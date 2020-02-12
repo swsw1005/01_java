@@ -1,10 +1,15 @@
 package ch04_control;
 
+import java.util.Scanner;
+
 public class Test04_switch {
 
     public static void main(String[] args) {
 
-        int score = Integer.parseInt(args[0]);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("점수를 입력하세요 (0~100)");
+        int score = scan.nextInt();
+
         char grade = ' ';
 
         if (score >= 0 && score <= 100) {
@@ -34,6 +39,6 @@ public class Test04_switch {
         } else {
             System.out.println("0~100 까지 숫자를 입력하세요");
         }
-
+        scan.close();
     }
 }

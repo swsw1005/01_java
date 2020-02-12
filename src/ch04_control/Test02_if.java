@@ -1,5 +1,7 @@
 package ch04_control;
 
+import java.util.Scanner;
+
 public class Test02_if {
 
     public static void main(String[] args) {
@@ -9,7 +11,9 @@ public class Test02_if {
         // 70~79 C
         // 60~69 D
         // 60 미만 F
-        int score = Integer.parseInt(args[0]);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("input score : ");
+        int score = scan.nextInt();
         char grade = ' ';
 
         if (score >= 0 && score <= 100) {
@@ -29,6 +33,7 @@ public class Test02_if {
         } else {
             System.out.println("0에서 100 사이의 숫자만 입력하세요");
         }
+        scan.close();
 
     } // main end
 } // class end

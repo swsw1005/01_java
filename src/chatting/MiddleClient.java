@@ -4,153 +4,153 @@ package chatting;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
-import java.util.*;
 import java.net.*;
 import javax.swing.*;
 
-//Å¬¶óÀÌ¾ðÆ®
-public class MiddleClient extends JFrame implements ActionListener,Runnable{
-	//º¯¼ö
-	JButton b1,b2,b3;
-	JTextField tf;//´ëÈ­ ³»¿ë ÀÔ·Â¶õ
-	JTextArea ta;//´ëÈ­ ³»¿ë Ãâ·Â ¿ëµµ
-	String name;//´ëÈ­¸í ³ÖÀ» º¯¼ö
-	
+//Å¬ï¿½ï¿½ï¿½Ì¾ï¿½Æ®
+public class MiddleClient extends JFrame implements ActionListener, Runnable {
+	// ï¿½ï¿½ï¿½ï¿½
+	JButton b1, b2, b3;
+	JTextField tf;// ï¿½ï¿½È­ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â¶ï¿½
+	JTextArea ta;// ï¿½ï¿½È­ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ëµµ
+	String name;// ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+
 	private DataInputStream in;
 	private DataOutputStream out;
 	private Thread thread;
 	JScrollPane scrollPane;
 	JScrollBar scrollBar;
 
-	//»ý¼ºÀÚ
-	public MiddleClient(String ip,int port){
-		try{
-			Socket sock=new Socket(ip,port);//¼­¹ö Á¢¼Ó
-			in=new DataInputStream(sock.getInputStream());
-			out=new DataOutputStream(sock.getOutputStream());
-			
-		}catch(Exception ex){
-			System.out.println("¼­¹ö Á¢¼Ó ½ÇÆÐ :"+ex);
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	public MiddleClient(String ip, int port) {
+		try {
+			Socket sock = new Socket(ip, port);// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+			in = new DataInputStream(sock.getInputStream());
+			out = new DataOutputStream(sock.getOutputStream());
+
+		} catch (Exception ex) {
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ :" + ex);
 			System.exit(0);
-		}//catch
-		
-		ImageIcon i1=new ImageIcon("c:\\_java\\imgs\\a1.gif");
-		b1=new JButton("Á¾·á",i1);
-		b1.addActionListener(this);//ÀÌº¥Æ® µî·Ï 
-		
-		ImageIcon i2=new ImageIcon("c:\\_java\\imgs\\a2.gif");
-		b2=new JButton("¸®½ºÆ®",i2);
-		b2.addActionListener(this);//ÀÌº¥Æ® µî·Ï 
-		
-		ImageIcon i3=new ImageIcon("c:\\_java\\imgs\\a3.gif");
-		b3=new JButton("»ö»óÁöÁ¤",i3);
-		b3.addActionListener(this);//ÀÌº¥Æ® µî·Ï 
-		
-		tf=new JTextField();
-		tf.addActionListener(this);//ÀÌº¥Æ® µî·Ï 
-		
-		ta=new JTextArea();
-		ta.setLineWrap(true);//³»¿ëÀÌ ¸¹À¸¸é ÀÚµ¿À¸·Î °³Çà ÇÏ·Á°í
-		
-		JPanel p=new JPanel();
-		p.setLayout(new GridLayout(3,1));
+		} // catch
+
+		ImageIcon i1 = new ImageIcon("c:\\_java\\imgs\\a1.gif");
+		b1 = new JButton("ï¿½ï¿½ï¿½ï¿½", i1);
+		b1.addActionListener(this);// ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½
+
+		ImageIcon i2 = new ImageIcon("c:\\_java\\imgs\\a2.gif");
+		b2 = new JButton("ï¿½ï¿½ï¿½ï¿½Æ®", i2);
+		b2.addActionListener(this);// ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½
+
+		ImageIcon i3 = new ImageIcon("c:\\_java\\imgs\\a3.gif");
+		b3 = new JButton("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", i3);
+		b3.addActionListener(this);// ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½
+
+		tf = new JTextField();
+		tf.addActionListener(this);// ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½
+
+		ta = new JTextArea();
+		ta.setLineWrap(true);// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ï¿½ï¿½
+
+		JPanel p = new JPanel();
+		p.setLayout(new GridLayout(3, 1));
 		p.add(b1);
 		p.add(b2);
 		p.add(b3);
-		
-		scrollPane=new JScrollPane(ta);
-		scrollBar=scrollPane.getVerticalScrollBar();
-		scrollBar.setValue(scrollBar.getMaximum());
-		
-		getContentPane().add(p,"East");
-		getContentPane().add(scrollPane,"Center");
-		getContentPane().add(tf,"South");
-		
-		setSize(400,300);//Ã¢Å©±â
-		setVisible(true);//Ã¢Ç¥½Ã
-		tf.requestFocus();//Æ÷Ä¿½º ¼³Á¤ 
-		
-		//´ëÈ­¸í ¹Þ±â
-		name=JOptionPane.showInputDialog(this,"´ëÈ­¸íÀ» ÀÔ·Â ÇÏ½Ã¿ä");
-		
-		thread=new Thread(this);
-		thread.start();//ÁØºñ´Ü°è, run()È£Ãâ
-	}//cons end
 
-	//¸Þ¼­µå : ¼­¹ö·Î ¿äÃ»ÇÒ¶§ »ç¿ëÇÒ ¿ëµµ
-	public void actionPerformed(ActionEvent e){
-		if(e.getSource()==tf){
-			//´ëÈ­³»¿ëÀ» ¼­¹ö·Î º¸³½´Ù
-			try{
-				String msg=tf.getText().trim();
-				if(msg.length()<1){
-					JOptionPane.showMessageDialog(this, "´ëÈ­³»¿ëÀ» ÀÔ·ÂÇÏ½Ã¿ä");
-					tf.requestFocus();//Æ÷Ä¿½º ¼³Á¤
-					return ;
-				}//if
-				
-				//¼­¹ö·Î º¸³»´Â ÀÛ¾÷
-				out.writeUTF("["+name+"]´ÔÀÇ ¸»>>"+msg);
-				tf.setText("");//Áö¿ì±â
-				
-			}catch(Exception ex){
-				ta.append("¼­¹ö·Î µ¥ÀÌÅÍ¸¦ º¸³»´øÁß ¿¹¿Ü ¹ß»ý :"+ex);
-				ta.append("10ÃÊ ÈÄ¿¡ Á¾·á ÇÕ´Ï´Ù ");
-				try{
+		scrollPane = new JScrollPane(ta);
+		scrollBar = scrollPane.getVerticalScrollBar();
+		scrollBar.setValue(scrollBar.getMaximum());
+
+		getContentPane().add(p, "East");
+		getContentPane().add(scrollPane, "Center");
+		getContentPane().add(tf, "South");
+
+		setSize(400, 300);// Ã¢Å©ï¿½ï¿½
+		setVisible(true);// Ã¢Ç¥ï¿½ï¿½
+		tf.requestFocus();// ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+
+		// ï¿½ï¿½È­ï¿½ï¿½ ï¿½Þ±ï¿½
+		name = JOptionPane.showInputDialog(this, "ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ ï¿½Ï½Ã¿ï¿½");
+
+		thread = new Thread(this);
+		thread.start();// ï¿½Øºï¿½Ü°ï¿½, run()È£ï¿½ï¿½
+	}// cons end
+
+	// ï¿½Þ¼ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã»ï¿½Ò¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ëµµ
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == tf) {
+			// ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			try {
+				String msg = tf.getText().trim();
+				if (msg.length() < 1) {
+					JOptionPane.showMessageDialog(this, "ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ã¿ï¿½");
+					tf.requestFocus();// ï¿½ï¿½Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+					return;
+				} // if
+
+				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½
+				out.writeUTF("[" + name + "]ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½>>" + msg);
+				tf.setText("");// ï¿½ï¿½ï¿½ï¿½ï¿½
+
+			} catch (Exception ex) {
+				ta.append("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ :" + ex);
+				ta.append("10ï¿½ï¿½ ï¿½Ä¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Õ´Ï´ï¿½ ");
+				try {
 					Thread.sleep(10000);
-				}catch(Exception ex2){}
-				
+				} catch (Exception ex2) {
+				}
+
 				System.exit(0);
-			}//catch
-			
-			
-		}else if(e.getSource()==b1){//Á¾·á
-			int an=JOptionPane.showConfirmDialog(this, "Á¾·áÇÒ±î¿ä","Á¾·á",JOptionPane.YES_NO_OPTION);
-			switch(an){
+			} // catch
+
+		} else if (e.getSource() == b1) {// ï¿½ï¿½ï¿½ï¿½
+			int an = JOptionPane.showConfirmDialog(this, "ï¿½ï¿½ï¿½ï¿½ï¿½Ò±ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", JOptionPane.YES_NO_OPTION);
+			switch (an) {
 			case JOptionPane.YES_OPTION:
 				System.exit(0);
 				break;
 			case JOptionPane.NO_OPTION:
 				break;
-			}//switch
-			
-		}else if(e.getSource()==b2){//¸®½ºÆ®
-			//´ëÈ­¸í ¸®½ºÆ®
+			}// switch
+
+		} else if (e.getSource() == b2) {// ï¿½ï¿½ï¿½ï¿½Æ®
+			// ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®
 			ta.setText("");
 			ta.append(name);
-		}else if(e.getSource()==b3){//»ö»ó
-			ta.setFont(new Font("Dialog",Font.BOLD,16));
-			
+		} else if (e.getSource() == b3) {// ï¿½ï¿½ï¿½ï¿½
+			ta.setFont(new Font("Dialog", Font.BOLD, 16));
+
 			ta.setForeground(Color.blue);
-			
-			tf.setFont(new Font("Dialog",Font.BOLD,16));
+
+			tf.setFont(new Font("Dialog", Font.BOLD, 16));
 			tf.setBackground(Color.yellow);
 		}
-	}//actionPerformed
+	}// actionPerformed
 
-	//¸Þ¼­µå : ¼­¹ö°¡ º¸³»ÁØ ³»¿ëÀ» Ã³¸®(Ãâ·Â)
-	public void run(){
-		try{	
-			while(true){
-				String str=in.readUTF();
-				ta.append(str+"\n");
+	// ï¿½Þ¼ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½(ï¿½ï¿½ï¿½)
+	public void run() {
+		try {
+			while (true) {
+				String str = in.readUTF();
+				ta.append(str + "\n");
 				scrollBar.setValue(scrollBar.getMaximum());
-				
-			}//while
-		}catch(Exception ex){
-			ta.append("¼­¹ö·ÎºÎÅÍ µ¥ÀÌÅÍ¸¦ ¹Þ´øÁß ¿¹¿Ü :"+ex);
-			ta.append("10ÃÊ ÈÄ¿¡ Á¾·á ÇÕ´Ï´Ù");
-			try{
-				Thread.sleep(10000);
-			}catch(Exception ex2){}
-			
-			System.exit(0);
-		}//catch
-	}//run
 
-	//main
+			} // while
+		} catch (Exception ex) {
+			ta.append("ï¿½ï¿½ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ :" + ex);
+			ta.append("10ï¿½ï¿½ ï¿½Ä¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Õ´Ï´ï¿½");
+			try {
+				Thread.sleep(10000);
+			} catch (Exception ex2) {
+			}
+
+			System.exit(0);
+		} // catch
+	}// run
+
+	// main
 	public static void main(String[] args) {
-		new MiddleClient(args[0],Integer.parseInt(args[1]));
-		//                ¼­¹öip      ¼­¹öport
-	}//main
-}//class
+		new MiddleClient(args[0], Integer.parseInt(args[1]));
+		// ï¿½ï¿½ï¿½ï¿½ip ï¿½ï¿½ï¿½ï¿½port
+	}// main
+}// class

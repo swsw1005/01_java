@@ -1,9 +1,14 @@
 package ch04_control;
 
+import java.util.Scanner;
+
 public class Test01_if {
 
     public static void main(String[] args) {
-        int su = Integer.parseInt(args[0]);
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("su 값을 입력해라");
+        int su = scan.nextInt();
 
         if (su > 0) {
             System.out.println(su + "는 양수");
@@ -18,6 +23,7 @@ public class Test01_if {
         } else {
 
         }
+        scan.close();
 
     }// main end
 }// class end
