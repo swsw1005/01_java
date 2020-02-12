@@ -1,0 +1,287 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<01_java>",
+            "request": "launch",
+            "mainClass": "app.App",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test09_multiClass<01_java>",
+            "request": "launch",
+            "mainClass": "ch01.Test09_multiClass",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test1<01_java>",
+            "request": "launch",
+            "mainClass": "ch01.Test1",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test10<01_java>",
+            "request": "launch",
+            "mainClass": "ch01.Test10",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test2<01_java>",
+            "request": "launch",
+            "mainClass": "ch01.Test2",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test3<01_java>",
+            "request": "launch",
+            "mainClass": "ch01.Test3",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test4<01_java>",
+            "request": "launch",
+            "mainClass": "ch01.Test4",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test5<01_java>",
+            "request": "launch",
+            "mainClass": "ch01.Test5",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test6<01_java>",
+            "request": "launch",
+            "mainClass": "ch01.Test6",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test7_BigInteger<01_java>",
+            "request": "launch",
+            "mainClass": "ch01.Test7_BigInteger",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test8_multiClass<01_java>",
+            "request": "launch",
+            "mainClass": "ch01.Test8_multiClass",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test01<01_java>",
+            "request": "launch",
+            "mainClass": "ch02_datatype.Test01",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test02<01_java>",
+            "request": "launch",
+            "mainClass": "ch02_datatype.Test02",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test03<01_java>",
+            "request": "launch",
+            "mainClass": "ch02_datatype.Test03",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test04_math<01_java>",
+            "request": "launch",
+            "mainClass": "ch02_datatype.Test04_math",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test01<01_java>(1)",
+            "request": "launch",
+            "mainClass": "ch03.Test01",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test02<01_java>(1)",
+            "request": "launch",
+            "mainClass": "ch03.Test02",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test03<01_java>(1)",
+            "request": "launch",
+            "mainClass": "ch03.Test03",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test04<01_java>",
+            "request": "launch",
+            "mainClass": "ch03.Test04",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test05<01_java>",
+            "request": "launch",
+            "mainClass": "ch03.Test05",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test06<01_java>",
+            "request": "launch",
+            "mainClass": "ch03.Test06",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test07<01_java>",
+            "request": "launch",
+            "mainClass": "ch03.Test07",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test08<01_java>",
+            "request": "launch",
+            "mainClass": "ch03.Test08",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test09<01_java>",
+            "request": "launch",
+            "mainClass": "ch03.Test09",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ch04<01_java>",
+            "request": "launch",
+            "mainClass": "ch04_control.Ch04",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test01_if<01_java>",
+            "request": "launch",
+            "mainClass": "ch04_control.Test01_if",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test02_if<01_java>",
+            "request": "launch",
+            "mainClass": "ch04_control.Test02_if",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test03_switch<01_java>",
+            "request": "launch",
+            "mainClass": "ch04_control.Test03_switch",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test04_switch<01_java>",
+            "request": "launch",
+            "mainClass": "ch04_control.Test04_switch",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test05_switch<01_java>",
+            "request": "launch",
+            "mainClass": "ch04_control.Test05_switch",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test06_switch<01_java>",
+            "request": "launch",
+            "mainClass": "ch04_control.Test06_switch",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test01_for<01_java>",
+            "request": "launch",
+            "mainClass": "ch05.Test01_for",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test02_for<01_java>",
+            "request": "launch",
+            "mainClass": "ch05.Test02_for",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test03_for<01_java>",
+            "request": "launch",
+            "mainClass": "ch05.Test03_for",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InetAddressDemo<01_java>",
+            "request": "launch",
+            "mainClass": "chatting.InetAddressDemo",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MiddleClient<01_java>",
+            "request": "launch",
+            "mainClass": "chatting.MiddleClient",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test<01_java>",
+            "request": "launch",
+            "mainClass": "chatting.Test",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-simpleclient<01_java>",
+            "request": "launch",
+            "mainClass": "chatting.simpleclient",
+            "projectName": "01_java"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-simpleserver<01_java>",
+            "request": "launch",
+            "mainClass": "chatting.simpleserver",
+            "projectName": "01_java"
+        }
+    ]
+}
