@@ -32,11 +32,7 @@ public class Test06_short {
                 for (int j = 1; j <= i; j++) {
                     System.out.print("☆");
                 }
-                for (int j =
-
-                        (2 * i + 2 * n + 1) - (i - n - 1)
-
-                ; j >= 1; j--) {
+                for (int j = 1 - 2 * (i - n); j >= 1; j--) {
                     System.out.print("★");
                 }
                 for (int j = 1; j <= i; j++) {
@@ -49,6 +45,8 @@ public class Test06_short {
         }
 
         scan.close();
+
+        System.out.println("\n\n\n");
 
     } // main end
 
