@@ -40,12 +40,10 @@ public class Test06_short {
                 }
                 System.out.println();
 
-            }
-
-        }
+            } // if else if end
+        } // for end
 
         scan.close();
-
         System.out.println("\n\n\n");
 
     } // main end
