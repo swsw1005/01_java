@@ -6,6 +6,8 @@ public class Equals {
         String name1 = new String("java");
         String name2 = new String("java");
 
+        System.out.println("기초변수, 참조변수 구분합니다.");
+
         System.out.println("name1, name2 둘다 java 이지만,");
         System.out.println("실제값은 HIP영역에 있고,");
         System.out.println("둘다 참조변수입니다.");
