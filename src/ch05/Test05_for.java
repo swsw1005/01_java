@@ -31,5 +31,18 @@ public class Test05_for {
         System.out.println();
         System.out.println("1~30 3배수합계 : " + sum);
         System.out.println();
+
+        System.out.println("Q. 127~300 10의배수 합계");
+        sum = 0;
+        for (int i = 127; i <= 300; i++) {
+            if (i % 10 == 0) {
+                sum += i;
+                System.out.println("i =\t" + i + "\tsum = \t" + sum);
+            }
+        }
+        System.out.println();
+        System.out.println("127~300 10배수합계 : " + sum);
+        System.out.println();
+
     }// main end
 }// class end
