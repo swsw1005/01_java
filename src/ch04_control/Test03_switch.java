@@ -11,9 +11,9 @@ public class Test03_switch {
         System.out.println("지금까지 이런 숫자는 없었다.");
         System.out.println("이것을 짝수인가 홀수인가");
 
-        Scanner scan_su = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
-        int su = scan_su.nextInt();
+        int su = scan.nextInt();
 
         switch (su % 2) {
         case 0:
@@ -24,6 +24,6 @@ public class Test03_switch {
             break;// 마지막엔 안써도 무관
         } // switch end
 
-        scan_su.close();
+        scan.close();
     }// main end
 }// class end
