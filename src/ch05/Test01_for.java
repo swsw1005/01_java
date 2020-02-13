@@ -20,7 +20,7 @@ public class Test01_for {
         // 오늘은 수요일 5
 
         for (int i = 10; i >= 0; i--) {
-            System.out.println(i + " ");
+            System.out.print(i + " ");
         }
         System.out.println();
 
