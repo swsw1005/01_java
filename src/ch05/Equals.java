@@ -12,9 +12,9 @@ public class Equals {
         System.out.println("주소(레퍼런스)가 다릅니다.");
 
         if (name1.equals(name2)) {
-
-            System.out.println("값이 같습니다.111");
-        }
+            System.out.println("if (name1.equals(name2))");
+            System.out.println("\t값이 같습니다.111");
+        } // if end
 
         if (name1 == name2) {
             System.out.println("값이 같은가.");
@@ -22,7 +22,6 @@ public class Equals {
             System.out.println("값은 같지만 주소가 다릅니다.");
             System.out.println("equals 통해서 값을 비교해야합니다.");
             System.out.println("레퍼런스가 다릅니다.");
-        }
-
-    }
-}
+        } // if else end
+    }// main end
+}// class end
