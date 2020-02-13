@@ -29,7 +29,6 @@ public class Test01_if {
             scan.close();
 
         } catch (InputMismatchException e) {
-            // TODO: handle exception
             System.out.println("숫자입력하라고 ㅉㅉ");
         }
 

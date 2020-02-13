@@ -40,5 +40,7 @@ public class Test05_switch {
             System.out.println("입력오류 : + - * / % 중 하나를 입력하세요");
         } // switch end
 
+        scan.close();
+
     }
 }

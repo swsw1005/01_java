@@ -29,7 +29,7 @@ public class Test6 {
       scan.close();
 
     } catch (InputMismatchException exception) {
-      // TODO: handle exception
+
       System.out.println("숫자입력하라니까 임마");
 
     }
