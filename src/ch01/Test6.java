@@ -1,16 +1,18 @@
 package ch01;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 //"Test6.java"
 public class Test6 {
   public static void main(String args[]) {
 
-    Scanner scan = new Scanner(System.in);
-    System.out.println("숫자 입력해라");
-    int a = scan.nextInt();
-
     try {
+
+      Scanner scan = new Scanner(System.in);
+      System.out.println("숫자 입력해라");
+      int a = scan.nextInt();
+
       System.out.println();
       System.out.println("10진수\t" + a);// 10진수
       System.out.println("2진수\t" + Integer.toBinaryString(a));// 2진수
@@ -23,12 +25,14 @@ public class Test6 {
       System.out.println();
       System.out.println(Long.MIN_VALUE);
       System.out.println(Long.MAX_VALUE);
-    } catch (Exception r) {
+
+      scan.close();
+
+    } catch (InputMismatchException exception) {
       // TODO: handle exception
       System.out.println("숫자입력하라니까 임마");
 
     }
 
-    scan.close();
   }// main end
 }// class end

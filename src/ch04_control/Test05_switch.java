@@ -1,14 +1,23 @@
 package ch04_control;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 public class Test05_switch {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
 
         System.out.print("+ - * / % 중 하나의 연산자를 입력하세요>>");
         char oper = (char) System.in.read();
+        // char 한글자밖에 못읽는다.
+        System.out.println("숫자 a b입력");
 
-        int a = 20;
-        int b = 7;
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+
+        // int a = 20;
+        // int b = 7;
 
         switch (oper) {
 

@@ -31,6 +31,5 @@ public class Test03_for {
             System.out.println(i + " ");
 
         } // for end
-
     }// main end
 }// class end
