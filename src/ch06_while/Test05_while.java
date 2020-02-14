@@ -24,7 +24,7 @@ public class Test05_while {
 
         // for문 . 자료 최종치 알고 있을때 사용
         // while문, 자료 최종치 불확실하면 사용
-        // 주로 while 사용
+        // 주로 while 사용'
 
     }
 }
