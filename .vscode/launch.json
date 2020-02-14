@@ -8,6 +8,20 @@
       "type": "java",
       "name": "CodeLens (Launch) - Test06_short",
       "request": "launch",
+      "mainClass": "ch05_for.Test06_short",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test07_2for",
+      "request": "launch",
+      "mainClass": "ch05_for.Test07_2for",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test06_short",
+      "request": "launch",
       "mainClass": "ch05.Test06_short",
       "projectName": "01_java"
     },
