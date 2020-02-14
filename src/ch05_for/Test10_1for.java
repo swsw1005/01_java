@@ -2,7 +2,7 @@ package ch05_for;
 
 import java.util.Scanner;
 
-public class Test10_for {
+public class Test10_1for {
 
     public static void main(String[] args) {
 
