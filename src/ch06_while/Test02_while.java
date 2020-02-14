@@ -10,6 +10,6 @@ public class Test02_while {
                 System.out.print(i + " ");
             }
             i++;
-        }
-    }
-}
+        } // while end
+    }// main end
+}// class end
