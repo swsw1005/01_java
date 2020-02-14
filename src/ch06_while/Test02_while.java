@@ -11,5 +11,15 @@ public class Test02_while {
             }
             i++;
         } // while end
+        System.out.println();
+        // 10~90 7배수
+        i = 10;
+        while (i <= 90) {
+            if (i % 7 == 0) {
+                System.out.print(i + " ");
+            }
+            i++;
+        }
+
     }// main end
 }// class end
