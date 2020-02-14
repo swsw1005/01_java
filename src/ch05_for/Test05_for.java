@@ -1,4 +1,4 @@
-package ch05;
+package ch05_for;
 
 public class Test05_for {
     public static void main(String args[]) {

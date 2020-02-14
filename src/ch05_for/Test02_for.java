@@ -1,4 +1,4 @@
-package ch05;
+package ch05_for;
 
 public class Test02_for {
 
