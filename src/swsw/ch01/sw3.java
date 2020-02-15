@@ -9,10 +9,11 @@ public class sw3 {
             System.out.print("mynum[" + i + "]\t");
             try {
                 System.out.println(mynum[i]);
-            } catch (Exception e) {
+                // mynum[] 순서대로 반복출력
+            } catch (Exception e) { // 오류 발생하면
                 System.out.println("invalid input");
                 System.out.println("bye bye");
-                break;
+                break;// 끝낸다.
             }
         }
 
