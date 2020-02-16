@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - sw8",
+      "request": "launch",
+      "mainClass": "swsw.ch01.sw8",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test06_break",
       "request": "launch",
       "mainClass": "ch06_while.Test06_break",

@@ -4,40 +4,40 @@ public class sw6 {
 
     public static void main(String[] args) {
 
-        double x = 123.4564;
+        double x = 123.456789;
         System.out.println();
         System.out.println("x = " + x);
         System.out.println();
 
         System.out.println("---01-----------------");
         double x1 = Math.sin(x);
-        System.out.println(x1);// -0.804175189839928
+        System.out.println(x1);// -0.8044063476133956
         System.out.println();
 
         System.out.println("---02-----------------");
         double x2 = Math.cos(x);
-        System.out.println(x2);// -0.5943923485761873
+        System.out.println(x2);// -0.5940794794632086
         System.out.println();
 
         System.out.println("---03-----------------");
         double x3 = Math.toRadians(x);
-        System.out.println(x3);// 2.1547206626591273
+        System.out.println(x3);// 2.1547274519899178
         System.out.println();
 
         System.out.println("---04-----------------");
         double x4 = Math.sqrt(x);
-        System.out.println(x4);// 11.111093555541686
+        System.out.println(x4);// 11.111111060555556
         System.out.println();
 
         System.out.println("---05-----------------");
         double x5 = Math.random();
-        System.out.println(x5);// 0.19318159945966218
+        System.out.println(x5);// 랜덤
         System.out.println();
 
         System.out.println("---06-----------------");
         double x6 = Math.abs(x);
         int x6_1 = Math.abs((int) x);
-        System.out.println(x6);// 123.4564
+        System.out.println(x6);// 123.456789
         System.out.println(x6_1);// 123
         System.out.println();
 
