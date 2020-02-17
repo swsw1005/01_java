@@ -66,5 +66,23 @@ public class sw5 {
         text_replace = text_replace.replace("java", "JAVA");
         System.out.println(text_replace);
 
-    }
-}
+        System.out.println("12-----------------");
+        String test5 = text.toUpperCase();
+        System.out.println(test5);
+        System.err.println(test5.toLowerCase());
+        System.out.println(test5.toLowerCase().toUpperCase());
+
+        System.out.println("13-----------------");
+        String[] text6 = text.split(" ");
+        for (int i = 0; i < 1000; i++) {
+            try {
+                System.out.println("text.split [" + i + "] =\t" + text6[i]);
+            } catch (Exception e) {
+                System.out.println("-------------invalid args");
+                break;
+            }
+        }
+        ;
+
+    }// main end
+}// class end
