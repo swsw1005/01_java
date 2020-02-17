@@ -22,28 +22,28 @@ public class sw2 {
 
             if (i <= n) {
 
-                for (int j = 0; j <= n - i - 1; j++) {
+                for (int j = 1; j <= n - i; j++) {
                     System.out.print("☆");
                 }
 
                 for (int j = 0; j <= 2 * i; j++) {
                     System.out.print("★");
                 }
-                for (int j = 0; j <= n - i - 1; j++) {
+                for (int j = 1; j <= n - i; j++) {
                     System.out.print("☆");
                 }
                 System.out.println();
 
             } else {
 
-                for (int j = 0; j <= i - n - 1; j++) {
+                for (int j = 1; j <= i - n; j++) {
                     System.out.print("☆");
                 }
 
                 for (int j = 0; j <= 2 * (2 * n - i); j++) {
                     System.out.print("★");
                 }
-                for (int j = 0; j <= i - n - 1; j++) {
+                for (int j = 1; j <= i - n; j++) {
                     System.out.print("☆");
                 }
 
