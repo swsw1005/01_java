@@ -36,5 +36,6 @@ public class Test02_arr {
         for (int i = 0; i < st.length; i++) {
             System.out.println("st[" + i + "]\t" + st[i]);
         } // null null null
-    }
-}
+
+    }// main end
+}// class end
