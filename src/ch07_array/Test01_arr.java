@@ -25,7 +25,7 @@ public class Test01_arr {
             }
 
         } // for end
-        System.out.println(Math.count(arr2));
+        System.out.println();
 
         for (int i = 0; i < 100; i++) {
             try {
