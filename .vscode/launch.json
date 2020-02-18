@@ -6,6 +6,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test02_method",
+      "request": "launch",
+      "mainClass": "ch08_oop.Test02_method",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01_method",
+      "request": "launch",
+      "mainClass": "ch08_oop.Test01_method",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - sw9_lotto",
+      "request": "launch",
+      "mainClass": "swsw.ch01.sw9_lotto",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test11",
+      "request": "launch",
+      "mainClass": "ch07_array.Test11",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test10_lotto",
+      "request": "launch",
+      "mainClass": "ch07_array.Test10_lotto",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test09_random",
+      "request": "launch",
+      "mainClass": "ch07_array.Test09_random",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test09_arr",
+      "request": "launch",
+      "mainClass": "ch07_array.Test09_arr",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test08_arr",
       "request": "launch",
       "mainClass": "ch07_array.Test08_arr",
