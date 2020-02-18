@@ -19,11 +19,13 @@ public class Test02_method {
     public static void main(String[] args) {
         Test02_method t = new Test02_method(); // 객체생성
         int a = t.aa();
-        double b = t.bb();
+
         String irum = t.name();
 
         System.out.println("a\t" + a);
+        double b = t.bb();
         System.out.println("b\t" + b);
         System.out.println("irum\t" + irum);
+
     }
 }
