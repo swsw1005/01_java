@@ -7,9 +7,15 @@ public class Test03_arr {
         double[] height = { 130.5, 177.7, 185.9 };
         String name[] = { "손여은", "전소미", "이유비" };
 
-        for (int i = 0; i <= age.length; i++) {
+        for (int i = 0; i < age.length; i++) {
 
-            System.out.printf("이름:%12s\t나이:%7d\t키:%7.1f\n", name[i], age[i], height[i]);
+            try {
+                System.out.printf("이름:%12s\t나이:%7d\t키:%7.1f\n", name[i], age[i], height[i]);
+
+            } catch (Exception e) {
+
+                System.out.println("invalide. system out.");
+            }
 
         }
 
