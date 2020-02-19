@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test12_static_var",
+      "request": "launch",
+      "mainClass": "ch08_oop.Test12_static_var",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test11_static_var",
+      "request": "launch",
+      "mainClass": "ch08_oop.Test11_static_var",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test10_static_var",
+      "request": "launch",
+      "mainClass": "ch08_oop.Test10_static_var",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test08_method_var",
       "request": "launch",
       "mainClass": "ch08_oop.Test08_method_var",

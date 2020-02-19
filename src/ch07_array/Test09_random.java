@@ -15,7 +15,7 @@ public class Test09_random {
         for (int i = 1; i <= sc; i++) {
             // int a = (int) (Math.random() * 6 + 1);
             int a = (int) (((Math.random()) * 1000) % 6) + 1;
-            System.out.println(a);
+            // System.out.println(a);
             sum = sum + a;
             // a = 0;
             // System.out.println("-----" + sum);

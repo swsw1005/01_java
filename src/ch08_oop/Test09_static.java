@@ -12,10 +12,7 @@ Static 변수는 모든 객체가 공유한다.
           성인 : 20 static 변수.
           어디서나 불러다가 쓸수있다.
     ex)    법정금리...모든 객체가 공유하는 수치
-
-
-
-
+  
 */
 public class Test09_static {
 
