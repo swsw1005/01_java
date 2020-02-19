@@ -1,5 +1,7 @@
 package ch08_oop;
 
+import ch01.Demo4;
+
 public class Test02_method {
 
     public int aa() {
@@ -10,6 +12,10 @@ public class Test02_method {
     public double bb() {
         System.out.println("bb!");
         return 12.7;
+    }
+
+    public void cc() {
+        System.out.println("cc!");
     }
 
     public String name() {
@@ -26,6 +32,10 @@ public class Test02_method {
         double b = t.bb();
         System.out.println("b\t" + b);
         System.out.println("irum\t" + irum);
+        t.cc();
+
+        Demo4 de3 = new Demo4();
+        de3.dd();
 
     }
 }

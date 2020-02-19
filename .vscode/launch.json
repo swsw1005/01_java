@@ -6,6 +6,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test08_method_var",
+      "request": "launch",
+      "mainClass": "ch08_oop.Test08_method_var",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test07_method_var",
+      "request": "launch",
+      "mainClass": "ch08_oop.Test07_method_var",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test06_arr_parameter",
+      "request": "launch",
+      "mainClass": "ch08_oop.Test06_arr_parameter",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test05_methodstar",
+      "request": "launch",
+      "mainClass": "ch08_oop.Test05_methodstar",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test04_method",
+      "request": "launch",
+      "mainClass": "ch08_oop.Test04_method",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test023_method_overload",
+      "request": "launch",
+      "mainClass": "ch08_oop.Test023_method_overload",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test02_method",
       "request": "launch",
       "mainClass": "ch08_oop.Test02_method",
