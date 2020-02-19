@@ -2,11 +2,11 @@ package ch07_array;
 
 import java.util.Arrays;
 
-public class Test10_lotto {
+class Lotto {
 
-    public static void main(String[] args) {
+    public void lotto6num() {
 
-        System.out.println("학원방식 lotto");
+        // System.out.println("학원방식 lotto");
         int lotto[] = new int[6];
 
         for (int i = 0; i < 6; i++) {
@@ -23,11 +23,10 @@ public class Test10_lotto {
             } // inner for end
         } // for end
 
-        for (int i = 0; i < 6; i++) {
-            System.out.println(lotto[i] + " ");
+        // for (int i = 0; i < 6; i++) {
+        // System.out.println(lotto[i] + " ");
 
-        }
-        System.out.println("--------------------------");
+        // }
 
         // int a1 = lotto[0];
         // int a2 = lotto[1];
@@ -45,15 +44,13 @@ public class Test10_lotto {
         // int b5 = 0;
         // int b6 = 0;
 
-        System.out.println("--------------------------");
-
         Arrays.sort(lotto);
         // 정렬
 
         String lottosrt = Arrays.toString(lotto);
         lottosrt = lottosrt.replace("[", "");
         lottosrt = lottosrt.replace("]", "");
-        lottosrt = lottosrt.replace(",", " ");
+        lottosrt = lottosrt.replace(",", "\t");
         System.out.println(lottosrt);
         // while (a1 > 0) {
         // b1 = Math.min(a1, a2);
@@ -90,5 +87,17 @@ public class Test10_lotto {
         // System.out.println(a1 + " " + a2 + " " + a3 + " " + a4 + " " + a5 + " " +
         // a6);
         // System.out.println("--------------------------");
+
+    }
+
+}
+
+public class Test10_lotto {
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 150; i++) {
+            Lotto lot = new Lotto();
+            lot.lotto6num();
+        }
     }// main end
 }// class end
