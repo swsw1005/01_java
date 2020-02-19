@@ -66,20 +66,17 @@ public class sw9 {
         int x2 = scan.nextInt();
         // int x3 = scan.nextInt();
         // int x4 = scan.nextInt();
-
         Calculator c1 = new Calculator();
         // c1.setleftright(x1, x2);
         // c1.sum();
         // c1.avg();
         // c1.je_gob();
         c1.Calset(x1, x2);
-
         // Calculator c2 = new Calculator();
         // c2.setleftright(x3, x4);
         // c2.sum();
         // c2.avg();
         // c2.je_gob();
-
         scan.close();
     }
 
