@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test_enhanced_for",
+      "request": "launch",
+      "mainClass": "ch08_oop.Test_enhanced_for",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test12_static_var",
       "request": "launch",
       "mainClass": "ch08_oop.Test12_static_var",
