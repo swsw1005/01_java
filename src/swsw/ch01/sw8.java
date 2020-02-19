@@ -8,7 +8,7 @@ public class sw8 {
 
         Scanner scan = new Scanner(System.in);
 
-        Geo geo1 = new Geo();
+        Geo geo1 = new Geo();// sw7.Geo. 가져온다
         geo1.latitude = scan.nextDouble();
         geo1.longitude = scan.nextDouble();
 

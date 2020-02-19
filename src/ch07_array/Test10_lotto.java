@@ -29,13 +29,14 @@ public class Test10_lotto {
         }
         System.out.println("--------------------------");
 
-        int a1 = lotto[0];
-        int a2 = lotto[1];
-        int a3 = lotto[2];
-        int a4 = lotto[3];
-        int a5 = lotto[4];
-        int a6 = lotto[5];
-        System.out.println(a1 + " " + a2 + " " + a3 + " " + a4 + " " + a5 + " " + a6);
+        // int a1 = lotto[0];
+        // int a2 = lotto[1];
+        // int a3 = lotto[2];
+        // int a4 = lotto[3];
+        // int a5 = lotto[4];
+        // int a6 = lotto[5];
+        // System.out.println(a1 + " " + a2 + " " + a3 + " " + a4 + " " + a5 + " " +
+        // a6);
 
         // int b1 = 0;
         // int b2 = 0;
@@ -49,8 +50,11 @@ public class Test10_lotto {
         Arrays.sort(lotto);
         // 정렬
 
-        System.out.println(Arrays.toString(lotto));
-
+        String lottosrt = Arrays.toString(lotto);
+        lottosrt = lottosrt.replace("[", "");
+        lottosrt = lottosrt.replace("]", "");
+        lottosrt = lottosrt.replace(",", " ");
+        System.out.println(lottosrt);
         // while (a1 > 0) {
         // b1 = Math.min(a1, a2);
         // b2 = Math.max(a1, a2);

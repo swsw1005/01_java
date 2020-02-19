@@ -57,8 +57,10 @@ public class sw5 {
 
         System.out.println("10-----------------");
         String text4 = "12345678901234567890";
-        String text4_index = text4.substring(7);
+        String text4_index = text4.substring(3);
         System.out.println(text4_index);
+        String text4_in_index = text4_index.substring(3);
+        System.out.println(text4_in_index);
 
         System.out.println("11-----------------");
         String text_replace = text.replace("Hello", "Bye Bye");

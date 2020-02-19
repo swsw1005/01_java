@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Test06_short {
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         // 이중 for문 2개 쓰지말고, 하나로 합쳐라
         System.out.print("몇층짜리 다이아몬드?");
-        int n = scan.nextInt() / 2;
+        int n = sc.nextInt() / 2;
         System.out.println();
         System.out.println(">>>" + n + "층짜리 다이아 제작중...");
         System.out.println();
@@ -39,11 +39,10 @@ public class Test06_short {
                     System.out.print("☆");
                 }
                 System.out.println();
-
+                sc.close();
             } // if else if end
         } // for end
 
-        scan.close();
         System.out.println("\n\n\n");
 
     } // main end
