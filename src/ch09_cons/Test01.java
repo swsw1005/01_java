@@ -30,6 +30,14 @@ class Sung {
         System.out.println("이름\t" + name + "\t국어점수\t" + kor);
     }
 
+    public void disp(String name, int kor) {
+        // Sung(name, kor);
+        this.name = name;
+        this.kor = kor;
+        // System.out.println("이름\t" + name + "\t국어점수\t" + kor);
+        disp();
+    }
+
 }
 
 public class Test01 {
@@ -37,10 +45,17 @@ public class Test01 {
     public static void main(String[] args) {
         new Sung();
         Sung will = new Sung("윌리엄", 99);
-        Sung kim = new Sung("김철수", 40);
-        Sung lee = new Sung("이효리", 50);
         will.disp();
+        System.out.println();
+        Sung kim = new Sung("김철수", 40);
         kim.disp();
+        System.out.println();
+        Sung lee = new Sung("이효리", 50);
         lee.disp();
+        System.out.println();
+        System.out.println();
+        Sung park = new Sung();
+        park.disp("박상혁", 99);
+
     }
 }

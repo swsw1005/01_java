@@ -6,7 +6,15 @@ class Idol_girl {
     public double ki;
     protected String addr;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
     // 생성자
+    // >>> 인스턴스 만드는 특수한 메소드
     // 1. 클래스명과 같은 이름 써야한다.
     // 2. 리턴값 없다.
     // 3. 객체필드 초기화
