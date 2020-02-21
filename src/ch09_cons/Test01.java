@@ -43,17 +43,23 @@ class Sung {
 public class Test01 {
 
     public static void main(String[] args) {
-        new Sung();
+        // new Sung();
+
         Sung will = new Sung("윌리엄", 99);
         will.disp();
+
         System.out.println();
-        Sung kim = new Sung("김철수", 40);
-        kim.disp();
+
+        Sung kim = new Sung("김철수", 40); // 디폴드로 생성되었으나
+        kim.disp("이효리", 50);// 덮어씌워졌다.
+
         System.out.println();
-        Sung lee = new Sung("이효리", 50);
-        lee.disp();
+
+        Sung lee = new Sung();
+        lee.disp("이효리", 50);
+
         System.out.println();
-        System.out.println();
+
         Sung park = new Sung();
         park.disp("박상혁", 99);
 
