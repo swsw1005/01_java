@@ -1,0 +1,18 @@
+문서.txt 클래스 기초-----------------
+package 패키지명
+
+import java.util.*;
+import java.awt.*;>>>>>자동으로 상속받지만,숨겨져있다
+
+class 아들클래스 extends Object(수퍼클래스){
+--- 변수
+--- 생성자
+--- 메서드
+}
+
+public class 주클래스(저장이름){
+
+--- public static void main(String args[]){
+
+--- }
+}

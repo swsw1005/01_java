@@ -59,3 +59,9 @@ public class Test04_cons_super extends Frame {
 // --- ex) java(int a, int b) != java(int a, String c)
 
 // 오버라이딩
+// --- 상속받은 메소드 내용 재정의
+// --- 리턴형, 메소드 이름, 매개변수 반드시 같아야 한다.
+// --- 접근제한자는 더 넓은 것을 사용할 수 있다.
+// --- protected =>> public
+// ----상위클래스 ----파생클래스
+// --- 또 다른 상속 가능하다.
