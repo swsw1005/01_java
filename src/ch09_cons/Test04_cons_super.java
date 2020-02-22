@@ -15,10 +15,11 @@ public class Test04_cons_super extends Frame {
         super("연습1");// 상위클래스 생성자 호출
 
         setTitle(this.getTitle());
+
         super.setSize(450, 450);// 필요없다.
         this.setSize(450, 450);// 필요없다.
-
         setSize(430, 430);// 상속 받았잖아. 그냥 써도 된다.
+
         setVisible(true);
 
     }

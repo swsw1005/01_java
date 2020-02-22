@@ -26,6 +26,12 @@ class Calculator {
         System.out.println("-----------------------");
     } // 역시 같은 클래스의 변수 left right 똑같이 이용한다.
 
+    public void avg(int left, int right) {
+        System.out.print("avg\t=\t");
+        System.out.println((double) (this.left + this.right) / 2);
+        System.out.println("-----------------------");
+    }
+
     public void je_gob() {
 
         long je = this.left;
@@ -64,6 +70,8 @@ public class sw9 {
         Scanner scan = new Scanner(System.in);
         int x1 = scan.nextInt();
         int x2 = scan.nextInt();
+        int x3 = scan.nextInt();
+        int x4 = scan.nextInt();
         // int x3 = scan.nextInt();
         // int x4 = scan.nextInt();
         Calculator c1 = new Calculator();
@@ -71,12 +79,17 @@ public class sw9 {
         // c1.sum();
         // c1.avg();
         // c1.je_gob();
-        c1.Calset(x1, x2);
+        // c1.Calset(x1, x2);
         // Calculator c2 = new Calculator();
         // c2.setleftright(x3, x4);
         // c2.sum();
         // c2.avg();
         // c2.je_gob();
+        System.out.println("--------------");
+
+        c1.avg(x3, x4);
+        System.out.println("--------------");
+
         scan.close();
     }
 

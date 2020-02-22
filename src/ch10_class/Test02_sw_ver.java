@@ -1,8 +1,6 @@
 package ch10_class;
 
 import java.text.SimpleDateFormat;
-import java.time.Month;
-import java.time.Year;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
@@ -38,8 +36,6 @@ public class Test02_sw_ver {
                 jumin_yyyy = jumin_yy + 1900;
             }
 
-            System.out.println(jumin_yyyy);
-
             boolean j_yy = (jumin_yy >= 0 && jumin_yy <= 99);
             boolean j_mm = (jumin_mm >= 1 && jumin_mm <= 12);
             boolean j_dd = (jumin_dd >= 1 && jumin_dd <= 31);
@@ -49,26 +45,52 @@ public class Test02_sw_ver {
 
             boolean j_all = j_yy && j_mm && j_dd && j_mid && j_back1 && j_length;
 
-            System.out.print(jumin_yy + " " + jumin_mm + " " + jumin_dd + " " + jumin_mid);
-            System.out.println(" (" + jumin_back1 + ") " + jumin_back);
-            System.out.println("length : \t" + jumin_length);
-
-            SimpleDateFormat yyyymmdd = new SimpleDateFormat("yyyy-MM-dd");
-            Date today = new Date();
-
-            // Date birth = new Date();
-
-            // Calendar cal = Calendar.getInstance();
-            // cal.set(jumin_yyyy, jumin_mm, jumin_dd, 0, 0, 0);
-
-            String today_format = yyyymmdd.format(today);
-            // String birth_format = yyyymmdd.format(cal);
-
             if (j_all) {
+
+                System.out.print(jumin_yy + " " + jumin_mm + " " + jumin_dd + " " + jumin_mid);
+                System.out.println(" (" + jumin_back1 + ") " + jumin_back);
+                System.out.println("length : \t" + jumin_length);
+
+                System.out.println("------------------");
+
+                SimpleDateFormat yyyymmdd = new SimpleDateFormat("yyyy-MM-dd");
+                Date today = new Date();
+
+                Calendar cal = Calendar.getInstance();
+                cal.set(jumin_yyyy, jumin_mm - 1, jumin_dd, 0, 0, 0);
+
+                Date birth = cal.getTime();
+
+                System.out.println("------------------");
+                System.out.println("today" + today);
+                System.out.println("birth" + birth);
+
+                String today_format = yyyymmdd.format(today);
+                String birth_format = yyyymmdd.format(birth);
+
+                String jumin_sung;
+
+                switch (jumin_back1 % 2) {
+                    case 0:
+                        jumin_sung = "여자";
+                        break;
+                    case 1:
+                        jumin_sung = "남자";
+                        break;
+                    default:
+                        jumin_sung = "글쎄";
+                        break;
+                }
                 System.out.println("축하합니다. 올바른 주민번호를 입력하였습니다.");
                 System.out.println();
                 System.out.println("오늘은 \t" + today_format);
-                // System.out.println("출생일 \t" + birth_format);
+                System.out.println("출생일 \t" + birth_format);
+                System.out.println((today.getTime() - birth.getTime()) / (24 * 60 * 60 * 1000) + " 일 동안 생존하셧습니다.");
+                System.out.println();
+                System.out.print("당신은 99% 확률로");
+                System.out.print(jumin_sung);
+                System.out.println("입니다.");
+                System.out.println();
 
             } else {
                 System.out.println("주민번호가 이상합니다.");
