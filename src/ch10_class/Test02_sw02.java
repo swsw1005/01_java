@@ -99,7 +99,7 @@ class Jumin {
         if (j_all) {
 
             System.out.print(jumin_yy + " " + jumin_mm + " " + jumin_dd + " " + jumin_mid);
-            System.out.println(" (" + jumin_back1 + ") ****** ");
+            System.out.println(" " + jumin_back1 + "****** ");
             System.out.println("length : \t" + jumin_length); //// 주민등록 번호 각각 분리되어 보여준다
             System.out.println("--------------------------------------");
 
