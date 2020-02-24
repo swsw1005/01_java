@@ -12,7 +12,7 @@ class PersonSuper {
     }// cons end
 
     public void disp() {
-        System.out.println("이름 \t" + name);
+        System.out.println("이름 \t" + name); // 이름 보여주는 메소드
     }
 }
 
@@ -31,7 +31,7 @@ class PersonSub extends PersonSuper { // 이름 상속받고, 좌안 우안 시�
     }// 생성자 end
 
     @Override
-    public void disp() {
+    public void disp() { // 상속받고 overridding ------ 좌안 우안 추가
         System.out.println("이름 \t" + name);
         System.err.println("좌안 시력\t" + left_eye);
         System.err.println("우안 시력\t" + right_eye);
@@ -54,7 +54,7 @@ class PersonSin extends PersonSuper { // 이름을 상속받고, 주소, 전화�
     }
 
     @Override
-    public void disp() {
+    public void disp() { /// 이름 상속받고 주소 번호 추가
         System.out.println("이름 \t" + name);
         System.err.println("주소\t" + addr);
         System.err.println("폰번호\t" + hp);
