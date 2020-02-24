@@ -35,7 +35,8 @@ public class Test04_cons_super extends Frame {
 // ** 캡슐화 class Test{}
 // -----은닉화(private)로 선언된 변수. 외부클래스에서 접근 불가
 
-// ** 상속 class 클래스명 extends 수퍼클래스()
+// ** 상속
+/////// class 자식클래스 extends 부모클래스()
 
 // ** 다형성 overload, overriding
 

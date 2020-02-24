@@ -4,7 +4,7 @@ package 패키지명
 import java.util.*;
 import java.awt.*;>>>>>자동으로 상속받지만,숨겨져있다
 
-class 아들클래스 extends Object(수퍼클래스){
+class 자식클래스 extends Object(부모클래스){
 --- 변수
 --- 생성자
 --- 메서드

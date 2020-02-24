@@ -21,7 +21,7 @@ class SuperTest { // 아버지 클래스
 
 }
 
-class SubTest extends SuperTest {// 상속받은 아들 클래스
+class SubTest extends SuperTest {// 상속받은 자식 클래스
     public SubTest() {
         super("연습1", 100);
     }

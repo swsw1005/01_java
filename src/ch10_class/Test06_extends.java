@@ -70,5 +70,10 @@ public class Test06_extends {
         m.disp();
         System.out.println("---------------------------------------");
 
+        PanMaeSub mn = new PanMaeSub("귤", 55, 1355, 13);
+        mn.disp();
+        System.out.println("--------------------");
+        m = mn;
+        m.disp();
     }
 }
