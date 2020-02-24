@@ -1,4 +1,6 @@
 {
     "sqltools.connections": [],
-    "sqltools.useNodeRuntime": true
+    "sqltools.useNodeRuntime": true,
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.dependency.syncWithFolderExplorer": true
 }
