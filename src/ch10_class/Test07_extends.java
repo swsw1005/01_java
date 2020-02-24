@@ -4,7 +4,7 @@ package ch10_class;
 class PersonSuper {
     protected String name;
 
-    public PersonSuper() {
+    public PersonSuper() {// 디폴트 생성자
     }
 
     public PersonSuper(String name) {
@@ -17,7 +17,7 @@ class PersonSuper {
 }
 
 // 자식클래스 1
-class PersonSub extends PersonSuper {
+class PersonSub extends PersonSuper { // 이름 상속받고, 좌안 우안 시력 포함
     private double left_eye;
     private double right_eye;
 
@@ -40,7 +40,7 @@ class PersonSub extends PersonSuper {
 }// class end
 
 // 자식 클래스 2
-class PersonSin extends PersonSuper {
+class PersonSin extends PersonSuper { // 이름을 상속받고, 주소, 전화번호 포함
     private String addr;// 전역변수, 주소
     private String hp;// 전역변수, 전화번호
 
