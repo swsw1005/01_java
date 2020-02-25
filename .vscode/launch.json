@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test12_downcasting",
+      "request": "launch",
+      "mainClass": "ch10_class.Test12_downcasting",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test11_downcasting",
+      "request": "launch",
+      "mainClass": "ch10_class.Test11_downcasting",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test10_upcasting",
       "request": "launch",
       "mainClass": "ch10_class.Test10_upcasting",

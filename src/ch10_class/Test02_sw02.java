@@ -112,7 +112,6 @@ class Jumin {
             System.out.println("--------------------------------------"); // 날것 그대로의 날짜 출력
 
             System.out.println("주민등록번호를 입력하였습니다.");
-            System.out.println("당신의 개인정보 바르게 저장되었다.");
             System.out.println();
             System.out.println("출생일  \t" + birth_format);
             System.out.println("직전생일 \t" + last_format);
@@ -124,7 +123,7 @@ class Jumin {
 
             System.out.println((today_date.getTime() - birth_date.getTime()) / (24 * 60 * 60 * 1000) + "일 살아오셨습니다...");
             System.out.println();
-            System.out.print("당신은 99% 확률로  " + jumin_sung + "입니다.");
+            System.out.print("성별  " + jumin_sung);
             // System.out.print(jumin_sung);
             // System.out.println("입니다.");
             System.out.println();
