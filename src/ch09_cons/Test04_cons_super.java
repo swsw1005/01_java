@@ -12,7 +12,7 @@ public class Test04_cons_super extends Frame {
 
     public Test04_cons_super() {
 
-        super("연습1");// 상위클래스 생성자 호출
+        super("연습1");// 부모(수퍼)클래스 생성자 호출
 
         setTitle(this.getTitle());
 
@@ -36,7 +36,7 @@ public class Test04_cons_super extends Frame {
 // -----은닉화(private)로 선언된 변수. 외부클래스에서 접근 불가
 
 // ** 상속
-/////// class 자식클래스 extends 부모클래스()
+/////// class 자식클래스 extends 부모(수퍼)클래스()
 
 // ** 다형성 overload, overriding
 
@@ -65,5 +65,5 @@ public class Test04_cons_super extends Frame {
 // --- 리턴형, 메소드 이름, 매개변수 반드시 같아야 한다.
 // --- 접근제한자는 더 넓은 것을 사용할 수 있다.
 // --- protected =>> public
-// ----상위클래스 ----파생클래스
+// ----부모(수퍼)클래스 ----자식클래스
 // --- 또 다른 상속 가능하다.

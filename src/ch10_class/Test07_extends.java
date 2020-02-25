@@ -1,7 +1,8 @@
 package ch10_class;
 
-// 부모클래스
+// 부모(수퍼)클래스
 class PersonSuper {
+
     protected String name;
 
     public PersonSuper() {// 디폴트 생성자
@@ -14,10 +15,11 @@ class PersonSuper {
     public void disp() {
         System.out.println("이름 \t" + name); // 이름 보여주는 메소드
     }
-}
+}// class end
 
 // 자식클래스 1
 class PersonSub extends PersonSuper { // 이름 상속받고, 좌안 우안 시력 포함
+
     private double left_eye;
     private double right_eye;
 
@@ -35,12 +37,13 @@ class PersonSub extends PersonSuper { // 이름 상속받고, 좌안 우안 시�
         System.out.println("이름 \t" + name);
         System.err.println("좌안 시력\t" + left_eye);
         System.err.println("우안 시력\t" + right_eye);
-    }// disp end
 
+    }// disp end
 }// class end
 
 // 자식 클래스 2
 class PersonSin extends PersonSuper { // 이름을 상속받고, 주소, 전화번호 포함
+
     private String addr;// 전역변수, 주소
     private String hp;// 전역변수, 전화번호
 
@@ -58,8 +61,8 @@ class PersonSin extends PersonSuper { // 이름을 상속받고, 주소, 전화�
         System.out.println("이름 \t" + name);
         System.err.println("주소\t" + addr);
         System.err.println("폰번호\t" + hp);
-    }// disp end
 
+    }// disp end
 }// class end
 
 // main 클래스
@@ -70,11 +73,20 @@ public class Test07_extends {
         PersonSuper m = new PersonSuper("홍길동");
         m.disp();
 
+        System.out.println();
+
         m = new PersonSub("이순신", 1.5, 1.7);
         m.disp();
 
+        System.out.println();
+
         m = new PersonSin("박문수", "서울 구로", "010-1234-4567");
         m.disp();
+
+        System.out.println();
+
+        m = new PersonSub("아이유", 5.5, 6.7);
+        m.disp();
+
     }// main end
-}
-// class end
+}// class end

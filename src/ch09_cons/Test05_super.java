@@ -1,7 +1,7 @@
 package ch09_cons;
 
-//super : 상위클래스 객체 ★☆☆☆☆
-//super()  : 상위클래스 내의 생성자 호출 ★★★★★
+//super : 부모(수퍼)클래스 객체 ★☆☆☆☆
+//super()  : 부모(수퍼)클래스 내의 생성자 호출 ★★★★★
 
 class SuperTest { // 아버지 클래스
     String title;
