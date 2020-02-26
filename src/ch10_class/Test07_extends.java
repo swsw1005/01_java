@@ -63,7 +63,8 @@ class PersonSin extends PersonSuper { // 이름을 상속받고, 주소, 전화�
         System.err.println("폰번호\t" + hp);
 
     }// disp end
-}// class end
+}// class end ------------------------------------------
+ // ------------------------------------------------------
 
 // main 클래스
 public class Test07_extends {
@@ -89,4 +90,5 @@ public class Test07_extends {
         m.disp();
 
     }// main end
-}// class end
+}// class end ------------------------------------------
+ // ------------------------------------------------------

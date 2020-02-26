@@ -8,6 +8,7 @@ public class Test09_upcasting extends Frame {
         super("연습1");
     }
 
+    
     public static void main(String[] args) {
 
         Frame f = new Test09_upcasting();
