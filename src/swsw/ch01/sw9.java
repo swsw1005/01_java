@@ -68,8 +68,8 @@ public class sw9 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        int x1 = scan.nextInt();
-        int x2 = scan.nextInt();
+        // int x1 = scan.nextInt();
+        // int x2 = scan.nextInt();
         int x3 = scan.nextInt();
         int x4 = scan.nextInt();
         // int x3 = scan.nextInt();

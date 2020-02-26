@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test05_absclass",
+      "request": "launch",
+      "mainClass": "ch11_interface_abs.Test05_absclass",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test03_interface",
+      "request": "launch",
+      "mainClass": "ch11_interface_abs.Test03_interface",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test02_interface",
+      "request": "launch",
+      "mainClass": "ch11_interface_abs.Test02_interface",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - BoardImpl",
+      "request": "launch",
+      "mainClass": "ch11_interface_abs.BoardImpl",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01_interface",
+      "request": "launch",
+      "mainClass": "ch11_interface_abs.Test01_interface",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test12_downcasting",
       "request": "launch",
       "mainClass": "ch10_class.Test12_downcasting",
