@@ -6,6 +6,76 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - sss",
+      "request": "launch",
+      "mainClass": "swsw.ch01.sss",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test08_quiz",
+      "request": "launch",
+      "mainClass": "ch05_for.Test08_quiz",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - sw6",
+      "request": "launch",
+      "mainClass": "swsw.ch01.sw6",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - sw3",
+      "request": "launch",
+      "mainClass": "swsw.ch01.sw3",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test05_img",
+      "request": "launch",
+      "mainClass": "ch13_awt.Test05_img",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test04_graphics",
+      "request": "launch",
+      "mainClass": "ch13_awt.Test04_graphics",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test03_win",
+      "request": "launch",
+      "mainClass": "ch13_awt.Test03_win",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test02_win",
+      "request": "launch",
+      "mainClass": "ch13_awt.Test02_win",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01_win",
+      "request": "launch",
+      "mainClass": "ch13_awt.Test01_win",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test04_absclass",
+      "request": "launch",
+      "mainClass": "ch11_interface_abs.Test04_absclass",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test01",
       "request": "launch",
       "mainClass": "ch12_package.Test01",
