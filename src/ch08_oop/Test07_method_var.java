@@ -38,11 +38,15 @@ public class Test07_method_var {
         ss.setData("아이유", 25, 160.11);
         ss.disp();
 
+
+
+
+
         ss.age = 26;
         ss.disp();
 
         for (int i = 0; i < 100; i++) {
-            ss.setData("서장훈", 1 + i, 100 + i * 1.5);
+                 ss.setData("서장훈", 1 + i, 100 + i * 1.5);
             ss.disp2();
             if (ss.height >= 200) {
                 break;

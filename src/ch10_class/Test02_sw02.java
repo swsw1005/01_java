@@ -14,9 +14,12 @@ class Jumin {
     public Jumin(String jumin) {
 
         /// 조각조각 쪼개기
-        int jumin_yy = Integer.parseInt(jumin.substring(0, 2)) * 1; /// yy >> int
-        int jumin_mm = Integer.parseInt(jumin.substring(2, 4)) * 1; /// mm >> int
-        int jumin_dd = Integer.parseInt(jumin.substring(4, 6)) * 1; /// dd >> int
+        int jumin_yy = Integer.parseInt(jumin.substring(0, 2)) * 1; /// yy >>
+                                                                    /// int
+        int jumin_mm = Integer.parseInt(jumin.substring(2, 4)) * 1; /// mm >>
+                                                                    /// int
+        int jumin_dd = Integer.parseInt(jumin.substring(4, 6)) * 1; /// dd >>
+                                                                    /// int
 
         String jumin_mid = jumin.substring(6, 7); /// 중간 구분자 -
 
@@ -26,7 +29,8 @@ class Jumin {
 
         /// 오늘날짜
         SimpleDateFormat yyyymmdd = new SimpleDateFormat("yyyy-MM-dd");/// 포맷 생성
-        Calendar today_cal = new GregorianCalendar(Locale.KOREA);// 오늘날짜 가져오기(cal)
+        Calendar today_cal = new GregorianCalendar(Locale.KOREA);// 오늘날짜
+                                                                 // 가져오기(cal)
         Date today_date = today_cal.getTime();
         // 오늘 날짜 가져오기 (date)
 
@@ -44,7 +48,8 @@ class Jumin {
         }
 
         Calendar birth = Calendar.getInstance(); // 주민번호 앞자리로 생년월일 생성
-        birth.set(jumin_yy_yy, jumin_mm - 1, jumin_dd, 0, 0, 0);// 주민번호 앞자리로 생년월일 생성
+        birth.set(jumin_yy_yy, jumin_mm - 1, jumin_dd, 0, 0, 0);// 주민번호 앞자리로
+                                                                // 생년월일 생성
         Date birth_date = birth.getTime();// 주민번호 앞자리로 생년월일 생성
         ///
         /// 생년월일이 현재시간보다 크면, 연도에서 100을 뺀다
@@ -73,17 +78,19 @@ class Jumin {
         //
         String jumin_sung; //// 성별____남자 or 여자
         switch (jumin_back1 % 2) { /// 남자 여자 결정
-            case 0:
-                jumin_sung = "여자";
-                break;
-            default:
-                jumin_sung = "남자";
-                break;
+        case 0:
+            jumin_sung = "여자";
+            break;
+        default:
+            jumin_sung = "남자";
+            break;
         }
 
         //// 나이 구하기
-        int age = (int) ((last_birth_Date.getTime() - birth_date.getTime()) / 365 / 24 / 60 / 60 / 1000);
-        int age_kor = today_cal.get(Calendar.YEAR) - birth.get(Calendar.YEAR) + 1;
+        int age = (int) ((last_birth_Date.getTime() - birth_date.getTime())
+                / 365 / 24 / 60 / 60 / 1000);
+        int age_kor = today_cal.get(Calendar.YEAR) - birth.get(Calendar.YEAR)
+                + 1;
         //// 나이 구하기 end
 
         System.out.println(jumin_yy_yy);
@@ -101,15 +108,20 @@ class Jumin {
 
         if (j_all) {
 
-            System.out.print(jumin_yy + " " + jumin_mm + " " + jumin_dd + " " + jumin_mid);
+            System.out.print(jumin_yy + " " + jumin_mm + " " + jumin_dd + " "
+                    + jumin_mid);
             System.out.println(" " + jumin_back1 + "****** ");
-            System.out.println("length : \t" + jumin_length); //// 주민등록 번호 각각 분리되어 보여준다
+            System.out.println("length : \t" + jumin_length); //// 주민등록 번호 각각
+                                                              //// 분리되어 보여준다
             System.out.println("--------------------------------------");
 
             System.out.println("--------------------------------------");
             System.out.println("today  \t" + today_date);
             System.out.println("birth  \t" + birth_date);
-            System.out.println("--------------------------------------"); // 날것 그대로의 날짜 출력
+            System.out.println("--------------------------------------"); // 날것
+                                                                          // 그대로의
+                                                                          // 날짜
+                                                                          // 출력
 
             System.out.println("주민등록번호를 입력하였습니다.");
             System.out.println();
@@ -121,7 +133,8 @@ class Jumin {
             System.out.println("나이\t\t" + age);
             System.out.println("한국나이\t" + age_kor);
 
-            System.out.println((today_date.getTime() - birth_date.getTime()) / (24 * 60 * 60 * 1000) + "일 살아오셨습니다...");
+            System.out.println((today_date.getTime() - birth_date.getTime())
+                    / (24 * 60 * 60 * 1000) + "일 살아오셨습니다...");
             System.out.println();
             System.out.print("성별  " + jumin_sung);
             // System.out.print(jumin_sung);

@@ -13,6 +13,9 @@ class Idol_girl {
     public void setName(String name) {
         this.name = name;
     }
+
+
+    
     // 생성자
     // >>> 인스턴스 만드는 특수한 메소드
     // 1. 클래스명과 같은 이름 써야한다.

@@ -51,7 +51,8 @@ public class Test02_objectArr {
         }
         System.out.println("------------------------");
 
-        Sung m[] = { new Sung("김김", 60, 50), new Sung("이이", 50, 60), new Sung("박박", 40, 70) };
+        Sung m[] = { new Sung("김김", 60, 50), new Sung("이이", 50, 60),
+                new Sung("박박", 40, 70) };
         for (int i = 0; i < m.length; i++) {
             m[i].disp();
         }
