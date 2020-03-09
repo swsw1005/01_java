@@ -29,9 +29,10 @@ public class Test02_if {
             } else if (score < 60) {
                 grade = 'f';
             }
-            System.out.println("grade = " + grade);
+
         } else {
             System.out.println("0에서 100 사이의 숫자만 입력하세요");
+            System.out.println("grade = " + grade);
         }
         scan.close();
 

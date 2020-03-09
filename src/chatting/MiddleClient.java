@@ -104,7 +104,8 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
 			} // catch
 
 		} else if (e.getSource() == b1) {// ����
-			int an = JOptionPane.showConfirmDialog(this, "�����ұ��", "����", JOptionPane.YES_NO_OPTION);
+			int an = JOptionPane.showConfirmDialog(this, "�����ұ��", "����",
+					JOptionPane.YES_NO_OPTION);
 			switch (an) {
 			case JOptionPane.YES_OPTION:
 				System.exit(0);

@@ -12,6 +12,8 @@ interface AA2 {
 }
 
 class BB implements AA {
+
+    @override
     public void aa() {
         System.out.println("interface aa()method overriding...");
     }
@@ -19,10 +21,12 @@ class BB implements AA {
 
 class CC implements AA, AA2 {
 
+    @override
     public void aa() {
         System.out.println("AA aa overriding");
     }
 
+    @override
     public void aa2() {
         System.out.println("AA2 aa2 overriding");
     }
@@ -31,14 +35,28 @@ class CC implements AA, AA2 {
 public class Test01_interface {
 
     public static void main(String[] args) {
+
+        System.out.println("-1-------");
+
         AA A = new BB();
         A.aa();
 
-        AA A2 = new CC();
+        System.out.println("-2-------");
+
+        AA a2 = new CC();
+        a2.aa();
+
+        System.out.println("-3-------");
+
         AA2 A2_1 = new CC();
-        A2.aa();
         A2_1.aa2();
 
+        System.out.println("-4-------");
+
+        BB b1 = new BB();
+        b1.aa();
+
+        System.out.println("-5-------");
     }
 
 }

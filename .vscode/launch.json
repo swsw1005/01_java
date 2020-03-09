@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - HW200309",
+      "request": "launch",
+      "mainClass": "swsw.ch02.HW200309",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01",
+      "request": "launch",
+      "mainClass": "swsw.ch02.Test01",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Sw_test02",
+      "request": "launch",
+      "mainClass": "ch06_while.Sw_test02",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Sw_test01",
+      "request": "launch",
+      "mainClass": "ch06_while.Sw_test01",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Sw_test",
+      "request": "launch",
+      "mainClass": "ch07_array.Sw_test",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - sss",
       "request": "launch",
       "mainClass": "swsw.ch01.sss",
