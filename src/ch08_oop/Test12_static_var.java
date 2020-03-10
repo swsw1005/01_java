@@ -10,10 +10,11 @@ class Sangpum2 {
 
     // 사용자 정의 메소드
     public void setData(String p, int s, int d) {
-
+        // setDate(3개의 인자)
         pum = p;
         su = s;
         dan = d;
+        // 각각 pum, su, dan에 넣는다.
 
     }// setData end
 

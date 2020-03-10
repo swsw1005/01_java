@@ -26,7 +26,13 @@ package ch12_package
 
 
 
+1
+2
+### usage: jar -cvmf manifest.txt name.jar *.class
+$ jar -cvmf manifest.txt Test1.jar Test1.class Test/Test2.class
 
+
+출처: https://korbillgates.tistory.com/168 [생물정보학자의 블로그]
 
 
 

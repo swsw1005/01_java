@@ -58,5 +58,9 @@ public class HW200309 {
 
         System.out.println("------------------------------------------");
 
+        x = 1;
+        s1 = "";
+        System.out.println(x + s1);
+
     }
 }

@@ -6,6 +6,126 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test07_choice",
+      "request": "launch",
+      "mainClass": "ch15_event.Test07_choice",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test04_radiobutton",
+      "request": "launch",
+      "mainClass": "ch15_event.Test04_radiobutton",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test06_update",
+      "request": "launch",
+      "mainClass": "ch15_event.Test06_update",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test05_guest",
+      "request": "launch",
+      "mainClass": "ch15_event.Test05_guest",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test03_checkbox",
+      "request": "launch",
+      "mainClass": "ch15_event.Test03_checkbox",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test02_button",
+      "request": "launch",
+      "mainClass": "ch15_event.Test02_button",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01_tf_event_02",
+      "request": "launch",
+      "mainClass": "ch15_event.Test01_tf_event_02",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DateOutputTest",
+      "request": "launch",
+      "mainClass": "ch15_event.DateOutputTest",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SwTest",
+      "request": "launch",
+      "mainClass": "ch15_event.SwTest",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - TimePrint",
+      "request": "launch",
+      "mainClass": "ch15_event.TimePrint",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01_tf_event",
+      "request": "launch",
+      "mainClass": "ch15_event.Test01_tf_event",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test04_Layout",
+      "request": "launch",
+      "mainClass": "ch14_layout.Test04_Layout",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test03_GridLayout",
+      "request": "launch",
+      "mainClass": "ch14_layout.Test03_GridLayout",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test02_BorderLayout",
+      "request": "launch",
+      "mainClass": "ch14_layout.Test02_BorderLayout",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01_FlowLayout",
+      "request": "launch",
+      "mainClass": "ch14_layout.Test01_FlowLayout",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - HW200309",
       "request": "launch",
       "mainClass": "swsw.ch02.HW200309",

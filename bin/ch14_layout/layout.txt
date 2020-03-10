@@ -1,0 +1,22 @@
+LayoutManager    컨테이너 안  컴포넌트 위치와 크기  자동 조정
+
+
+flowlayout      panel 계열 기본
+                왼쪽에서 오른쪽 배치
+                너비 벗어나면 아래줄 배치
+
+borderlayout    frame 계열 기본
+                상 하 좌 우 중앙    5가지 기준으로 정렬
+                항상 채움으로 생성됨
+
+gridlayout      격자모양
+                모든 컴포넌트 크기 같음
+                행과 열
+                창 크기에 따라 자동 조절됨
+
+
+gridbaglayout   X
+
+cardlayout      X
+
+null            개발자 직접 디자인

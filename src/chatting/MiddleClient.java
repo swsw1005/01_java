@@ -9,6 +9,10 @@ import javax.swing.*;
 
 //Ŭ���̾�Ʈ
 public class MiddleClient extends JFrame implements ActionListener, Runnable {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 	// ����
 	JButton b1, b2, b3;
 	JTextField tf;// ��ȭ ���� �Է¶�
