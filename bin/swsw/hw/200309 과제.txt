@@ -1,8 +1,4 @@
-package swsw.hw;
-
-public class HW200310 {
-
-    public static void main(String[] args) {
+//주어진 조건을 가지고 문제를 풀어보세요
 
         String s1 = "abcdefghijklmnopqrstuvwxyz";
         boolean b;
@@ -36,9 +32,3 @@ public class HW200310 {
         // 2. while문으로 작성된 모든 코드는 for문으로 변경할 수 있다.
         // 3. if문과 switch-case문은 서로 호환된다.
         // 4. 100점짜리 시험에서, 10점 단위로 학점을 나누는 코드를 switch-case로 짤수 있다.
-
-        b = true;
-        System.out.println(b + s1);
-
-    }
-}

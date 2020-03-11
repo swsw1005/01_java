@@ -1,0 +1,31 @@
+exception   예외처리
+IO          파일 입출력
+
+간단한 메모장
+
+
+util    vector map hashmap  list  arraylist
+Thread 동시에 다른 작업하려면 필요
+        게임, 채팅, 웹, 등등
+
+
+swing   awt 확장형
+network
+
+db연결
+    select  insert  update  delete
+
+연습프로젝트
+
+
+html css js  jquery
+
+웹 프로그램
+Servlet.jsp
+팀 프로젝트 : 포트폴리요,  노동부 제출용
+
+
+spring boot
+
+sts
+

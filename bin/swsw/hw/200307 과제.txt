@@ -1,0 +1,30 @@
+Scanner sc = new Scanner(System.in);
+int k = sc.nextInt();
+String name = sc.nextLine();
+
+int arr[]= {10,20,30,40,50};
+
+
+//int k,  String name, int arr[] 을 이용하여 다음 문제를 풀이하시오
+
+
+문제 1.  "안녕하세요"  5번 출력하세요	
+
+
+
+문제 2.  20~50 사이에서  k의 배수를 출력하시오.
+
+
+
+문제 3.	name값에 따라 다음 값을 출력하시오
+
+	홍길동	"안녕하세요"
+	임성우	"Hello"
+	권혁원	"오늘은 일요일"
+	임지훈	"내일은 학원 가는날"
+
+
+문제 4.	arr[]의 값을 순서대로 출력하시오
+
+
+

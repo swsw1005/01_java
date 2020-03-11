@@ -6,6 +6,44 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test10_scroll",
+      "request": "launch",
+      "mainClass": "ch15_event.Test10_scroll",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test09_list",
+      "request": "launch",
+      "mainClass": "ch15_event.Test09_list",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test08_list",
+      "request": "launch",
+      "mainClass": "ch15_event.Test08_list",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test",
+      "request": "launch",
+      "mainClass": "swsw.hw.Test",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - HW200310",
+      "request": "launch",
+      "mainClass": "swsw.hw.HW200310",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test07_choice",
       "request": "launch",
       "mainClass": "ch15_event.Test07_choice",
