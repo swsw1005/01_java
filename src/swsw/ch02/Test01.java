@@ -1,30 +1,39 @@
 package swsw.ch02;
 
-import swsw.ch01.Geo;
+import java.util.Arrays;
 
 public class Test01 {
 
     public static void main(String[] args) {
 
-        // Saram sa = new Saram();
+        int array1[] = { 1, 5, 2, 6, 3, 7, 4 };
+        int commands1[][] = { { 2, 5, 3 }, { 4, 4, 1 }, { 1, 7, 3 } };
 
-        // sa.disp2(4.1, 6.1238);
+        Solution sl = new Solution();
 
-        // Geo g1 = new Geo(123.456789, 444.55566677);
+        int dap[] = sl.solution(array1, commands1);
 
-        // g1.disp();
+        for (int i = 0; i < dap.length; i++) {
+            System.out.print(dap[i]);
+        } // for end
 
-        Geo g2 = new Geo();
+        System.out.println("-------------------------------");
 
-        g2.scan();
+        for (int i = 0; i < dap.length; i++) {
 
-        for (int i = 0; i < 5; i++) {
-
-            g2.disp();
         }
 
-        // Jumin jm = new Jumin();
-        // jm.disp();
-
+        Arrays.toString(array1);
     }
 }
+
+// 클래스 정의
+// 클래스 생성
+// z클래스에서 생성자 쓰는 이유
+// 내부 변수 선언
+
+/*
+ * 
+ * 매개변수 자료형
+ * 
+ */

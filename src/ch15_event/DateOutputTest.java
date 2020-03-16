@@ -3,7 +3,9 @@ package ch15_event;
 public class DateOutputTest {
 
     public static void main(String[] args) {
-        DatePrint d = new DatePrint();
+        DatePrint d = new DatePrint(2020, 10, 25);
+
+        d.disp();
 
         d.sysdate();
         d.disp();

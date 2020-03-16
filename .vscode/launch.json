@@ -6,6 +6,83 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test05_exception",
+      "request": "launch",
+      "mainClass": "ch16_exception.Test05_exception",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test04_exception",
+      "request": "launch",
+      "mainClass": "ch16_exception.Test04_exception",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test03_exception",
+      "request": "launch",
+      "mainClass": "ch16_exception.Test03_exception",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test02_throw",
+      "request": "launch",
+      "mainClass": "ch16_exception.Test02_throw",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01_try_catch",
+      "request": "launch",
+      "mainClass": "ch16_exception.Test01_try_catch",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test03",
+      "request": "launch",
+      "mainClass": "swsw.generic.Test03",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test02",
+      "request": "launch",
+      "mainClass": "swsw.generic.Test02",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01",
+      "request": "launch",
+      "mainClass": "swsw.generic.Test01",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01",
+      "request": "launch",
+      "mainClass": "swsw.collection.ch01_arraylist.Test01",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - TTest",
+      "request": "launch",
+      "mainClass": "swsw.hw.TTest",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DateTest",
+      "request": "launch",
+      "mainClass": "ch15_event.DateTest",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test10_scroll",
       "request": "launch",
       "mainClass": "ch15_event.Test10_scroll",

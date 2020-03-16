@@ -69,7 +69,7 @@ public class Test01_tf_event extends Frame implements ActionListener {
 
             ta.append(msg + "\n\t by tf1\t " + d.date + " \n\n");// custom***
             // tf1.setText("");
-            // tf2.requestFocus();// 포커스 넘겨주기
+            tf2.requestFocus();// 포커스 넘겨주기
 
         } else if (e.getSource() == tf2) {
 
@@ -86,7 +86,7 @@ public class Test01_tf_event extends Frame implements ActionListener {
 
             ta.append(msg + "\n\t by tf2\t " + d.date + " \n\n");// custom***
             // tf2.setText("");
-            // tf1.requestFocus();// 포커스 넘겨주기
+            tf1.requestFocus();// 포커스 넘겨주기
 
         } // if end
     }// actionPerformed end

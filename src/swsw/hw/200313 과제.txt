@@ -1,0 +1,103 @@
+
+**hard
+문제 1.
+    A, B ,C , .... Y, Z 까지 순서대로 담겨있는 배열 String s1[]  있다.
+
+    같은 길이의 배열 String s2[] = new String[7];  있다.
+
+   반복문을 사용하여
+    String s2 = {a, b, d, g, k, p, v}가 입력되도록 하시오
+    (규칙이 있습니다.)
+
+
+     -----------------------------------------
+char a = 65;
+        System.out.println(a);
+
+        char abc[] = new char[26];
+
+        for (int i = 0; i < abc.length; i++) {
+            abc[i] = (char) (65 + i);
+        }
+
+        String s1[] = new String[26];
+
+        for (int i = 0; i < abc.length; i++) {
+            s1[i] = String.valueOf(abc[i]);
+        }
+
+        System.out.println("String s1[]");
+        System.out.println(Arrays.toString(s1));
+
+        String s2[] = new String[7];
+        int j = 0;
+
+        int k[] = new int[7];
+
+        for (int i = 0; i < k.length; i++) {
+            k[i] = i + 1;
+        }
+        System.out.println("int k[]");
+        System.out.println(Arrays.toString(k));
+
+        for (int i = 0; i < s2.length; i++) {
+            s2[i] = s1[0 + j];
+            j = j + k[i];
+        }
+
+        System.out.println("String s2[]");
+        System.out.println(Arrays.toString(s2));
+
+        char ch2[] = new char[7];
+
+        for (int i = 0; i < ch2.length; i++) {
+            ch2[i] = s2[i].charAt(0);
+        }
+
+        System.out.println("Char ch2[]");
+        System.out.println(Arrays.toString(ch2));
+
+        for (int i = 0; i < ch2.length; i++) {
+            ch2[i] = (char) (ch2[i] + 32);
+        }
+
+        System.out.println("Char ch2[]");
+        System.out.println(Arrays.toString(ch2));
+
+        for (int i = 0; i < ch2.length; i++) {
+            s2[i] = String.valueOf(ch2[i]);
+        }
+
+        System.out.println("String s2[]");
+        System.out.println(Arrays.toString(s2));
+
+      -----------------------------------------
+    
+
+**hard
+문제 2.
+    피보나치 수열을 50번째까지 출력하는 프로그램을 작성하시오
+
+    1,1,2,3,5,8,13...
+
+    (첫번째 두번째 숫자는 1이고, 세번째부터는 자기 앞의 2개 숫자를 더한 값이다.
+    1+1 = 2
+    2+3 = 5
+    3+5 =8....)
+
+
+    -----------------------------------------
+
+    long pivo[] = new long[50];
+
+        for (int i = 0; i < pivo.length; i++) {
+            if (i <= 1) {
+                pivo[i] = 1;
+            } else {
+                pivo[i] = pivo[i - 1] + pivo[i - 2];
+            }
+        } // for end
+
+        System.out.println(Arrays.toString(pivo));
+
+    -----------------------------------------

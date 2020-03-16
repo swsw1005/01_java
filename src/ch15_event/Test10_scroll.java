@@ -65,7 +65,6 @@ public class Test10_scroll extends Frame implements AdjustmentListener {
         });
         setSize(500, 500);
         setVisible(true);
-
     }
 
     // 메서드
