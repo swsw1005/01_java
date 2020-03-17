@@ -6,6 +6,118 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test13_menu",
+      "request": "launch",
+      "mainClass": "ch17_io.Test13_menu",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test12",
+      "request": "launch",
+      "mainClass": "ch17_io.Test12",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test10_bufferbyteR",
+      "request": "launch",
+      "mainClass": "ch17_io.Test10_bufferbyteR",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test10_bufferbyte",
+      "request": "launch",
+      "mainClass": "ch17_io.Test10_bufferbyte",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test11_dataByteWR",
+      "request": "launch",
+      "mainClass": "ch17_io.Test11_dataByteWR",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test09_bufferbyteW",
+      "request": "launch",
+      "mainClass": "ch17_io.Test09_bufferbyteW",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test08_byteR",
+      "request": "launch",
+      "mainClass": "ch17_io.Test08_byteR",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test07_byteM",
+      "request": "launch",
+      "mainClass": "ch17_io.Test07_byteM",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test06_printM",
+      "request": "launch",
+      "mainClass": "ch17_io.Test06_printM",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test05_readConsole",
+      "request": "launch",
+      "mainClass": "ch17_io.Test05_readConsole",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test04_bufferR",
+      "request": "launch",
+      "mainClass": "ch17_io.Test04_bufferR",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test03_buffer",
+      "request": "launch",
+      "mainClass": "ch17_io.Test03_buffer",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test",
+      "request": "launch",
+      "mainClass": "Test",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - S11",
+      "request": "launch",
+      "mainClass": "swsw.hw.S11",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test02_fileR",
+      "request": "launch",
+      "mainClass": "ch17_io.Test02_fileR",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01_io",
+      "request": "launch",
+      "mainClass": "ch17_io.Test01_io",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test05_exception",
       "request": "launch",
       "mainClass": "ch16_exception.Test05_exception",
