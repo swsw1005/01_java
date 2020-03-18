@@ -52,5 +52,5 @@ public class Test03_cons_this {
 
         Cons c3 = new Cons("뭐", 123);
         c3.disp();
-    }// maini end
-}// class end
+    } // maini end
+} // class end

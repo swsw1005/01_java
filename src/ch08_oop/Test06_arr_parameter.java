@@ -6,8 +6,8 @@ class Test06 {
             System.out.print(a[i] + " ");
         } // for end
         System.out.println("\n-----------------------");
-    }// disp end
-}// class end
+    } // disp end
+} // class end
 
 public class Test06_arr_parameter {
 
@@ -16,5 +16,5 @@ public class Test06_arr_parameter {
         Test06 t06 = new Test06();
         t06.disp(m);
 
-    }// main end
-}// class end
+    } // main end
+} // class end

@@ -25,5 +25,5 @@ public class Equals {
             System.out.println("equals 통해서 값을 비교해야합니다.");
             System.out.println("레퍼런스가 다릅니다.");
         } // if else end
-    }// main end
-}// class end
+    } // main end
+} // class end

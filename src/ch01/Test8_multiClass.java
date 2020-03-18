@@ -12,24 +12,24 @@ class Test8_multiClass {
     demo2.bb1(); // bb1 () �޼��� ȣ��
 
   } // main end
-}// class end
+} // class end
 
 class Demo1 {
   public void aa() {
     System.out.println("Demo\tclass\n\t\t aa\tmethod\r");
-  }// aa end
+  } // aa end
 
   public void aa1() {
     System.out.println("Demo\tclass\n\t\t aa1\tmethod\r");
-  }// aa1 end
-}// class end
+  } // aa1 end
+} // class end
 
 class Demo2 {
   public void bb() {
     System.out.println("Demo2\tclass\n\t\t bb\tmethod\r");
-  }// bb end
+  } // bb end
 
   public void bb1() {
     System.out.println("Demo2\tclass\n\t\t bb1\tmethod\r");
-  }// bb1 end
-}// class end
+  } // bb1 end
+} // class end

@@ -6,14 +6,14 @@ class Panmae3 {
     protected int su;
     protected int dan;
 
-    public Panmae3() {// 디폴트 생성자
+    public Panmae3() { // 디폴트 생성자
     }
 
     public Panmae3(String pum, int su, int dan) {
         this.pum = pum;
         this.dan = dan;
         this.su = su;
-    }// cons end
+    } // cons end
 
     public void disp() {
 
@@ -21,9 +21,9 @@ class Panmae3 {
         System.out.println(pum + "-\t-" + su + "-\t-" + dan);
         System.out.println("----------------------");
 
-    }// disp end
-}// class end--------------------------------------
- // -----------------------------------------------
+    } // disp end
+} // class end--------------------------------------
+  // -----------------------------------------------
 
 class SalePanmae extends Panmae3 {
 
@@ -42,10 +42,10 @@ class SalePanmae extends Panmae3 {
     public void disp() {
         super.disp();
         System.out.println("할인된 금액\t" + (int) (dan * (1 - rate)));
-    }// disp end
+    } // disp end
 
-}// class end--------------------------------------
- // -----------------------------------------------
+} // class end--------------------------------------
+  // -----------------------------------------------
 
 public class Test10_upcasting {
 

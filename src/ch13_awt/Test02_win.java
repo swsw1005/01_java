@@ -13,7 +13,7 @@ public class Test02_win extends Frame {
         setSize(450, 450);
         setVisible(true);
 
-        addWindowListener(new MyWin());// 이벤트 등록
+        addWindowListener(new MyWin()); // 이벤트 등록
     }
 
     // inner class
@@ -23,7 +23,7 @@ public class Test02_win extends Frame {
         public void windowClosing(WindowEvent we) {
             System.exit(0);
         }
-    }// inner class end
+    } // inner class end
 
     public static void main(String[] args) {
         new Test02_win();

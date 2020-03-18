@@ -4,7 +4,7 @@ interface AA {
 
     int MAX = 100; // 무조건 static final
 
-    void aa();// 무조건 public
+    void aa(); // 무조건 public
 }
 
 interface AA2 {
@@ -63,6 +63,6 @@ public class Test01_interface {
 
 // public Test01_interface(); // 추상 생성자
 
-// public static void aa();// static 추상 메소드
+// public static void aa(); // static 추상 메소드
 
-// private void bb();// private 추상 메소드
+// private void bb(); // private 추상 메소드

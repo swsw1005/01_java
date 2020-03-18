@@ -13,5 +13,5 @@ public class Test09_multiClass {
 		demo33.cc();
 		demo44.dd();
 
-	}// main end
+	} // main end
 } // class end

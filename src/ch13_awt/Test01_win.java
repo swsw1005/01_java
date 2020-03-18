@@ -1,6 +1,6 @@
 package ch13_awt;
 
-import java.awt.*;//frame
+import java.awt.*; //frame
 import java.awt.event.*; //이벤트 처리 클래스, 인터페이스
 
 public class Test01_win extends Frame implements WindowListener {
@@ -13,7 +13,7 @@ public class Test01_win extends Frame implements WindowListener {
         this.addWindowListener(this);
         this.setSize(450, 450);
         this.setVisible(true);
-    }// cons end
+    } // cons end
 
     // 오버라이딩
     // 다 쓸건 아니지만, 인터페이스는 모두 overriding 해놔야 한다.
@@ -60,6 +60,6 @@ public class Test01_win extends Frame implements WindowListener {
 
     public static void main(String[] args) {
         new Test01_win();
-    }// main end
+    } // main end
 
-}// class end
+} // class end

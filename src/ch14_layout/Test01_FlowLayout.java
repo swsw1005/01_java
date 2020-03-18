@@ -37,17 +37,17 @@ public class Test01_FlowLayout extends Frame {
         setSize(450, 450);
         setVisible(true);
 
-    }// cons end
+    } // cons end
 
     class MyWin extends WindowAdapter {
         // 창 닫기
         public void windowClosing(WindowEvent we) {
             System.exit(0);
         }
-    }// inner class out
+    } // inner class out
 
     public static void main(String[] args) {
         new Test01_FlowLayout();
-    }// main end
+    } // main end
 
-}// class end
+} // class end

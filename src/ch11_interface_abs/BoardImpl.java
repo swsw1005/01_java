@@ -38,6 +38,6 @@ public class BoardImpl implements Board {
         b.boardContent();
         b.boardDelete();
 
-    }// main end
+    } // main end
 
-}// class end
+} // class end

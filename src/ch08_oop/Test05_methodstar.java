@@ -16,13 +16,13 @@ public class Test05_methodstar {
             System.out.println();
         } // out for end
 
-    }// star end
+    } // star end
 
     public static void main(String[] args) {
 
         Test05_methodstar t = new Test05_methodstar();
         t.star();
 
-    }// main end
+    } // main end
 
-}// class end
+} // class end

@@ -36,7 +36,7 @@ public class Test07_choice extends Frame implements ItemListener {
         setSize(500, 500);
         setVisible(true);
 
-    }// cons end
+    } // cons end
 
     // inner class
     class MyWin extends WindowAdapter {

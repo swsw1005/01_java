@@ -61,7 +61,7 @@ public class Test01_tf_event_02 extends Frame implements ActionListener {
 
             // 날짜 가져오기
             DatePrint d = new DatePrint();
-            d.sysdate();// 시스템 날짜 가져오기
+            d.sysdate(); // 시스템 날짜 가져오기
             // 날짜 가져오기 end
 
             if (msg == "" || msg == null || msg.length() < 1) {
@@ -69,9 +69,9 @@ public class Test01_tf_event_02 extends Frame implements ActionListener {
                 return;
             }
 
-            ta.append(msg + "\n\t--- by tf1\t " + d.date + " \n\n");// custom***
+            ta.append(msg + "\n\t--- by tf1\t " + d.date + " \n\n"); // custom***
             tf1.setText("");
-            // tf2.requestFocus();// 포커스 넘겨주기 //테스트 편하게하기위한
+            // tf2.requestFocus(); // 포커스 넘겨주기 //테스트 편하게하기위한
 
         } else if (e.getSource() == tf2) {
 
@@ -79,7 +79,7 @@ public class Test01_tf_event_02 extends Frame implements ActionListener {
 
             // 날짜 가져오기
             DatePrint d = new DatePrint();
-            d.sysdate();// 시스템 날짜 가져오기
+            d.sysdate(); // 시스템 날짜 가져오기
             // 날짜 가져오기 end
 
             if (msg == "" || msg == null || msg.length() < 1) {
@@ -87,15 +87,15 @@ public class Test01_tf_event_02 extends Frame implements ActionListener {
                 return;
             }
 
-            ta.append(msg + "\n\t--- by tf2\t " + d.date + " \n\n");// custom***
+            ta.append(msg + "\n\t--- by tf2\t " + d.date + " \n\n"); // custom***
             tf2.setText("");
-            // tf1.requestFocus();// 포커스 넘겨주기 //테스트 편하게하기위한
+            // tf1.requestFocus(); // 포커스 넘겨주기 //테스트 편하게하기위한
 
         } // if end
-    }// actionPerformed end
+    } // actionPerformed end
 
     // main end
     public static void main(String[] args) {
         new Test01_tf_event_02();
-    }// main end
-}// class end
+    } // main end
+} // class end

@@ -3,7 +3,7 @@ package ch08_oop;
 class SangPum {
     String pum; // 품명
     int su; // 수량
-    int dan;// 단가
+    int dan; // 단가
 
     // 사용자 정의 메소드
     public void setData(String pum, int su, int dan) {
@@ -11,7 +11,7 @@ class SangPum {
         this.pum = pum;
         this.su = su;
         this.dan = dan;
-    }// setDate end
+    } // setDate end
 
     // 사용자 정의 메소드
     public void disp() {
@@ -20,9 +20,9 @@ class SangPum {
         System.out.println("단가  " + dan);
         System.out.println("금액  " + (su * dan));
         System.out.println();
-    }// disp end
+    } // disp end
 
-}// class end
+} // class end
 
 public class Test08_method_var {
 

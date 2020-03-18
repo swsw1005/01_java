@@ -21,5 +21,5 @@ public class Test10_1for {
         } // out for
 
         scan.close();
-    }// main out
-}// class end
+    } // main out
+} // class end

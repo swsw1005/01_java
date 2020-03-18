@@ -27,5 +27,5 @@ public class Test07_arr {
         System.out.println(ki.length);
         System.out.println(ki[0].length);
         System.out.println(ki[1].length);
-    }// main end
-}// class end
+    } // main end
+} // class end

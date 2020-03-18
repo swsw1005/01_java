@@ -16,7 +16,7 @@ class Sung {
         this.kor = kor;
         this.eng = eng;
 
-    }// cons end
+    } // cons end
 
     // 사용자가 만든 메서드
     public void disp() {
@@ -24,8 +24,8 @@ class Sung {
         System.out.printf("%10s %5d %5d\n", name, kor, eng);
     }
 
-}// class sung end
- // --------------------------------------------------
+} // class sung end
+  // --------------------------------------------------
 
 public class Test02_objectArr {
     public static void main(String[] args) {

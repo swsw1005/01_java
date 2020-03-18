@@ -5,9 +5,9 @@ class Test3 {
     System.out.print("김씨");
     System.out.print("이씨");
     System.out.print("박씨");
-    System.out.println();// line skip
+    System.out.println(); // line skip
 
-    System.out.print("김씨\n");// \n은 line skip
+    System.out.print("김씨\n"); // \n은 line skip
     System.out.print("이씨\n");
     System.out.print("박씨\n\n");
 
@@ -18,5 +18,5 @@ class Test3 {
     System.out.print("자바\r");
     System.out.print("안녕\r");
 
-  }// main end
-}// class end
+  } // main end
+} // class end

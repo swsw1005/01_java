@@ -96,7 +96,7 @@
             } else {
                 pivo[i] = pivo[i - 1] + pivo[i - 2];
             }
-        } // for end
+        }  // for end
 
         System.out.println(Arrays.toString(pivo));
 

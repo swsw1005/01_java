@@ -56,10 +56,10 @@ public class Test04_radiobutton extends Frame implements ItemListener {
         // 닫기버튼
         addWindowListener(new MyWin());
         // .addItemListener(this);
-        setSize(500, 500);// 사이즈
-        setVisible(true);// 보이게
+        setSize(500, 500); // 사이즈
+        setVisible(true); // 보이게
 
-    }// cons end
+    } // cons end
 
     // inner class
     class MyWin extends WindowAdapter {
@@ -80,4 +80,4 @@ public class Test04_radiobutton extends Frame implements ItemListener {
     public static void main(String[] args) {
         new Test04_radiobutton();
     } // main end
-}// class end
+} // class end

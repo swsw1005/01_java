@@ -50,4 +50,4 @@ public class Test02 {
         // ep 객체에 info.rank 출력
 
     }
-}// class end
+} // class end

@@ -52,7 +52,7 @@ public class Test01 {
         System.out.println();
 
         Sung kim = new Sung("김철수", 40); // 디폴드로 생성되었으나
-        kim.disp("이효리", 50);// 덮어씌워졌다.
+        kim.disp("이효리", 50); // 덮어씌워졌다.
 
         System.out.println();
 

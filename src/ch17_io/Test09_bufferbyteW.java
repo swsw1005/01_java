@@ -8,7 +8,7 @@ public class Test09_bufferbyteW {
         // FileOutputStream fos = new FileOutputStream("a4.txt");
         // BufferedOutputStream bos = new BufferedOutputStream(fos);
         BufferedOutputStream bos = new BufferedOutputStream(
-                new FileOutputStream("src//ch17_io//txt//a4.txt"));
+                new FileOutputStream("src //ch17_io //txt //a4.txt"));
 
         for (int i = 1; i <= 10; i++) {
             bos.write(i);

@@ -3,7 +3,7 @@ package ch10_class;
 class GeneralSuper {
 
     static int roomNo = 100;
-}// class end
+} // class end
 
 public class Test04_extends extends GeneralSuper {
 
@@ -12,5 +12,5 @@ public class Test04_extends extends GeneralSuper {
 
         System.out.println("roomNo \t: " + roomNo);
 
-    }// main end
-}// class end
+    } // main end
+} // class end

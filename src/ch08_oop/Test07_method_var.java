@@ -13,24 +13,24 @@ class SinSang {
         this.age = age;
         this.height = height;
 
-    }// setData end
+    } // setData end
 
     public void disp() {
         System.out.println("이름\t>\t" + name);
         System.out.println("나이\t>\t" + age);
         System.out.println("키\t>\t" + height);
         System.out.println();
-    }// disp end
+    } // disp end
 
     public void disp2() {
         System.out.println(name + "\t" + age + "\t" + height);
     }
-}// class SinSang end
+} // class SinSang end
 
 public class Test07_method_var {
 
     public static void main(String[] args) {
-        SinSang ss = new SinSang();// 객체생성
+        SinSang ss = new SinSang(); // 객체생성
 
         ss.setData("홍길동", 5, 100.352);
         ss.disp();
@@ -38,15 +38,11 @@ public class Test07_method_var {
         ss.setData("아이유", 25, 160.11);
         ss.disp();
 
-
-
-
-
         ss.age = 26;
         ss.disp();
 
         for (int i = 0; i < 100; i++) {
-                 ss.setData("서장훈", 1 + i, 100 + i * 1.5);
+            ss.setData("서장훈", 1 + i, 100 + i * 1.5);
             ss.disp2();
             if (ss.height >= 200) {
                 break;
@@ -54,5 +50,5 @@ public class Test07_method_var {
         }
         System.out.println();
 
-    }// main end
-}// class end
+    } // main end
+} // class end

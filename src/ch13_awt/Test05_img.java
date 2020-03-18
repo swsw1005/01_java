@@ -21,7 +21,7 @@ public class Test05_img extends Frame {
         setVisible(true);
 
         im = Toolkit.getDefaultToolkit().getImage(
-                "C://Users/swsw1/OneDrive/Dev/Workspace/01_java/src/ch13_awt/dog.jpg");
+                "C: //Users/swsw1/OneDrive/Dev/Workspace/01_java/src/ch13_awt/dog.jpg");
 
         // im2 = Toolkit.getDefaultToolkit().getImage()
 

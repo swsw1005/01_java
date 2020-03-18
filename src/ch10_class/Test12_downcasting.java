@@ -13,7 +13,7 @@ class Panmae5 {
         this.pum = pum;
         this.su = su;
         this.dan = dan;
-    }// cons end
+    } // cons end
 
     public void disp() {
         System.out.println("품명 : " + pum);
@@ -21,7 +21,7 @@ class Panmae5 {
         System.out.println("단가 : " + dan);
     }
 
-}// class end
+} // class end
 
 class SalesPanmae5 extends Panmae5 {
 
@@ -45,7 +45,7 @@ class SalesPanmae5 extends Panmae5 {
         System.out.println("discount : " + (int) (dan * su * (1 - rate)));
     }
 
-}// class end
+} // class end
 
 public class Test12_downcasting {
 
@@ -61,7 +61,7 @@ public class Test12_downcasting {
         for (int i = 0; i < p5.length; i++) {
             p5[i].disp();
 
-            //// p5가 SalesPanmae5 클래스인 경우에만
+            // // p5가 SalesPanmae5 클래스인 경우에만
             // discount 메소드 불러온다.
             // 할인단가 포함됨
             /// rate??? override 된 disp() 내장
@@ -73,5 +73,5 @@ public class Test12_downcasting {
 
         } // for end
 
-    }// main end
-}// class end
+    } // main end
+} // class end

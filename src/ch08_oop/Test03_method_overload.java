@@ -19,7 +19,7 @@ public class Test03_method_overload {
         int s;
         s = a + b + 100000;
         return s;
-    }// sum end
+    } // sum end
 
     public double sum(double a, double b) {
 
@@ -42,6 +42,6 @@ public class Test03_method_overload {
         System.out.println("s1\t" + s1);
         System.out.println("s2\t" + s2);
         System.out.println("s3\t" + s3);
-    }// main end
+    } // main end
 
-}// class end
+} // class end

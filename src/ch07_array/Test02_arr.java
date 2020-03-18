@@ -2,7 +2,7 @@ package ch07_array;
 
 public class Test02_arr {
 
-    static int aa = 100;// 전역변수
+    static int aa = 100; // 전역변수
     // static에서는 static 변수만 사용 가능
     static int bb;
 
@@ -11,7 +11,7 @@ public class Test02_arr {
         System.out.println("aa : " + aa);
         System.out.println("bb : " + bb); // 전역 변수는 자동 초기화
 
-        int b = 0;// int b;// 지역변수는 자동 초기화 불가능
+        int b = 0; // int b; // 지역변수는 자동 초기화 불가능
         System.out.println("b : " + b);
 
         // 배열은 지역변수라도 자동초기화
@@ -37,5 +37,5 @@ public class Test02_arr {
             System.out.println("st[" + i + "]\t" + st[i]);
         } // null null null
 
-    }// main end
-}// class end
+    } // main end
+} // class end

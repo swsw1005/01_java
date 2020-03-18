@@ -1,6 +1,6 @@
 package ch10_class;
 
-import java.awt.*;//frame
+import java.awt.*; //frame
 
 public class Test09_upcasting extends Frame {
 

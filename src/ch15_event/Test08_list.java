@@ -61,7 +61,7 @@ public class Test08_list extends Frame implements ActionListener, ItemListener {
         setSize(500, 500);
         setVisible(true);
 
-    }// cons end
+    } // cons end
 
     // 메소드
     @Override
@@ -87,6 +87,6 @@ public class Test08_list extends Frame implements ActionListener, ItemListener {
     // main
     public static void main(String[] args) {
         new Test08_list();
-    }// main end
+    } // main end
 
-}// class end
+} // class end

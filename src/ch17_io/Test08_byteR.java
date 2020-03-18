@@ -9,7 +9,7 @@ public class Test08_byteR {
 
         try {
 
-            fis = new FileInputStream("src//ch17_io//txt//a3.txt");
+            fis = new FileInputStream("src //ch17_io //txt //a3.txt");
             int a;
 
             while ((a = fis.read()) != -1) {

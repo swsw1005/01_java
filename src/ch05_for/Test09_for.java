@@ -42,5 +42,5 @@ public class Test09_for {
         } // out for end
 
         scan.close();
-    }// main end
-}// class end
+    } // main end
+} // class end

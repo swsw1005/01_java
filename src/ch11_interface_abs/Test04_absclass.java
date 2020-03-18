@@ -1,13 +1,13 @@
 package ch11_interface_abs;
 
 abstract class AbsTest {
-    abstract public void aa();// 추상메소드
+    abstract public void aa(); // 추상메소드
 
     public void bb() {
         System.out.println("추상클래스 안의 일반 메서드 bb");
     }
 
-}// class end
+} // class end
 
 class AbsDemo extends AbsTest {
     public void aa() {

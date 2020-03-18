@@ -50,9 +50,9 @@
     int $a=10;
 
    잘못된  예
-    int 1a=30;//첫글자 숫자는 사용하지 마세요 
-    int hong kil=50;//공백 사용 못함
-    int a 1 = 20;   //공백 사용 못함
+    int 1a=30; //첫글자 숫자는 사용하지 마세요 
+    int hong kil=50; //공백 사용 못함
+    int a 1 = 20;    //공백 사용 못함
 
 
 Literal(리터럴) => 상수(constant) => 데이터(data)
@@ -95,15 +95,15 @@ Literal(리터럴) => 상수(constant) => 데이터(data)
 
 - 자동형변환 : 자료형이 큰쪽으로 자동으로 변환된다 
   예:
-   double a=100;// 100 이라는 정수가 a메모리에 할당 되면서 자동으로 형변환이 된다 
-   double b=12.5f; // float형이 double 으로 
-   System.out.println("결과 :"+(10+12.5)); // double형으로 변환 되어 출력된다 
+   double a=100; // 100 이라는 정수가 a메모리에 할당 되면서 자동으로 형변환이 된다 
+   double b=12.5f;  // float형이 double 으로 
+   System.out.println("결과 :"+(10+12.5));  // double형으로 변환 되어 출력된다 
    10+12.5 ===> double 형으로 변환 
 
 - 강제형변환(casting)  : 자료형을 명시적으로 변환 하는것 
-  char ch=(char)65 ;// 65라는 정수가 A로 변환 
+  char ch=(char)65 ; // 65라는 정수가 A로 변환 
   char ch=(char)65.7
-  int a=(int)12.5; // 12.5라는 double 형을 int 형으로 변환 
+  int a=(int)12.5;  // 12.5라는 double 형을 int 형으로 변환 
 
 
 

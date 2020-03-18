@@ -8,5 +8,5 @@ public class Test10_static_var {
         System.out.println(a);
         // main은 static
         // a 불러오려면 a 또한 static 이여야 한다.
-    }// main end
-}// class end
+    } // main end
+} // class end

@@ -16,5 +16,5 @@ public class Test06_arr {
         } // out for end
 
         System.out.println(b[1]);
-    }// main end
-}// class end
+    } // main end
+} // class end

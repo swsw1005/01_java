@@ -22,5 +22,5 @@ public class Test1 {
 
 		scan.close();
 
-	}// main end
-}// class end
+	} // main end
+} // class end

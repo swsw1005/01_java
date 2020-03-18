@@ -21,5 +21,5 @@ public class Test02_while {
             i++;
         }
 
-    }// main end
-}// class end
+    } // main end
+} // class end

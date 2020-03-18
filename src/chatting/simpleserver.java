@@ -23,8 +23,8 @@ public class simpleserver {
 		while (true) {
 			try {
 				sock = ss.accept();
-				dos = new DataOutputStream(sock.getOutputStream());// �뜲�씠�꽣蹂대궪媛앹껜
-				dos.writeUTF(msg);// �겢�씪�씠�뼵�듃濡� 蹂대궦�떎.
+				dos = new DataOutputStream(sock.getOutputStream()); // �뜲�씠�꽣蹂대궪媛앹껜
+				dos.writeUTF(msg); // �겢�씪�씠�뼵�듃濡� 蹂대궦�떎.
 
 				// �겢�씪�씠�뼵�듃 蹂대궦 �궡�슜 異쒕젰
 				dis = new DataInputStream(sock.getInputStream());
@@ -42,4 +42,4 @@ public class simpleserver {
 		} // while end
 
 	} // main end
-}// class end
+} // class end

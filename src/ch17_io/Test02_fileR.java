@@ -10,7 +10,7 @@ public class Test02_fileR {
 
         try {
 
-            fr = new FileReader("src//ch17_io//txt//a1.txt");
+            fr = new FileReader("src //ch17_io //txt //a1.txt");
 
             int a;
 

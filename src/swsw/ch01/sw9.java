@@ -11,14 +11,14 @@ class Calculator {
     public void setleftright(int left, int right) {
         this.left = left;
         this.right = right;
-    }// 인수 2개를 이용한다는 공통점
+    } // 인수 2개를 이용한다는 공통점
 
     public void sum() {
         System.out.print("sum\t=\t");
         System.out.println(this.left + this.right);
         System.out.println("-----------------------");
-    }// 같은 클래스내의 변수 left right...
-     // 그래도 이용했다.
+    } // 같은 클래스내의 변수 left right...
+      // 그래도 이용했다.
 
     public void avg() {
         System.out.print("avg\t=\t");

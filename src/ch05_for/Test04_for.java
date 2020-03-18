@@ -18,5 +18,5 @@ public class Test04_for {
 
         }
         System.out.println("합계 : " + sum);
-    }// main end
-}// class end
+    } // main end
+} // class end

@@ -9,7 +9,7 @@ public class Test11_dataByteWR {
         // FileOutputStream fos = new FileOutputStream("a5.txt");
         // DataOutputStream dos = new DataOutputStream(fos);
         DataOutputStream dos = new DataOutputStream(
-                new FileOutputStream("src//ch17_io//txt//a5.txt"));
+                new FileOutputStream("src //ch17_io //txt //a5.txt"));
 
         dos.writeByte(Integer.MAX_VALUE);
         dos.writeChar('a');
@@ -24,10 +24,10 @@ public class Test11_dataByteWR {
 
         // 파일 읽어오기
         // FileInputStream fis = new
-        // FileInputStream("src//ch17_io//txt//a5.txt")
+        // FileInputStream("src //ch17_io //txt //a5.txt")
         // DataInputStream dis = new DataInputStream(fis);
         DataInputStream dis = new DataInputStream(
-                new FileInputStream("src//ch17_io//txt//a5.txt"));
+                new FileInputStream("src //ch17_io //txt //a5.txt"));
 
         System.out.println(dis.readByte());
         System.out.println(dis.readChar());

@@ -47,4 +47,4 @@ public class Test06_short {
 
     } // main end
 
-}// class end
+} // class end

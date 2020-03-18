@@ -27,5 +27,5 @@ public class Test08_quiz {
 
         scan.close();
 
-    }// main end
-}// class end
+    } // main end
+} // class end

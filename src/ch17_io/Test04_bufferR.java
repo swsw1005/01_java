@@ -7,7 +7,7 @@ public class Test04_bufferR {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(
-                new FileReader("src//ch17_io//txt//a2.txt"));
+                new FileReader("src //ch17_io //txt //a2.txt"));
 
         String a2 = "";
         String str = "";

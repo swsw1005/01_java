@@ -10,7 +10,7 @@ public class Test07_byteM {
 
         try {
 
-            fos = new FileOutputStream("src//ch17_io//txt//a3.txt");
+            fos = new FileOutputStream("src //ch17_io //txt //a3.txt");
 
             for (int i = 1; i < 10; i++) {
                 fos.write(i);

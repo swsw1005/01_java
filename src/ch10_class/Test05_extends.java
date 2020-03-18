@@ -5,8 +5,8 @@ class GeneralSuper02 {
     protected int roomNo;
     protected int capacity;
 
-}// class end
- // -------------------------------------
+} // class end
+  // -------------------------------------
 
 class GeneralSub02 extends GeneralSuper02 {
     String owner; // 집주인
@@ -17,9 +17,9 @@ class GeneralSub02 extends GeneralSuper02 {
         System.out.println("방번호\t" + roomNo);
         System.out.println("정원\t" + capacity);
         System.out.println("집주인\t" + owner);
-    }// disp end
-}// class end
- // ------------------------------------
+    } // disp end
+} // class end
+  // ------------------------------------
 
 public class Test05_extends {
 
@@ -31,5 +31,5 @@ public class Test05_extends {
         sub02.owner = "이효리";
 
         sub02.disp();
-    }// main end
-}// class end
+    } // main end
+} // class end

@@ -8,10 +8,10 @@ public class Test4 {
     System.out.println("args[1] : " + args[1]);
     System.out.println("args[2] : " + args[2]);
 
-  }// main end
-}// class end
- // "Test4.java" 저장
- // C:\aa>javac Test4.java 컴파일
+  } // main end
+} // class end
+  // "Test4.java" 저장
+  // C:\aa>javac Test4.java 컴파일
 
 // 실행
 // C:\aa>java Test4 kim lee park

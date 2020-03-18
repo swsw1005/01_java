@@ -38,5 +38,5 @@ public class Test01_arr {
 
         } // for end
 
-    }// main end
-}// class end
+    } // main end
+} // class end

@@ -13,7 +13,7 @@ public class Test04_graphics extends Frame {
             System.exit(0);
         }
 
-    }// class end
+    } // class end
 
     // inner class end
     public Test04_graphics() {

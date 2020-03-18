@@ -28,5 +28,5 @@ public class Test01_while {
         System.out.println();
 
         scan.close();
-    }// main end
-}// class end
+    } // main end
+} // class end

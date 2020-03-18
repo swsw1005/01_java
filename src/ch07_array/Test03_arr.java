@@ -10,7 +10,8 @@ public class Test03_arr {
         for (int i = 0; i < age.length; i++) {
 
             try {
-                System.out.printf("이름:%12s\t나이:%7d\t키:%7.1f\n", name[i], age[i], height[i]);
+                System.out.printf("이름:%12s\t나이:%7d\t키:%7.1f\n", name[i], age[i],
+                        height[i]);
 
             } catch (Exception e) {
 
@@ -19,5 +20,5 @@ public class Test03_arr {
 
         }
 
-    }// main end
-}// class end
+    } // main end
+} // class end

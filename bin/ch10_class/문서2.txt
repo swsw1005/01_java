@@ -20,8 +20,8 @@ int indexOf (String s)
 >> 현재 문자열에서  s 찾아서 있으면 첫번째 위치(index) 반환
 
 ex)  i = str.indexOf("d");
-        System.out.println(i); // 4
-        // 첫글자 0부터 시작
-        // 문자열 못찾으면 -1
+        System.out.println(i);  // 4
+         // 첫글자 0부터 시작
+         // 문자열 못찾으면 -1
 
 

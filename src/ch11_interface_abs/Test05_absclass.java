@@ -1,7 +1,7 @@
 package ch11_interface_abs;
 
 abstract class Abs {
-    String name;// 전역변수
+    String name; // 전역변수
 
     // 생성자
     public Abs(String name) {
@@ -15,8 +15,8 @@ abstract class Abs {
 
     // 추상메소드
     abstract public void disp();
-}// class end ------------------------------------
- // --------------------------------------------
+} // class end ------------------------------------
+  // --------------------------------------------
 
 public class Test05_absclass extends Abs {
 
@@ -37,5 +37,5 @@ public class Test05_absclass extends Abs {
         t.kk();
         t.disp();
 
-    }// main end
-}// class end
+    } // main end
+} // class end

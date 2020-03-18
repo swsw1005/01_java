@@ -44,5 +44,5 @@ public class Test05_for {
         System.out.println("127~300 10배수합계 : " + sum);
         System.out.println();
 
-    }// main end
-}// class end
+    } // main end
+} // class end

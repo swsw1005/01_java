@@ -1,0 +1,45 @@
+core java
+
+@ C ------------------------------
+
+기본문법(자료형,연산자, 제어문)
+
+
+@ JAVA  ------------------------------
+
+JDK 설치
+
+java기본문법 (자료형, 연산자, 제어문, 배열)
+
+객체지향
+    메소드, 클래스, 상속, 인터페이스, 추상클래스
+
+awt
+    창종료, 마우스 이벤트처리, Component이벤트 처리
+
+Exception, I/O , 간단한 메모장 프로그램 , Serealizable(객체 직렬화)
+util (Iterator, Vector, List, ArryLIst, Map, HashMap, Properties)
+Thread, Appler, Swing, NetWork, DB연결
+
+
+@ DB ------------------------------
+
+ORACLE
+    DML insert, update, delete, select
+    DQL select
+    DDL create, drop, alter
+    DCL grant, revoke
+    TCL Transaction(Commit, rollback)
+
+MySQL
+    DB생성, table생성
+    CRUD    Create Read Update Delete
+            insert 
+
+@ HTML CSS JavaScript ------------------------------
+
+    HTML    시맨틱 태그
+    CSS3    태그선택 , #id , .class , 외부CSS
+    JavaScript  기초문법, 데이터 유효성 체크
+    jQuery  기초문법, 데이터성 체크
+    Ajax

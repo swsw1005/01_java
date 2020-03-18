@@ -16,7 +16,7 @@ class Sangpum2 {
         dan = d;
         // 각각 pum, su, dan에 넣는다.
 
-    }// setData end
+    } // setData end
 
     // 사용자 정의 메서드
     public void disp() {

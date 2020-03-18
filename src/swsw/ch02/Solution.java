@@ -34,7 +34,7 @@ public class Solution {
             } else {
 
                 // i부터 j까지 분리해서 넣어줄 새로운 배열 int arr[]선언
-                int arr[] = new int[j - i + 1];// (2,5)>> 5-2+1 = 4칸
+                int arr[] = new int[j - i + 1]; // (2,5)>> 5-2+1 = 4칸
 
                 // int arr[]에 값을 넣어주자 (2,5)>> 5-2+1 >>> b<4
                 for (int b = 0; b < (j - i + 1); b++) {
@@ -51,7 +51,7 @@ public class Solution {
 
             }
         } // for a end
-        return answer;// [5, 6, 3]
+        return answer; // [5, 6, 3]
 
     } // solution() end
 

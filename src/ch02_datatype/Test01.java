@@ -1,56 +1,37 @@
 package ch02_datatype;
 
+public class Test01 {
+    public static void main(String args[]) {
+        int a1 = 10;
+        int _a = 10;
+        int $a = 10;
 
-public class Test01{
-	public static void main(String args[]){
-		int a1=10;
-		int _a=10;
-		int $a=10;
-		
-		System.out.println("a1\t=\t"+a1);
-		System.out.println("_a\t=\t"+_a);
-		System.out.println("$a\t=\t"+$a);
-			
-	}//main end
-}//class end
+        System.out.println("a1\t=\t" + a1);
+        System.out.println("_a\t=\t" + _a);
+        System.out.println("$a\t=\t" + $a);
+
+    } // main end
+} // class end
 /*
-
-Java Data Type 
-¤¤ Primitive Type
-    ¤¤ Boolean Type(boolean)
-    ¤¤ Numeric Type
-        ¤¤ Integral Type
-            ¤¤ Integer Type(short, int, long)
-            ¤¤ Floating Point Type(float, double)
-        ¤¤ Character Type(char)
-¤¤ Reference Type
-    ¤¤ Class Type
-    ¤¤ Interface Type
-    ¤¤ Array Type
-    ¤¤ Enum Type
-    ¤¤ etc.
-
-ÀÚ·áÇü
-byte	1byte 	-128 ~ 127
-char	2byte	unicode
-short	2byte	-32768 ~ 32767
-int 	4byte	-2,147,483,648 ~ 2,147,483,647
-
-
-int	a	a1	_a	$a	°¡´É
-
-int kim 1 = 1000	°ø¹é ºÒ°¡´É
-int 2kim  = 2000	Ã¹±ÛÀÚ ¼ýÀÚºÒ°¡´É
-
-»ó¼ö(constant) = data = °ª
-
-1. Á¤¼ö	10(int)  10L(long)  0xa(16Áø)
-2. ½Ç¼ö	12.7(double)  12.7f(float)
-3. ¹®ÀÚ »ó¼ö	'a' 'A' 'f'
-4. ¹®ÀÚ¿­»ó¼ö	"A" "mbc" "È«±æµ¿"
-
-Á¤¼ö+""	¹®ÀÚ¿­
-Á¤¼ö+''	Á¤¼ö		ÀÚ·áÇü Å«ÂÊÀ¸·Î
-Á¤¼ö+½Ç¼ö	½Ç¼ö°ª		ÀÚ·áÇü Å«ÂÊÀ¸·Î
-
-*/
+ * 
+ * Java Data Type ï¿½ï¿½ Primitive Type ï¿½ï¿½ Boolean Type(boolean) ï¿½ï¿½ Numeric Type ï¿½ï¿½
+ * Integral Type ï¿½ï¿½ Integer Type(short, int, long) ï¿½ï¿½ Floating Point Type(float,
+ * double) ï¿½ï¿½ Character Type(char) ï¿½ï¿½ Reference Type ï¿½ï¿½ Class Type ï¿½ï¿½ Interface
+ * Type ï¿½ï¿½ Array Type ï¿½ï¿½ Enum Type ï¿½ï¿½ etc.
+ * 
+ * ï¿½Ú·ï¿½ï¿½ï¿½ byte 1byte -128 ~ 127 char 2byte unicode short 2byte -32768 ~ 32767 int
+ * 4byte -2,147,483,648 ~ 2,147,483,647
+ * 
+ * 
+ * int a a1 _a $a ï¿½ï¿½ï¿½ï¿½
+ * 
+ * int kim 1 = 1000 ï¿½ï¿½ï¿½ï¿½ ï¿½Ò°ï¿½ï¿½ï¿½ int 2kim = 2000 Ã¹ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ÚºÒ°ï¿½ï¿½ï¿½
+ * 
+ * ï¿½ï¿½ï¿½(constant) = data = ï¿½ï¿½
+ * 
+ * 1. ï¿½ï¿½ï¿½ï¿½ 10(int) 10L(long) 0xa(16ï¿½ï¿½) 2. ï¿½Ç¼ï¿½ 12.7(double) 12.7f(float) 3. ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ 'a' 'A' 'f' 4. ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ "A" "mbc" "È«ï¿½æµ¿"
+ * 
+ * ï¿½ï¿½ï¿½ï¿½+"" ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½+'' ï¿½ï¿½ï¿½ï¿½ ï¿½Ú·ï¿½ï¿½ï¿½ Å«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½+ï¿½Ç¼ï¿½ ï¿½Ç¼ï¿½ï¿½ï¿½ ï¿½Ú·ï¿½ï¿½ï¿½ Å«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 
+ */

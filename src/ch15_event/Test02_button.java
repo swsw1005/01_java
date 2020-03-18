@@ -51,7 +51,7 @@ public class Test02_button extends Frame implements ActionListener {
         setSize(600, 600);
         setVisible(true);
 
-    }// cons ends
+    } // cons ends
 
     // inner class
     class MyWin extends WindowAdapter {
@@ -63,7 +63,7 @@ public class Test02_button extends Frame implements ActionListener {
     // main
     public static void main(String[] args) {
         new Test02_button();
-    }// main end
+    } // main end
 
     @Override // 메소드 오버라이딩
     public void actionPerformed(ActionEvent e) {
@@ -88,6 +88,6 @@ public class Test02_button extends Frame implements ActionListener {
             System.exit(0);
         } // else if end
 
-    }// actionPerformed() end
+    } // actionPerformed() end
 
-}// class end
+} // class end

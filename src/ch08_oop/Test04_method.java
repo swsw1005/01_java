@@ -11,7 +11,7 @@ public class Test04_method {
 
         } // for end
         return hap;
-    }// sum(0) end
+    } // sum(0) end
 
     public static void main(String[] args) {
         Test04_method tm = new Test04_method();

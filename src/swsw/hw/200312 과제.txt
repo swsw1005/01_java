@@ -40,7 +40,7 @@ System.out.println("-------------------------------------");
 
         char a = 65;
         char z = 90;
-        System.out.println(a + "~" + z); // A~Z
+        System.out.println(a + "~" + z);  // A~Z
 
         a = 97;
         z = 122;
@@ -50,21 +50,21 @@ System.out.println("-------------------------------------");
 
         char[] ch = new char[26];
 
-        // 1. char ch[] 배열을 만들어주자
+         // 1. char ch[] 배열을 만들어주자
         for (int i = 0; i < 26; i++) {
             ch[i] = (char) (65 + i);
         }
 
-        // 2. 스트링 배열 만들어주자
+         // 2. 스트링 배열 만들어주자
         String[] ch_to_s = new String[26];
 
-        // 3. char >> String 배열로 옮겨주자
+         // 3. char >> String 배열로 옮겨주자
         for (int i = 0; i < 26; i++) {
-            // ch_to_s[i] = Character.toString(ch[i]);
+             // ch_to_s[i] = Character.toString(ch[i]);
             ch_to_s[i] = ch[i] + "";
         }
 
-        // 4. String 배열을 출력해서 확인해보자
+         // 4. String 배열을 출력해서 확인해보자
         for (int i = 0; i < 26; i++) {
             System.out.print(ch_to_s[i] + " ");
         }

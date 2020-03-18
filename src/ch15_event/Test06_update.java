@@ -25,7 +25,7 @@ public class Test06_update extends Frame {
         setSize(600, 600);
         // setVisible(true);
 
-    }// cons end
+    } // cons end
 
     // 메소드
 

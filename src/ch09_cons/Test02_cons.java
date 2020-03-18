@@ -47,7 +47,7 @@ class SinSang {
         disp();
     }
 
-}// class end
+} // class end
 
 public class Test02_cons {
 

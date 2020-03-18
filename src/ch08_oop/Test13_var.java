@@ -14,8 +14,6 @@ class Idol_girl {
         this.name = name;
     }
 
-
-    
     // 생성자
     // >>> 인스턴스 만드는 특수한 메소드
     // 1. 클래스명과 같은 이름 써야한다.
@@ -24,7 +22,7 @@ class Idol_girl {
     // 4. 인수를 갖는다. 오버로드(같은 이름 클래스) 가능하다
     // 5. 생성자 없으면 내부적으로 디폴트 생성자 취급
 
-}// class end
+} // class end
 
 public class Test13_var {
 

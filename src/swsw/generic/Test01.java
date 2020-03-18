@@ -17,7 +17,7 @@ public class Test01 {
         Person<Double> p3 = new Person<Double>();
         // p3.info는 double형
         p3.info = 12.134;
-        System.out.println(p3.info);// 12.134
+        System.out.println(p3.info); // 12.134
 
     }
 }

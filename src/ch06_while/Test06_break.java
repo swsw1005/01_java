@@ -24,7 +24,7 @@ public class Test06_break {
             System.out.println();
             // 이것도 10줄 반복되어야 하지만...
             if (i == 3)
-                break;// 3줄만 하고끝내버린다.
+                break; // 3줄만 하고끝내버린다.
         } // out for end
-    }// main end
-}// class end
+    } // main end
+} // class end

@@ -17,7 +17,7 @@ class Lotto {
             for (int j = 0; j < i; j++) {
                 if (lotto[i] == lotto[j]) {
                     i--;
-                    break;// inner out
+                    break; // inner out
                 } // if end
 
             } // inner for end
@@ -45,5 +45,5 @@ public class Test10_lotto {
             Lotto lot = new Lotto();
             lot.lotto6num();
         }
-    }// main end
-}// class end
+    } // main end
+} // class end

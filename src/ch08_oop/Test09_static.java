@@ -18,6 +18,6 @@ public class Test09_static {
 
     public static void main(String[] args) {
 
-    }// main end
+    } // main end
 
-}// class end
+} // class end

@@ -44,7 +44,7 @@ public class Test04_Layout extends Frame {
 
         setSize(500, 500);
         setVisible(true);
-    }// 생성자 end
+    } // 생성자 end
 
     // 메서드
 
@@ -53,10 +53,10 @@ public class Test04_Layout extends Frame {
         public void windowClosing(WindowEvent we) {
             System.exit(0);
         }
-    }// inner class end
+    } // inner class end
 
     // main
     public static void main(String[] args) {
         new Test04_Layout();
-    }// main end
-}// class end
+    } // main end
+} // class end

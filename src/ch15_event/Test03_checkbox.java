@@ -46,7 +46,7 @@ public class Test03_checkbox extends Frame implements ItemListener {
 
         setSize(600, 600);
         setVisible(true);
-    }// cons end
+    } // cons end
 
     // 메서드
 
@@ -60,7 +60,7 @@ public class Test03_checkbox extends Frame implements ItemListener {
     // main
     public static void main(String[] args) {
         new Test03_checkbox();
-    }// main end
+    } // main end
 
     @Override // 메서드 오버라이딩
     public void itemStateChanged(ItemEvent ie) {
@@ -97,6 +97,6 @@ public class Test03_checkbox extends Frame implements ItemListener {
 
         } // outer if end
 
-    }// itemStateChanged() end
+    } // itemStateChanged() end
 
-}// class end
+} // class end

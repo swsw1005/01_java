@@ -43,5 +43,5 @@ public class Test01 {
             jumins.add(new Jumin(ju_arr[i]));
         } // for end
 
-    }// main end
-}// class end
+    } // main end
+} // class end

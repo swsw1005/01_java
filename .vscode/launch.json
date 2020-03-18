@@ -1,15 +1,23 @@
 {
   // Use IntelliSense to learn about possible attributes.
   // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  // For more information, visit: https: //go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01_WrapperClass",
+      "request": "launch",
+      "mainClass": "ch18_util.Test01_WrapperClass",
+      "projectName": "01_java"
+    },
     {
       "type": "java",
       "name": "CodeLens (Launch) - Test13_menu",
       "request": "launch",
       "mainClass": "ch17_io.Test13_menu",
-      "projectName": "01_java"
+      "projectName": "01_java",
+      "encoding": "ms949"
     },
     {
       "type": "java",

@@ -28,9 +28,9 @@ public class DatePrint {
     public String mydate(int a, int b, int c) {
         // 연 월 일
         Calendar mydate = Calendar.getInstance(); // 새로운 Calendar 인스턴스
-        mydate.set(a, b - 1, c, 0, 0, 0);// a, b, c입력받아서
-                                         // 각각 년 월 일 입력
-        // Date mydate_date = mydate.getTime();// Date 형식으로 변경
+        mydate.set(a, b - 1, c, 0, 0, 0); // a, b, c입력받아서
+                                          // 각각 년 월 일 입력
+        // Date mydate_date = mydate.getTime(); // Date 형식으로 변경
 
         // date에 임의의 날짜 넣어주기
         // date = yyyymmdd.format(mydate_date);
@@ -41,9 +41,9 @@ public class DatePrint {
     public String mydate2(int a, int b, int c, int d, int e, int f) {
         // 연 월 일 + 시 분 초
         Calendar mydate = Calendar.getInstance(); // 새로운 Calendar 인스턴스
-        mydate.set(a, b - 1, c, d, e, f);// a, b, c입력받아서
-                                         // 각각 년 월 일 입력
-        // Date mydate_date = mydate.getTime();// Date 형식으로 변경
+        mydate.set(a, b - 1, c, d, e, f); // a, b, c입력받아서
+                                          // 각각 년 월 일 입력
+        // Date mydate_date = mydate.getTime(); // Date 형식으로 변경
 
         // date에 임의의 날짜 넣어주기
         // date = yyyymmdd.format(mydate_date);
@@ -63,9 +63,9 @@ public class DatePrint {
     public DatePrint(int a, int b, int c) {
         // 연 월 일
         Calendar mydate = Calendar.getInstance(); // 새로운 Calendar 인스턴스
-        mydate.set(a, b - 1, c, 0, 0, 0);// a, b, c입력받아서
-                                         // 각각 년 월 일 입력
-        // Date mydate_date = mydate.getTime();// Date 형식으로 변경
+        mydate.set(a, b - 1, c, 0, 0, 0); // a, b, c입력받아서
+                                          // 각각 년 월 일 입력
+        // Date mydate_date = mydate.getTime(); // Date 형식으로 변경
 
         // date에 임의의 날짜 넣어주기
         // date = yyyymmdd.format(mydate_date);
@@ -77,9 +77,9 @@ public class DatePrint {
     public DatePrint(int a, int b, int c, int d, int e, int f) {
         // 연 월 일 + 시 분 초
         Calendar mydate = Calendar.getInstance(); // 새로운 Calendar 인스턴스
-        mydate.set(a, b - 1, c, d, e, f);// a, b, c입력받아서
-                                         // 각각 년 월 일 입력
-        Date mydate_date = mydate.getTime();// Date 형식으로 변경
+        mydate.set(a, b - 1, c, d, e, f); // a, b, c입력받아서
+                                          // 각각 년 월 일 입력
+        Date mydate_date = mydate.getTime(); // Date 형식으로 변경
 
         // date에 임의의 날짜 넣어주기
         date = yyyymmdd.format(mydate_date);

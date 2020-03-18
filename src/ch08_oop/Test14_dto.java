@@ -16,7 +16,7 @@ public class Test14_dto {
         this.id = id;
     }
 
-    ////////////////////////////////
+    // // // // // // // // // // // // // // // //
 
     public String getPw() {
         return pw;
@@ -26,7 +26,7 @@ public class Test14_dto {
         this.pw = pw;
     }
 
-    ////////////////////////////////
+    // // // // // // // // // // // // // // // //
 
     public String getTel() {
         return tel;
@@ -36,7 +36,7 @@ public class Test14_dto {
         this.tel = tel;
     }
 
-    ////////////////////////////////
+    // // // // // // // // // // // // // // // //
 
     public String getAddr() {
         return addr;
@@ -46,7 +46,7 @@ public class Test14_dto {
         this.addr = addr;
     }
 
-    ////////////////////////////////
+    // // // // // // // // // // // // // // // //
 
     public String getEmail() {
         return email;
@@ -56,5 +56,5 @@ public class Test14_dto {
         this.email = email;
     }
 
-    ////////////////////////////////
+    // // // // // // // // // // // // // // // //
 }

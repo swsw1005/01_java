@@ -47,7 +47,7 @@ public class Jumin {
         }
         scan.close();
 
-    }// disp() end
+    } // disp() end
 
     public void disp2() {
 
@@ -74,6 +74,6 @@ public class Jumin {
 
         }
 
-    }// disp2() end
+    } // disp2() end
 
 }

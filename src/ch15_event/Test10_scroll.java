@@ -23,7 +23,7 @@ public class Test10_scroll extends Frame implements AdjustmentListener {
         // 디자인 시작
         label1 = new Label("");
         label1.setBackground(Color.yellow);
-        label1.setBounds(20, 180, 200, 40);// x y w h
+        label1.setBounds(20, 180, 200, 40); // x y w h
         add(label1);
 
         laRed = new Label("빨강", Label.RIGHT);

@@ -62,4 +62,4 @@ public class Test06_switch {
             System.out.println("제발 숫자 입력하라고");
         }
     } // main end
-}// class end
+} // class end

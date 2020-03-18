@@ -37,7 +37,7 @@ public class Test05_guest extends Frame implements ActionListener {
 
         setSize(600, 600);
         setVisible(true);
-    }// cons ends
+    } // cons ends
 
     // inner class
     class MyWin extends WindowAdapter {
@@ -53,12 +53,12 @@ public class Test05_guest extends Frame implements ActionListener {
 
         if (e.getSource() == b1) {
             // b1 누르면
-            tupdate.setVisible(true);// tupdate 프레임 띄운다.
+            tupdate.setVisible(true); // tupdate 프레임 띄운다.
 
         } else if (e.getSource() == tupdate.b1) {
             // tupdate.b1 누르면
-            tupdate.dispose();// 현재 프레임만 종료한다.
-            // tupdate.setVisible(false);//안보이게 한다.
+            tupdate.dispose(); // 현재 프레임만 종료한다.
+            // tupdate.setVisible(false); //안보이게 한다.
 
         } // else if end
     } // actionPerformed() end

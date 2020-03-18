@@ -15,9 +15,9 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
 	private static final long serialVersionUID = 1L;
 	// ����
 	JButton b1, b2, b3;
-	JTextField tf;// ��ȭ ���� �Է¶�
-	JTextArea ta;// ��ȭ ���� ��� �뵵
-	String name;// ��ȭ�� ���� ����
+	JTextField tf; // ��ȭ ���� �Է¶�
+	JTextArea ta; // ��ȭ ���� ��� �뵵
+	String name; // ��ȭ�� ���� ����
 
 	private DataInputStream in;
 	private DataOutputStream out;
@@ -28,7 +28,7 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
 	// ������
 	public MiddleClient(String ip, int port) {
 		try {
-			Socket sock = new Socket(ip, port);// ���� ����
+			Socket sock = new Socket(ip, port); // ���� ����
 			in = new DataInputStream(sock.getInputStream());
 			out = new DataOutputStream(sock.getOutputStream());
 
@@ -39,21 +39,21 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
 
 		ImageIcon i1 = new ImageIcon("c:\\_java\\imgs\\a1.gif");
 		b1 = new JButton("����", i1);
-		b1.addActionListener(this);// �̺�Ʈ ���
+		b1.addActionListener(this); // �̺�Ʈ ���
 
 		ImageIcon i2 = new ImageIcon("c:\\_java\\imgs\\a2.gif");
 		b2 = new JButton("����Ʈ", i2);
-		b2.addActionListener(this);// �̺�Ʈ ���
+		b2.addActionListener(this); // �̺�Ʈ ���
 
 		ImageIcon i3 = new ImageIcon("c:\\_java\\imgs\\a3.gif");
 		b3 = new JButton("��������", i3);
-		b3.addActionListener(this);// �̺�Ʈ ���
+		b3.addActionListener(this); // �̺�Ʈ ���
 
 		tf = new JTextField();
-		tf.addActionListener(this);// �̺�Ʈ ���
+		tf.addActionListener(this); // �̺�Ʈ ���
 
 		ta = new JTextArea();
-		ta.setLineWrap(true);// ������ ������ �ڵ����� ���� �Ϸ���
+		ta.setLineWrap(true); // ������ ������ �ڵ����� ���� �Ϸ���
 
 		JPanel p = new JPanel();
 		p.setLayout(new GridLayout(3, 1));
@@ -69,16 +69,16 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
 		getContentPane().add(scrollPane, "Center");
 		getContentPane().add(tf, "South");
 
-		setSize(400, 300);// âũ��
-		setVisible(true);// âǥ��
-		tf.requestFocus();// ��Ŀ�� ����
+		setSize(400, 300); // âũ��
+		setVisible(true); // âǥ��
+		tf.requestFocus(); // ��Ŀ�� ����
 
 		// ��ȭ�� �ޱ�
 		name = JOptionPane.showInputDialog(this, "��ȭ���� �Է� �Ͻÿ�");
 
 		thread = new Thread(this);
-		thread.start();// �غ�ܰ�, run()ȣ��
-	}// cons end
+		thread.start(); // �غ�ܰ�, run()ȣ��
+	} // cons end
 
 	// �޼��� : ������ ��û�Ҷ� ����� �뵵
 	public void actionPerformed(ActionEvent e) {
@@ -88,13 +88,13 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
 				String msg = tf.getText().trim();
 				if (msg.length() < 1) {
 					JOptionPane.showMessageDialog(this, "��ȭ������ �Է��Ͻÿ�");
-					tf.requestFocus();// ��Ŀ�� ����
+					tf.requestFocus(); // ��Ŀ�� ����
 					return;
 				} // if
 
 				// ������ ������ �۾�
 				out.writeUTF("[" + name + "]���� ��>>" + msg);
-				tf.setText("");// �����
+				tf.setText(""); // �����
 
 			} catch (Exception ex) {
 				ta.append("������ �����͸� �������� ���� �߻� :" + ex);
@@ -107,7 +107,7 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
 				System.exit(0);
 			} // catch
 
-		} else if (e.getSource() == b1) {// ����
+		} else if (e.getSource() == b1) { // ����
 			int an = JOptionPane.showConfirmDialog(this, "�����ұ��", "����",
 					JOptionPane.YES_NO_OPTION);
 			switch (an) {
@@ -116,13 +116,13 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
 				break;
 			case JOptionPane.NO_OPTION:
 				break;
-			}// switch
+			} // switch
 
-		} else if (e.getSource() == b2) {// ����Ʈ
+		} else if (e.getSource() == b2) { // ����Ʈ
 			// ��ȭ�� ����Ʈ
 			ta.setText("");
 			ta.append(name);
-		} else if (e.getSource() == b3) {// ����
+		} else if (e.getSource() == b3) { // ����
 			ta.setFont(new Font("Dialog", Font.BOLD, 16));
 
 			ta.setForeground(Color.blue);
@@ -130,7 +130,7 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
 			tf.setFont(new Font("Dialog", Font.BOLD, 16));
 			tf.setBackground(Color.yellow);
 		}
-	}// actionPerformed
+	} // actionPerformed
 
 	// �޼��� : ������ ������ ������ ó��(���)
 	public void run() {
@@ -151,11 +151,11 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
 
 			System.exit(0);
 		} // catch
-	}// run
+	} // run
 
 	// main
 	public static void main(String[] args) {
 		new MiddleClient(args[0], Integer.parseInt(args[1]));
 		// ����ip ����port
-	}// main
-}// class
+	} // main
+} // class

@@ -32,5 +32,5 @@ public class Test01_if {
             System.out.println("숫자입력하라고 ㅉㅉ");
         }
 
-    }// main end
-}// class end
+    } // main end
+} // class end

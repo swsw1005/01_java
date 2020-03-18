@@ -15,5 +15,5 @@ public class Test5 {
         int sum = a + b;
         System.out.println("sum:" + sum);
         scan.close();
-    }// main end
-}// class end
+    } // main end
+} // class end

@@ -8,15 +8,15 @@ class Super {
     }
 
     public Super(String name) {
-        this.name = name;// this.전역변수 = 매개변수
+        this.name = name; // this.전역변수 = 매개변수
     }
 
     public void disp() {
         System.out.println("이름\t" + name);
     }
 
-}// class end-----------------------------------
- // --------------------------------------------
+} // class end-----------------------------------
+  // --------------------------------------------
 
 class SungSub extends Super {
 
@@ -25,7 +25,7 @@ class SungSub extends Super {
     private int tot;
 
     public SungSub() {
-    }// 디폴트 생성자
+    } // 디폴트 생성자
 
     public SungSub(String name, int kor, int eng) {
 
@@ -33,7 +33,7 @@ class SungSub extends Super {
         this.kor = kor;
         this.eng = eng;
         tot = eng + kor; // 총점계산
-    }// cons end
+    } // cons end
 
     @Override
     public void disp() {
@@ -48,8 +48,8 @@ class SungSub extends Super {
         System.out.println("-----------------------------");
     }
 
-}// class end-----------------------------------
- // --------------------------------------------
+} // class end-----------------------------------
+  // --------------------------------------------
 
 class SinSub extends Super {
 
@@ -60,7 +60,7 @@ class SinSub extends Super {
     }
 
     public SinSub(String name, int age, String addr) {
-        super(name);// 수퍼클래스 생성자 호출
+        super(name); // 수퍼클래스 생성자 호출
         this.age = age;
         this.addr = addr;
     }
@@ -74,9 +74,9 @@ class SinSub extends Super {
         System.out.println("addr \t" + addr);
         System.out.println("-----------------------------");
 
-    }// disp end
-}// class end-----------------------------------
- // --------------------------------------------}
+    } // disp end
+} // class end-----------------------------------
+  // --------------------------------------------}
 
 public class Test08_extends {
 
@@ -91,7 +91,7 @@ public class Test08_extends {
         s.disp();
 
     }
-}// class end-----------------------------------
- // --------------------------------------------
+} // class end-----------------------------------
+  // --------------------------------------------
 
 //

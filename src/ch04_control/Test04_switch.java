@@ -33,7 +33,7 @@ public class Test04_switch {
                 break;
             default:
                 grade = 'f';
-            }// switch end
+            } // switch end
 
             System.out.println("점수\t" + score + "\t학점\t" + grade);
         } else {

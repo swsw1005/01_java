@@ -47,6 +47,6 @@ public class Test03 {
 
 		System.out.println((int) 66.7);
 
-	}// main end
+	} // main end
 
-}// class end
+} // class end

@@ -20,14 +20,14 @@ public class Test09_list extends Frame implements ActionListener {
     public Test09_list() {
         super("list연습2");
         setFont(new Font("Dialog", Font.BOLD, 16));
-        setDesign();// 디자인 메서드 호출
+        setDesign(); // 디자인 메서드 호출
 
         // 이벤트 등록
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent we) {
                 System.exit(0);
             }
-        });// 창 닫기 end
+        }); // 창 닫기 end
 
         list1.addActionListener(this);
         list2.addActionListener(this);
@@ -41,7 +41,7 @@ public class Test09_list extends Frame implements ActionListener {
         // setSize(500, 500);
         setBounds(300, 200, 450, 300);
         setVisible(true);
-    }// cons end
+    } // cons end
 
     // 디자인 메소드 생성
     public void setDesign() {
@@ -89,7 +89,7 @@ public class Test09_list extends Frame implements ActionListener {
         add(p, "Center");
         add(p4, "South");
 
-    }// setDesign() end
+    } // setDesign() end
 
     // 메소드
     @Override
@@ -102,7 +102,7 @@ public class Test09_list extends Frame implements ActionListener {
             // 공백검사
             if (tf.getText().equals("")) {
                 JOptionPane.showMessageDialog(this, "추가할 종목을 입력하세요");
-                tf.requestFocus();// tf에 포커스 설정하고
+                tf.requestFocus(); // tf에 포커스 설정하고
                 return; // 아래내용 수정못하게 피드백
             } // inner if end
 
@@ -110,20 +110,20 @@ public class Test09_list extends Frame implements ActionListener {
             for (int i = 0; i < list1.getItemCount(); i++) {
                 if (list1.getItem(i).equals(tf.getText())) {
                     JOptionPane.showMessageDialog(this, "이미 존재 항목");
-                    tf.setText("");// tf 내용 지우기
+                    tf.setText(""); // tf 내용 지우기
                     tf.requestFocus(); // 포커스 요청
                     return;
                 } // inner if end
             } // for end
 
             // 공백, 중복 검사 통과하면 처리
-            list1.add(tf.getText());//
+            list1.add(tf.getText()); //
             tf.setText("");
             tf.requestFocus();
         } // if end
 
         // 왼쪽꺼 오른쪽으로-----------------------
-        if (ob == b1) {// 선택한 자료 옮기기
+        if (ob == b1) { // 선택한 자료 옮기기
             String items[] = list1.getSelectedItems();
 
             // select한 아이템을 리스트2에 넣는다.

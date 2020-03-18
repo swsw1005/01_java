@@ -23,8 +23,9 @@ class PanMae {
         System.out.print("\tdan =\t" + dan);
         System.out.println();
     }
-}// class end
- //////////////////////////////////////////////////////////
+} // class end
+  // // // // // // // // // // // // // // // // // // // // // // // // // //
+  // // // //
 
 // 자식 클래스
 class PanMaeSub extends PanMae {
@@ -37,11 +38,11 @@ class PanMaeSub extends PanMae {
     // 생성자
     public PanMaeSub(String pum, int su, int dan, double rate) {
 
-        super(pum, su, dan);// 수퍼클래스 생성자 호출
+        super(pum, su, dan); // 수퍼클래스 생성자 호출
         this.rate = rate;
-    }// cons end
+    } // cons end
 
-    //// 오버라이딩.
+    // // 오버라이딩.
     public void disp() {
         System.out.print("pum =\t" + pum);
         System.out.print("\tsu =\t" + su);
@@ -50,9 +51,9 @@ class PanMaeSub extends PanMae {
         System.out.println();
     }
 
-}// class end
+} // class end
 
-//////////////////////////////////////////////////////
+// // // // // // // // // // // // // // // // // // // // // // // // // // //
 
 public class Test06_extends {
 

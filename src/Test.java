@@ -11,10 +11,10 @@ public class Test {
         String a = "java";
         String b = "java";
 
-        /////////////////////////////////////////////
+        // // // // // // // // // // // // // // // // // // // // // ///
         if (!(a.equals(b)))
             return;
-        ////////////////////////////////////////////
+        // // // // // // // // // // // // // // // // // // // // // //
         System.out.println("답이 같습니다.");
 
         Scanner sc = new Scanner(System.in);
@@ -46,5 +46,5 @@ public class Test {
 
         sc.close();
 
-    }// main end
-}// class end
+    } // main end
+} // class end

@@ -39,14 +39,14 @@ public class Test02_BorderLayout extends Frame {
         setSize(500, 500);
         setVisible(true);
 
-    }// cons end
+    } // cons end
 
     // inner class
     class MyWin extends WindowAdapter {
         public void windowClosing(WindowEvent we) {
             System.exit(0);
         }
-    }// inner class end
+    } // inner class end
 
     // 메서드
 

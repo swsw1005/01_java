@@ -21,9 +21,9 @@ public class Test03_switch {
             break;
         case 1:
             System.out.println(su + "\t>>홀수");
-            break;// 마지막엔 안써도 무관
+            break; // 마지막엔 안써도 무관
         } // switch end
 
         scan.close();
-    }// main end
-}// class end
+    } // main end
+} // class end
