@@ -6,6 +6,132 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test02_Generic",
+      "request": "launch",
+      "mainClass": "ch19_util2.Test02_Generic",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01_Generic",
+      "request": "launch",
+      "mainClass": "ch19_util2.Test01_Generic",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test08_Vector",
+      "request": "launch",
+      "mainClass": "ch18_util.Test08_Vector",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test16_String",
+      "request": "launch",
+      "mainClass": "ch18_util.Test16_String",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test15_String",
+      "request": "launch",
+      "mainClass": "ch18_util.Test15_String",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test14_Object_clone",
+      "request": "launch",
+      "mainClass": "ch18_util.Test14_Object_clone",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test13_Object",
+      "request": "launch",
+      "mainClass": "ch18_util.Test13_Object",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test12_properties",
+      "request": "launch",
+      "mainClass": "ch18_util.Test12_properties",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test11_Properties",
+      "request": "launch",
+      "mainClass": "ch18_util.Test11_Properties",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test07_sb_String",
+      "request": "launch",
+      "mainClass": "ch18_util.Test07_sb_String",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test10_StringTokenizer",
+      "request": "launch",
+      "mainClass": "ch18_util.Test10_StringTokenizer",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Enum",
+      "request": "launch",
+      "mainClass": "ch18_util.Enum",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test07_Vector",
+      "request": "launch",
+      "mainClass": "ch18_util.Test07_Vector",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test06_sb_String",
+      "request": "launch",
+      "mainClass": "ch18_util.Test06_sb_String",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test06_StringBuffer",
+      "request": "launch",
+      "mainClass": "ch18_util.Test06_StringBuffer",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test05_Date",
+      "request": "launch",
+      "mainClass": "ch18_util.Test05_Date",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test03_Calendar",
+      "request": "launch",
+      "mainClass": "ch18_util.Test03_Calendar",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test02_Hashtable",
+      "request": "launch",
+      "mainClass": "ch18_util.Test02_Hashtable",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test01_WrapperClass",
       "request": "launch",
       "mainClass": "ch18_util.Test01_WrapperClass",

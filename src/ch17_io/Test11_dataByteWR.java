@@ -36,6 +36,7 @@ public class Test11_dataByteWR {
         System.out.println(dis.readBoolean());
         // System.out.println(dis.readLine());
         System.out.println(dis.readUTF());
+        // 인코딩처리까지...한글처리 중요
 
         dis.close();
 

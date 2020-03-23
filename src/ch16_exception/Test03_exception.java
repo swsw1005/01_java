@@ -1,6 +1,5 @@
 package ch16_exception;
 
-import java.io.*;
 //고칠수 없는 에러
 
 public class Test03_exception {

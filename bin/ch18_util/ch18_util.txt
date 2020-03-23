@@ -1,0 +1,283 @@
+01-----------------------------------------------------------------------------------
+
+Wrapper Class ??
+    >> 원시자료형의 클래스
+
+자료형      래퍼클래스
+boolean     Boolean
+byte        Byte
+char        Character
+short       Short
+int         Integer
+long        Long
+float       Float
+double      Double
+
+02-----------------------------------------------------------------------------------
+
+Hashtable 
+
+key를 입력하면  hashfuction을 거쳐  hash값으로 변경.
+해시테이블은  2컬럼 <해시(hash)> <값(value)>
+
+ex)
+Hashtable<String, Object> ht = new Hashtable<String, Object>();
+제네릭으로 hash, value 자료형 설정.
+
+//입력
+ht.put("id", "kim");
+ht.put("id", "lee");  // 덮어씌우기
+
+key // hash는 1:1이어야 한다.
+다른 key >> 같은 hash ?? ==> 해시충돌
+
+//검색
+ht.get("id")    >>> "kim"
+
+
+03 04 05-----------------------------------------------------------------------------------
+
+Calendar cal = Calendar.getInstance();// 객체 생성
+
+Date date1 = cal.getTime(); // date 형식으로
+
+int y1 = cal.get(Calendar.YEAR);
+int m1 = cal.get(Calendar.MONTH) + 1; // month 0~11로 출력
+int d1 = cal.get(Calendar.DATE);
+
+///// 날짜 형식 선언
+SimpleDateFormat sd1
+    = new SimpleDateFormat("yyyy년 MM월 dd E요일  HH시 mm분 ss초");
+
+sd1.format(date1)   >> 정해진 형식의 String으로 날짜 출력
+
+
+
+06 07-----------------------------------------------------------------------------------
+
+StringBuffer sb = new StringBuffer();
+
+sb.append("hello");
+sb.append("good"); // 문자열이 계속 이어붙는다.
+
+System.out.println(sb.toString());  // "hellogood"
+System.out.println(sb.length());    // 문자열 길이
+System.out.println(sb.capacity());  // 할당된 메모리 길이   ?16단위?
+
+
+String << StringBuffer << StringBuilder 순으로 빠르다
+단순작업 측정시 600배 정도?
+
+StringBuilder는 쓰레드 불안전 ..... StringBuffer 쓴다.
+
+
+08-----------------------------------------------------------------------------------
+ 
+Vector<String> vec = new Vector<String>();
+제네릭으로 선언
+쓰레드 안전
+길이 맘대로 조절. >> 동적 배열
+
+vec.add("hello");  // index 없이 막 쑤셔넣는다.
+
+vec.get(i)
+조회할때는 index로 조회가능 
+
+vec.size() 
+크기 int
+
+
+
+09-----------------------------------------------------------------------------------
+
+private 변수 +  게터세터 method  = DTO
+
+    private String id;
+    private String pwd;
+    private String name;
+    private String email;
+    private String hp;
+    private String addr;
+
+    public String getId() {
+        return this.id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+    
+
+10-----------------------------------------------------------------------------------
+
+토크나이저  >> 문자열 파싱
+
+StringTokenizer st
+    = new StringTokenizer("김떡순|짬짜면|삼선짬뽕|울면", "|");
+
+StringTokenizer st2
+    = new StringTokenizer("안녕1헬로1ㅋㅋㅋ1김철수1짜장면", "1");
+
+연결된 하나의 string , 구분자
+
+String s[] = st.split("|");
+>> StringTokenizer st 를  "|" 으로 나눠서,  배열 String s[]에 넣는다.
+
+
+
+
+11 12-----------------------------------------------------------------------------------
+
+Properties ???  
+>> 수정 가능성이 있는 매개값을 외부 파일로...
+   유지보수 편리하다 (수정시 컴파일 불필요)
+ex) 다국어 메세지, 
+
+Properties pro = new Properties();
+
+    pro.put("driver", "com.mysql.jdbc.Driver");
+    pro.put("url", "jdbc:mysql://localhost:3306/mydb");
+    pro.put("user", "root");
+    pro.put("pwd", "q1w2e3");
+
+////////////////////////////////////////////
+#"DB.properties"
+
+user=root
+url=jdbc:mysql://localhost:3306/mydb
+driver=com.mysql.jdbc.Driver
+pwd=q1w2e3
+////////////////////////////////////////////
+
+//값 가져오기
+String driver = pro.getProperty("driver");
+
+// enum 이용한 출력
+
+Enumeration en = pro.propertyNames();
+
+    while (en.hasMoreElements()) {
+        String k = (String) en.nextElement();
+        String v = pro.getProperty(k);
+
+        System.out.println(k + " : " + v);
+    }
+
+// 한방에 출력
+
+pro.list(System.out);
+
+
+
+
+13-----------------------------------------------------------------------------------
+
+Object
+// protected Object clone() 객체 복사
+
+// public Class getClass()
+// 객체 클래스 이름 class형으로 반환
+
+// public String toString 객체를 문자열로 반환한다.
+
+// public void notify() 현제 스레드 완료 알림
+
+// public void notifyAll() 현재 스레드 완료 모두에게 알림
+
+// public void wait() 현제 스레드 기다리게...(대기상태)
+
+
+
+14-----------------------------------------------------------------------------------
+
+Object clone
+implements Cloneable 
+
+Test14_Object_clone A = new Test14_Object_clone("AAA");
+System.out.println(A.toString());
+System.out.println(A.getClass());
+System.out.println(A.hashCode());
+
+// 객체복사
+Test14_Object_clone B = (Test14_Object_clone) A.clone();
+System.out.println(B.toString());
+System.out.println(B.getClass());
+System.out.println(B.hashCode());
+
+AAA입니다
+class ch18_util.Test14_Object_clone
+118352462
+AAA입니다
+class ch18_util.Test14_Object_clone
+1550089733
+
+toStrin, getClass 같다
+
+hashcode는 다르다
+
+
+15-----------------------------------------------------------------------------------
+
+String s1 = "hello";
+String s2 = "hello";
+String ss = "Hello";
+
+String s3 = new String("hello");
+String s4 = new String("hello");
+
+System.out.println(s1 == s2); // true 같은 글자 > 같은 메모리
+System.out.println(s3 == s4); // false 객체생성 > 다른 메모리
+System.out.println(s1 == ss); // false 다른 글자 > 다른 메모리
+
+System.out.println(s1.hashCode()); // 99162322
+System.out.println(s2.hashCode()); // 99162322
+// 그냥 변수일때...같은 값이면 같은 메모리 참조
+
+# java에서 같은 값이 문자열. 메모리 한 위치에 저장.
+# 같은 값을 가지는 String은 전부 그 메모리위치를 참조한다.
+
+# 그냥 String 변수... ==으로 비교 가능
+ 왜?  메모리 위치까지도 똑같으니까
+
+# new String으로 선언된 객체... == 비교 불가
+ 왜?  별도의 객체니까.
+ equals로 비교한다.
+
+
+16-----------------------------------------------------------------------------------
+
+.concat()   이어붙이기
+.length()   길이 int값 리턴하는 메소드
+.replace(char , char)       앞에꺼 찾아서 뒤에껄로 변경
+.replace(String, String)
+
+.toUpperCase    모두 대문자로
+.toLowerCase    모두 소문자로
+
+
+17-----------------------------------------------------------------------------------
+
+
+
+
+18-----------------------------------------------------------------------------------
+
+
+
+
+19-----------------------------------------------------------------------------------
+
+
+
+
+20-----------------------------------------------------------------------------------
+
+
+
+
+21-----------------------------------------------------------------------------------
+
+
+
+
+

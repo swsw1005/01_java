@@ -1,23 +1,33 @@
 package ch15_event;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import java.util.*;
 
 public class DatePrint {
 
     // custom***
     // 날짜 데이터 포맷
-    SimpleDateFormat yyyymmdd = new SimpleDateFormat("yyyy-MM-dd  HH:mm:ss");
+    SimpleDateFormat yyyymmdd = new SimpleDateFormat(
+            "yyyy년 MM월 dd일 E요일 HH:mm:ss");
     // 최종출력되는 날짜
     String date;
 
     public String sysdate() {
-        Calendar today_cal = new GregorianCalendar();
-        Date today_date = today_cal.getTime();
+        Date today_date = new Date();
         // date에 시스템 날짜 넣어주기
         date = yyyymmdd.format(today_date);
+        return date;
+    }
+
+    public String sysdateOnly() {
+        Calendar today_cal = Calendar.getInstance();
+
+        int y = today_cal.get(Calendar.YEAR);
+        int m = today_cal.get(Calendar.MONTH);
+        int d = today_cal.get(Calendar.DATE);
+        today_cal.set(y, m, d, 0, 0, 0);
+        Date todayDate = today_cal.getTime();
+        date = yyyymmdd.format(todayDate);
         return date;
     }
 
@@ -88,8 +98,7 @@ public class DatePrint {
 
     // 기본 생성자 - sysdate
     public DatePrint() {
-        Calendar today_cal = new GregorianCalendar();
-        Date today_date = today_cal.getTime();
+        Date today_date = new Date();
         // date에 시스템 날짜 넣어주기
         date = yyyymmdd.format(today_date);
     }
