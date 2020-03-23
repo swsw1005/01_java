@@ -6,6 +6,62 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test10_map",
+      "request": "launch",
+      "mainClass": "ch19_util2.Test10_map",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test09_set_Lotto",
+      "request": "launch",
+      "mainClass": "ch19_util2.Test09_set_Lotto",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test07_Collection_set",
+      "request": "launch",
+      "mainClass": "ch19_util2.Test07_Collection_set",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test06_Scanner",
+      "request": "launch",
+      "mainClass": "ch19_util2.Test06_Scanner",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test05_Scanner",
+      "request": "launch",
+      "mainClass": "ch19_util2.Test05_Scanner",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test04_AutoUnboxing",
+      "request": "launch",
+      "mainClass": "ch19_util2.Test04_AutoUnboxing",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test03_enhanced_for",
+      "request": "launch",
+      "mainClass": "ch19_util2.Test03_enhanced_for",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test17_Random",
+      "request": "launch",
+      "mainClass": "ch18_util.Test17_Random",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test02_Generic",
       "request": "launch",
       "mainClass": "ch19_util2.Test02_Generic",

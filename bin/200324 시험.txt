@@ -77,9 +77,31 @@ return없는 유일한 메소드
   >> 오버로딩 가능하다
   >> 매개변수 순서, 종류, 갯수 등 달라야 한다.
 --------------------------------------------------------
-9.
---------------------------------------------------------
+9. 다음 ArrayList의 값을 출력하되 단축for문으로 출력하는 프로그램을 완성하시오.[10점]
 
+List<String> list = new ArrayList<String>()// 객체생성
+list.add("피자");
+list.add("치킨");
+list.add("사이다");
+list.add("신라면");
+list.add("콜라");
+
+for(   ①   ){
+    System.out.println(   ②   );
+--------------------------------------------------------
+답:① String s:list
+   ② s
+
+List<String> list = new ArrayList<String>();
+	list.add("피자");
+	list.add("치킨");
+	list.add("사이다");
+	list.add("신라면");
+	list.add("콜라");
+	
+	for(String s:list){
+		System.out.println(s);
+	}
 --------------------------------------------------------
 10. 나눠지는 숫자 int num 이  0일때
     ArithmeticException 발생한다.
