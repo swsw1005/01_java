@@ -1,0 +1,24 @@
+sychronized 제한자
+wait() notify() notifyAll()
+이용하여
+스레드 수행순서 조정
+
+
+class MyThread {
+
+    synchronized void put(char c) {
+        while ( 작업을 할수 없는 동안  ) {
+            try {
+                wait(); //기다린다
+            } catch (Exception e) { }
+        }
+    //모두에게 알린다.
+        notifyAll();
+
+        return ch;
+    }
+}
+
+주 클래스   Test05_Thread   product 생성
+생성클래스  Product         house put() 호출
+소비클래스  Consumer        house get() 호출

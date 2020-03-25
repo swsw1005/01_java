@@ -1,0 +1,26 @@
+java
+｜
+웹 프로그램   servlet
+｜           jsp
+｜           mvc 프레임워크
+｜           mvc 팀프로젝트
+｜
+스프링       sts (Spring Tool Suite) 프레임워크..설정만 하면 끝 (maven, )
+｜           myBatis(DB처리)
+｜           MVC
+｜
+MVC ??      
+    Model       (DTO, DAO, DB처리)
+    View        웹(HTML, CSS, JS) JSP, Ajax
+    Controller  servlet
+
+
+
+    Thread
+    Swing
+    Network
+    DB연결
+    MariaDB
+
+
+    jQuery Ajax JSON  XML

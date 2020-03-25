@@ -6,6 +6,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Test01_swing",
+      "request": "launch",
+      "mainClass": "ch21_swing.Test01_swing",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test05_Thread",
+      "request": "launch",
+      "mainClass": "ch20_thread.Test05_Thread",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test04_Thread",
+      "request": "launch",
+      "mainClass": "ch20_thread.Test04_Thread",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test03_Thread_sleep",
+      "request": "launch",
+      "mainClass": "ch20_thread.Test03_Thread_sleep",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test02_Thread",
+      "request": "launch",
+      "mainClass": "ch20_thread.Test02_Thread",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SW_Test01",
+      "request": "launch",
+      "mainClass": "ch20_thread.SW_Test01",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01_Thread",
+      "request": "launch",
+      "mainClass": "ch20_thread.Test01_Thread",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test10_map",
       "request": "launch",
       "mainClass": "ch19_util2.Test10_map",

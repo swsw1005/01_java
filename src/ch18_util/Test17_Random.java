@@ -45,5 +45,7 @@ public class Test17_Random {
         System.out.println(rd.nextBoolean());
         System.out.println(rd.nextDouble());
 
+        sc.close();
+
     }
 }
