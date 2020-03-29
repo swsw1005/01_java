@@ -9,7 +9,7 @@ public class Test01_io {
 
         try {
 
-            fw = new FileWriter("src //ch17_io //txt //a1.txt");
+            fw = new FileWriter("src//ch17_io//txt//a1.txt");
             for (int i = 0; i < 5; i++) {
                 fw.write("줄번호 : " + i + "\n");
 

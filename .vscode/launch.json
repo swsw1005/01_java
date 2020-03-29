@@ -6,6 +6,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - InetAddressDemo",
+      "request": "launch",
+      "mainClass": "ch23_network.InetAddressDemo",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test06_table",
+      "request": "launch",
+      "mainClass": "ch21_swing.Test06_table",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test05_table",
+      "request": "launch",
+      "mainClass": "ch21_swing.Test05_table",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test04_button_img",
+      "request": "launch",
+      "mainClass": "ch21_swing.Test04_button_img",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test03_awt_dialog",
+      "request": "launch",
+      "mainClass": "ch21_swing.Test03_awt_dialog",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test02_msgDialog",
+      "request": "launch",
+      "mainClass": "ch21_swing.Test02_msgDialog",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test01_swing",
       "request": "launch",
       "mainClass": "ch21_swing.Test01_swing",

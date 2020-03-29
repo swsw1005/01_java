@@ -10,7 +10,7 @@ public class Test02_fileR {
 
         try {
 
-            fr = new FileReader("src //ch17_io //txt //a1.txt");
+            fr = new FileReader("src//ch17_io//txt//a1.txt");
 
             int a;
 
@@ -24,6 +24,7 @@ public class Test02_fileR {
             System.out.println(b);
 
         } catch (IOException ex1) {
+            System.out.println("ex1");
             System.out.println(ex1);
 
         } finally { // 무조건 실행
@@ -33,6 +34,8 @@ public class Test02_fileR {
                     fr.close();
                 }
             } catch (Exception ex2) {
+                System.out.println("ex2");
+                System.out.println(ex2);
             }
 
         } // try catch finally end
