@@ -1,0 +1,19 @@
+
+클라이언트
+MainClient.java 처리내용
+RoomClient.java     대화창
+
+서버
+Room.java
+Server.java
+
+model1.setRowCount(0)   테이블 내용 삭제 (행 카운트 0으로 만들어 없애버린다)
+model1.addRow(String[] rowData) 행 추가
+model1.removeRow(int rowNum)
+
+getSelectedRow()    선택한 행 index 리턴
+
+table.getValueAt(int rowIndex, int colIndex)   해당 셀 값 리턴
+table.setValueAt(int rowIndex, int colIndex)   해당 셀 값 설정
+
+table.addMouseListener()

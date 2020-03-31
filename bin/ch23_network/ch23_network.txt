@@ -1,0 +1,89 @@
+네트워크
+
+TCP/IP 프로토콜(규약)에 의해 연결되어 있다.
+
+
+소켓    네트워크 연결하는 "점"
+
+TCP/IP(Transmission Control Protocol/ Intent Protocol : 통신망 접속 표준 통신 규약
+서로 다른 기계나 네트워크가 통신하기위해 필요한 프로토콜의 집합
+
+목적지 주소, 포트 번호 NEED     ex) 192.163.123.12:8080
+
+@@ 사용중인 포트 확인 방법
+Windows \ system32 \ drivers \ etc \ services  을 메모장으로 
+
+netstat -ano | findstr \[::]\:
+PID번호 >> 작업관리자: 서비스 목록에서 상호 대조
+
+TCP/IP 방식 >> 전화처럼...
+    장점    안정적, 데이터 무결성 , 정확성
+    단점    속도가 조금 느리다.
+
+UDP 방식    >> 이메일처럼...
+    장점    속도, 효율적
+    단점    데이터 무결성, 정확성 보장 못한다.
+
+
+DatagramPacket
+        UDP와 같은 비연결형 프로토콜에 사용되는 데이터그램
+DatagramSocket
+        데이터그램의 전송고 송수신을 위해 사용된다
+ServerSocket
+        TCP와 같은 연결형 프로코콜의 서버에서 사용된다
+Socket
+        연결형 프로토콜의 서버와 클라이언트에서 사용된다
+
+
+@@
+class ServerSocket	명시된 로컬포트로 서버 소켓을 생성한다
+    accept()	서버 소켓상의 연결을 가져온다(client로부터 들어오는 요청을 받는 메서드)
+    close()	    서버 소켓을 닫는다
+    getInetAddress()	서버 소켓이 생성된 컴퓨터의 주소를 가져온다
+    getLocalport()	서버 소켓의 로컬 포트 번호를 읽어온다
+
+
+@@
+class Socket	명시한 특정 목적지에 대한 소켓을 생성한다
+                client와 server 간의 데이터 교환하는데 사용
+    close()	소켓을 닫는다
+    getInputStream()	소켓에 대한 입력 스트림을 생성한다
+    getOutputStream()	소켓에 대한 출력 스트림을 생성한다
+    getInetAddress()	소켓이 연결된 원격 호스트의 주소를 얻는다
+    getLocalPort()	소켓의 로컬 포트를 읽어온다
+    getPort()	소켓으로 데이터를 송수신하는 원격 포트번호를 읽어온다
+
+
+String getHostAddesss()
+         : 주소 정보를 가진 문자열을 반환 ( ip )
+
+String getHostNames()
+         : 호스트이름을 가진 문자열을 반환한다 ( 도메인이름 )
+
+Inetaddress getByName() throws UnknownHostException
+         : 메서드는 DNS에서 제공하는 정보를 사용하는 이름(DNS)을 주소(ip)로 반환한다
+
+InetAddresss[] getAllByName() throws UnknownHostException
+         : ip와 DNS모두 리턴한다
+
+
+-------------------------------------------------
+
+Socket          전화기
+Port            전화선
+IP Address      전화번호
+
+???????????????
+mode1.setRowCount(0); 테이블 내용 삭제 
+model.addRow(rowData ); rowData 추가 
+model.removeRow(행): 행 제거 
+
+int row=table.getSelectedRow(); // 행을 얻는다
+
+table.getValueAt(행,열); 값을 얻는다
+table.setValueAt("값",행,열) : 행열에 값 설정
+
+String name=(String)table.getValueAt(row,col);
+
+table.addMouseListener();
+

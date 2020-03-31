@@ -6,6 +6,76 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Middle_macro",
+      "request": "launch",
+      "mainClass": "ch23_network.Middle_macro",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MainClient",
+      "request": "launch",
+      "mainClass": "ch24_network.MainClient",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - RoomClient",
+      "request": "launch",
+      "mainClass": "ch24_network.RoomClient",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01",
+      "request": "launch",
+      "mainClass": "ch03_oper.Test01",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MiddleServer_sw",
+      "request": "launch",
+      "mainClass": "ch23_network.MiddleServer_sw",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MiddleServer",
+      "request": "launch",
+      "mainClass": "ch23_network.MiddleServer",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MiddleClient",
+      "request": "launch",
+      "mainClass": "ch23_network.MiddleClient",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SimpleClient",
+      "request": "launch",
+      "mainClass": "ch23_network.SimpleClient",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - BoardList",
+      "request": "launch",
+      "mainClass": "swsw.jdbc.BoardList",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SimpleServer",
+      "request": "launch",
+      "mainClass": "ch23_network.SimpleServer",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - InetAddressDemo",
       "request": "launch",
       "mainClass": "ch23_network.InetAddressDemo",

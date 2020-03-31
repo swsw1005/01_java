@@ -37,7 +37,6 @@ public class Test05_img extends Frame {
 
         g.drawImage(im, 0, 0, this);
         // g.drawImage(im2, 30, 500, this);
-        // TODO 상대경로
 
     }
 

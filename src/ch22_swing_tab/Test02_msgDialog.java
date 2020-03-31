@@ -6,6 +6,10 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class Test02_msgDialog extends JPanel implements ActionListener {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = -7793223181180652229L;
 	// 변수
 	JButton b1, b2, b3;
 

@@ -16,7 +16,7 @@
 	  │		    │
 	  │		    │
 	  │	                │
-	  │        	    └─논리형 - boolean ( true / false)
+	  │        	    └─논리형 - boolean ( true / false)  1bit
 	  │
 	  │
 	  ├─레퍼런스형 ┬ 클래스 - String,System,Integer,Long, Float, Double
@@ -26,6 +26,9 @@
 	  │
 	  └─무치형 - void
 
+shift 연산
+
+<<
 
 
 =========================================================================

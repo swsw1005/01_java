@@ -21,6 +21,7 @@ class MyThread01 extends Thread {
         for (char ch = 'A'; ch <= 'Z'; ch++) {
             System.out.print(ch);
         }
+        System.out.println("---m end---");
     }
 }
 
@@ -29,5 +30,6 @@ class YourThread01 extends Thread {
         for (char ch = 'a'; ch <= 'z'; ch++) {
             System.out.print(ch);
         }
+        System.out.println("---y end---");
     }
 }

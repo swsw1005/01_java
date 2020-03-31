@@ -14,7 +14,6 @@ public class Test03_win extends Frame {
         // 이벤트 등록
         addWindowListener(new WindowAdapter() {
             // 이름없는 class
-            @override
             public void windowClosing(WindowEvent we) {
                 System.exit(1);
             }
@@ -25,4 +24,5 @@ public class Test03_win extends Frame {
     public static void main(String[] args) {
         new Test03_win();
     }
+
 }

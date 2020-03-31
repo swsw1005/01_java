@@ -5,12 +5,9 @@ import java.util.Arrays;
 public class Solution {
     public int[] solution(int[] array, int[][] commands) {
 
-        // array
-        // [1, 5, 2, 6, 3, 7, 4]
-        // commands
-        // [[2, 5, 3], [4, 4, 1], [1, 7, 3]]
-        // return
-        // [5, 6, 3]
+        // array [1, 5, 2, 6, 3, 7, 4]
+        // commands [[2, 5, 3], [4, 4, 1], [1, 7, 3]]
+        // return [5, 6, 3]
 
         // int array[] = { 1, 5, 2, 6, 3, 7, 4 };
         // int commands[][] = { { 2, 5, 3 }, { 4, 4, 1 }, { 1, 7, 3 } };

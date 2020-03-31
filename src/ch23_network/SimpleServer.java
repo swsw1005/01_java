@@ -18,7 +18,7 @@ public class SimpleServer {
         try {
 
             ss = new ServerSocket(7777);
-            System.out.println("서버구동중");
+            System.out.println("24 서버접속하셨습니다.");
 
         } catch (Exception ex) {
 

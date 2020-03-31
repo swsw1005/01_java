@@ -6,6 +6,10 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class Test04_button extends Panel implements ActionListener {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = -8028886746690824546L;
 	// 변수
 	Image img;
 	int num = 4;

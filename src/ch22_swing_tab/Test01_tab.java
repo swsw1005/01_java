@@ -5,6 +5,10 @@ import java.awt.*;
 import javax.swing.*;
 
 public class Test01_tab extends JFrame {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = -1617441923749086308L;
 	// 변수
 	Test02_msgDialog t1 = new Test02_msgDialog();// 2번 불러오기
 	Test04_button t2 = new Test04_button();// 4번 불러오기

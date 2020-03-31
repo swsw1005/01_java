@@ -18,6 +18,8 @@ public class Test04_Thread {
         mt2.start();
         mt3.start();
 
+        sc.close();
+
     }
 }
 

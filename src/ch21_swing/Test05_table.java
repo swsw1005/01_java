@@ -1,6 +1,5 @@
 package ch21_swing;
 
-import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
@@ -29,7 +28,7 @@ public class Test05_table extends JFrame implements ActionListener {
 
         JScrollPane jSPane = new JScrollPane(table);
 
-        this.getContentPane().add(jSPane, "Center");// TODO 오류
+        this.getContentPane().add(jSPane, "Center");
         setSize(500, 500);
         setVisible(true);
 

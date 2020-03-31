@@ -58,14 +58,6 @@ public class Test02_Hashtable {
         System.out.println(k);
         System.out.println("-----");
 
-        String k1 = (k - 1) + "";
-        String k2 = (k) + "";
-        String k3 = (k + 1) + "";
-
-        // System.out.println(hb2.get(k1));
-        // System.out.println(hb2.get(k2));
-        // System.out.println(hb2.get(k3));
-
         System.out.println(hb2.get(k - 1));
         System.out.println(hb2.get(k));
         System.out.println(hb2.get(k + 1));

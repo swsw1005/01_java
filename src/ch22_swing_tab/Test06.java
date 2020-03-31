@@ -7,6 +7,10 @@ import javax.swing.*;
 import javax.swing.table.*;//DefaultTableModel
 
 public class Test06 extends JPanel implements ActionListener, MouseListener {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = -2751642384450247872L;
 	// 변수
 	JButton bu;
 	JPanel pa;
