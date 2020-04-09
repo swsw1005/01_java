@@ -6,24 +6,85 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - BanBatch",
+      "request": "launch",
+      "mainClass": "swsw.ch02.BanBatch",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LottoTest",
+      "request": "launch",
+      "mainClass": "swsw.ch02.LottoTest",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - GuestBook",
+      "request": "launch",
+      "mainClass": "ch25_db.GuestBook",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Test01",
+      "request": "launch",
+      "mainClass": "ch25_db.Test01",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Collection",
+      "request": "launch",
+      "mainClass": "ch19_util2.Collection",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Lotto",
+      "request": "launch",
+      "mainClass": "swsw.ch02.Lotto",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MainClient_sw",
+      "request": "launch",
+      "mainClass": "ch24_network.sw.MainClient_sw",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Server",
+      "request": "launch",
+      "mainClass": "ch24_network.Server",
+      "projectName": "01_java",
+      "encoding": "ms949"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Middle_macro",
       "request": "launch",
       "mainClass": "ch23_network.Middle_macro",
-      "projectName": "01_java"
+      "projectName": "01_java",
+      "encoding": "ms949"
     },
     {
       "type": "java",
       "name": "CodeLens (Launch) - MainClient",
       "request": "launch",
       "mainClass": "ch24_network.MainClient",
-      "projectName": "01_java"
+      "projectName": "01_java",
+      "encoding": "ms949"
     },
     {
       "type": "java",
       "name": "CodeLens (Launch) - RoomClient",
       "request": "launch",
       "mainClass": "ch24_network.RoomClient",
-      "projectName": "01_java"
+      "projectName": "01_java",
+      "encoding": "ms949"
     },
     {
       "type": "java",

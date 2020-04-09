@@ -1,0 +1,99 @@
+217 EJB
+오라클
+drop table board;
+
+create table board(
+seq number primary key,
+name varchar2(20) not null,
+passwd varchar2(10) not null,
+title varchar2(50) not null,
+content varchar(4000) not null,
+regdate date not null,
+readcount number not null);
+
+drop sequence board_seq;
+create sequence board_seq;
+
+insert into board values(board_seq.NEXTVAL,'박문수','p123','제목','안녕하세요','2016-08-28',0);
+insert into board values(board_seq.NEXTVAL,'ppp','p123','제목','안녕하세요',sysdate,0);
+
+select board_seq.CURRVAL from dual;
+
+seq : 일련번호
+name : 작성자
+passwd : 암호
+title  : 글제목
+content : 글내용
+regdate : 날짜
+readcount : 조회수 
+
+224 EJB
+
+con=DRiverManager.getConnection(URL,USER,PASS);
+pstmt=con.prepareStatement("insert into board vaules(board_seq.NEXTVAL,?,?,?,empty_clob(),?,0)");
+
+pstmt.setString(1,boardBean.getName());
+pstmt.setString(2,boardBean.getPasswd());
+pstmt.setString(3,boardBean.getTitle());
+pstmt.setString(4,boardBean.getCurrentTimestamp());
+
+pstmt.executeUpdate();
+pstmt.close();
+
+
+
+일련번호 구하려고 
+
+pstmt=con.prepareStatement("select board_seq.CURRVAL from dual");
+rs=ps.executeQuery();
+rs.next();
+int iseq=rs.getInt(1);
+
+pstmt=prepareStatement("select content from board where seq=? for update");
+pstmt.setInt(1,iseq);
+rs=pstmt.executeQuery();
+rs.next()
+
+java.sql.Clob clob_content=rs.getClob();
+
+/*
+board_seq.CURVAL로 구한 주키값을 이용해서 게시판에 바로전에 저장된 
+content 컬럼 값을선택(select)한다
+
+select 문뒤에 "for update" 는 키워드 select 문을 수정하기 위해호출 
+ResultSet에 getClob() 메소드는 clob형식의 저장된 값을 참조(reference) 하는
+java.sql.Clob 객체를 반환한다 
+
+
+*/
+글내용 처리 clob
+Writer writer=((weblogic.jdbc.common.OracleClob)clob_content),getCharacteroutputStream();
+StringReader sr=new StringReader(boardBean.getcontent());
+
+char buffer[]=new char[512];
+int cnt=0;
+
+while((cnt=sr.read(buffer))!=-1)
+{
+writer.write(buffer,0,cnt);
+}
+sr.close();
+writer.close();
+
+
+226 EJB 참조 
+
+
+주키 key 값은  board_seq sequensce 를 이용해서 
+자동으로 저장되게 했다 
+
+pstmt=con.prapareStatement("select board_seq.CURRVAL from dual");
+rs=pstmt.executeQuery();
+rs.next();
+int iseq=rs.getInt()
+
+board_seq.NEXTVAL 에서 사용하려고 
+board_seq.CURRVAL을 이용해서 방금전에 자동으로 생성된 sequence값을 구한다
+sequence에  포함된 CURRVAL 속성은
+같은 트랜잭션 내에서 NEXTVAL에서 호출한
+뒤에만 호출할 수 있다

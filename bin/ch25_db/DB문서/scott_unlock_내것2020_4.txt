@@ -1,0 +1,19 @@
+OracleXE
+
+c:\>sqlplus system/Dhfkzmf123
+sql>@C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin\scott.sql
+
+ctrl + c
+
+
+c:\>sqlplus system/12345
+
+sql>alter user scott identified by tiger account unlock;
+
+ctrl + c
+
+c:\>sqlplus scott/tiger
+ 
+
+orcl : sid (db¸í)
+xe   : sid (db¸í)

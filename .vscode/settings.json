@@ -3,5 +3,6 @@
   "sqltools.useNodeRuntime": true,
   "java.dependency.packagePresentation": "hierarchical",
   "java.dependency.syncWithFolderExplorer": true,
-  "editor.fontFamily": " JetBrains Mono, Consolas, 'Courier New', monospacear"
+  "editor.fontFamily": " JetBrains Mono, Consolas, 'Courier New', monospacear",
+  "java.format.settings.url": "eclipse-formatter.xml"
 }

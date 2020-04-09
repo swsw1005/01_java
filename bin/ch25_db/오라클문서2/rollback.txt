@@ -1,0 +1,17 @@
+Transaction(트랜잭션)
+
+메서드()
+{
+
+  conn.setAutoCommit(false);
+
+  try {
+         update 실행  =>   KB은행에서 10억을 꺼내어
+         update 실행  =>   우리 은행으로 넣는 작업을 할때 
+         conn.commit();
+
+       } catch(SQLException e) 
+       {
+            conn.rollback();
+       }
+}

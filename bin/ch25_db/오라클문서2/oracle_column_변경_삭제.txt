@@ -1,0 +1,20 @@
+
+ALTER TABLE table이름  RENAME  COLUMN  COLUMN명 TO NEW-COLUMN 명;
+
+
+컬럼명 바꾸기
+ALTER TABLE test  RENAME COLUMN name TO irum ;
+
+
+컬럼수정
+
+alter table  test  modify ( tax number(10,2)  ) ;
+
+
+컬럼 삭제
+
+Alter table  test  Drop (tax);
+
+
+컬럼추가
+Alter table  test  add ( tax number(10,2)  default 2000  );

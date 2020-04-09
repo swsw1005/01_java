@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src" />
 	<classpathentry kind="lib" path="lib/ext/hong.jar" />
 	<classpathentry kind="lib" path="lib/ojdbc6.jar" />
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.0.8-bin.jar" />
 	<classpathentry kind="output" path="bin" />
 </classpath>

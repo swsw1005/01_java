@@ -1,0 +1,21 @@
+orcl에서는 
+c:>sqlplus system/j12345
+
+sql>ALTER USER scott ACCOUNT UNLOCK;
+
+
+
+
+웹 에서 접속 
+system
+j12345
+
+계정 과 권한 부여
+
+create user   j77 
+identified by j77
+default   tablespace users
+temporary tablespace temp;
+
+grant connect, resource
+to    j77;

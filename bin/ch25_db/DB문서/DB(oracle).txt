@@ -1,0 +1,336 @@
+C:\Users\swsw1>sqlplus system/q1w2e3
+
+SQL*Plus: Release 11.2.0.2.0 Production on 월 4월 6 10:46:19 2020
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+
+SQL> alter user scott identified by tiger account unlock;
+
+User altered.
+
+SQL> connect scott/tiger        다른 계정으로 접속하기
+Connected.
+
+SQL> show user
+USER is "SCOTT"
+
+
+
+SQL> desc member;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL VARCHAR2(20)
+ PW                                        NOT NULL VARCHAR2(20)
+ NAME                                      NOT NULL VARCHAR2(30)
+ GENDER                                             VARCHAR2(6)
+ BIRTH                                              DATE
+ TEL                                                VARCHAR2(13)
+ EMAIL                                     NOT NULL VARCHAR2(50)
+ REGDATE                                            DATE
+ CONDATE                                            DATE
+ STATUS                                             VARCHAR2(6)
+ PHOTO                                              VARCHAR2(50)
+ NEWMSGCNT                                          NUMBER
+ GRADENO                                            NUMBER(2)
+
+
+
+SQL> select * from grade;
+
+   GRADENO GRADENAME
+---------- ----------------------------------------
+         1 인턴
+         2 사원
+         3 대리
+         4 과장
+         5 차장
+         6 부장
+         7 상무
+         8 전무
+         9 사장
+
+9 rows selected.
+
+
+SQL>  select m.id, m.name, m.gradeno, g.gradename 
+      FROM member m, grade g
+      where m.gradeno = g.gradeno;
+
+ID                  NAME            GRADENO     GRADENAME
+-----------------------------------------------------------
+kwon123             Kwon            1           인턴
+im123               Im              1           인턴
+song123             song            9           사장
+admin               관리자           9           사장
+
+
+8 rows selected.
+
+
+SQL> select empno, ename, sal+nvl(comm,0) from emp;
+
+     EMPNO ENAME                                    SAL+NVL(COMM,0)
+---------- ---------------------------------------- ---------------
+      7839 KING                                              805000
+      7566 JONES                                               2975
+      7902 FORD                                                3000
+      7369 SMITH                                                800
+      7698 BLAKE                                               2850
+      7499 ALLEN                                               1900
+      7521 WARD                                              402150
+      7654 MARTIN                                              2650
+      7782 CLARK                                               2450
+      7788 SCOTT                                                800
+      7844 TURNER                                              1500
+
+     EMPNO ENAME                                    SAL+NVL(COMM,0)
+---------- ---------------------------------------- ---------------
+      7876 ADAMS                                                800
+      7900 JAMES                                                950
+      7934 MILLER                                              1300
+
+14 rows selected.
+
+
+SQL> select ename, sal from emp where sal>=20000;
+
+ENAME                                           SAL
+---------------------------------------- ----------
+KING                                         805000
+WARD                                         401650
+
+
+
+
+SQL> select ename, deptno from emp where ename LIKE 'A%';
+
+ENAME                                        DEPTNO
+---------------------------------------- ----------
+ALLEN                                            30
+ADAMS                                            20
+
+
+SQL> select ename, sal, hiredate from emp where hiredate>='1982/01/01';
+
+ENAME                                           SAL HIREDATE
+---------------------------------------- ---------- --------
+MILLER                                         1300 82/01/23
+
+
+SQL> select ename, sal, hiredate, substr(hiredate,1,2) from emp where hiredate>='1982/01/01';
+
+ENAME                                           SAL HIREDATE SUBSTR(HIREDATE,
+---------------------------------------- ---------- -------- ----------------
+MILLER                                         1300 82/01/23 82
+
+
+
+
+SQL> select ename, hiredate,substr(hiredate,1,2) hire2 from emp where substr(hiredate,1,2)=82;
+
+ENAME                                    HIREDATE HIRE2
+---------------------------------------- -------- ----------------
+MILLER                                   82/01/23 82
+
+
+
+SQL> select count(*) from emp;
+
+  COUNT(*)
+----------
+        14
+
+
+
+SQL> select ename from emp where ename like '%R%';
+
+ENAME
+----------------------------------------
+FORD
+WARD
+MARTIN
+CLARK
+TURNER
+MILLER
+
+6 rows selected.
+
+
+
+SQL> select count(*) from emp where ename like '%R%';
+
+  COUNT(*)
+----------
+         6
+
+
+
+SQL> select rownum rnum, empno, ename from emp where rownum>=1 and rownum<=10;
+
+      RNUM      EMPNO ENAME
+---------- ---------- ----------------------------------------
+         1       7839 KING
+         2       7566 JONES
+         3       7902 FORD
+         4       7369 SMITH
+         5       7698 BLAKE
+         6       7499 ALLEN
+         7       7521 WARD
+         8       7654 MARTIN
+         9       7782 CLARK
+        10       7788 SCOTT
+
+10 rows selected.
+
+
+
+
+
+ select rownum, rnum, empno, ename from  (select rownum rnum, empno, ename from emp) where rownum<=5 and rownum<=10;
+
+ select rnum, empno, ename from (select rownum rnum, empno, ename from emp);
+
+
+SQL>  select rnum, empno, ename from (select rownum rnum, empno, ename from emp);
+
+      RNUM      EMPNO ENAME
+---------- ---------- ----------------------------------------
+         1       7839 KING
+         2       7566 JONES
+         3       7902 FORD
+         4       7369 SMITH
+         5       7698 BLAKE
+         6       7499 ALLEN
+         7       7521 WARD
+         8       7654 MARTIN
+         9       7782 CLARK
+        10       7788 SCOTT
+        11       7844 TURNER
+        12       7876 ADAMS
+        13       7900 JAMES
+        14       7934 MILLER
+
+
+SQL> select rownum rnum, empno, ename from emp;
+
+      RNUM      EMPNO ENAME
+---------- ---------- ----------------------------------------
+         1       7839 KING
+         2       7566 JONES
+         3       7902 FORD
+         4       7369 SMITH
+         5       7698 BLAKE
+         6       7499 ALLEN
+         7       7521 WARD
+         8       7654 MARTIN
+         9       7782 CLARK
+        10       7788 SCOTT
+        11       7844 TURNER
+        12       7876 ADAMS
+        13       7900 JAMES
+        14       7934 MILLER
+
+14 rows selected.
+
+
+SQL> select rnum, empno, ename from (select rownum rnum, empno, ename from emp) where rnum>5;
+
+      RNUM      EMPNO ENAME
+---------- ---------- ----------------------------------------
+         6       7499 ALLEN
+         7       7521 WARD
+         8       7654 MARTIN
+         9       7782 CLARK
+        10       7788 SCOTT
+        11       7844 TURNER
+        12       7876 ADAMS
+        13       7900 JAMES
+        14       7934 MILLER
+
+9 rows selected.
+
+
+SQL> select rnum, empno, ename from ( select rownum rnum, empno, ename from emp) where rnum>5 and rnum<=10;
+
+      RNUM      EMPNO ENAME
+---------- ---------- ----------------------------------------
+         6       7499 ALLEN
+         7       7521 WARD
+         8       7654 MARTIN
+         9       7782 CLARK
+        10       7788 SCOTT
+
+
+SQL> select rnum, empno, ename 
+from( 
+    select rownum rnum, empno, ename 
+    from(
+        select * from emp order by ename desc
+        )
+    )
+    where rnum>5 and rnum<=10;
+
+      RNUM      EMPNO ENAME
+---------- ---------- ----------------------------------------
+         6       7654 MARTIN
+         7       7839 KING
+         8       7566 JONES
+         9       7900 JAMES
+        10       7902 FORD
+
+
+SQL> select rownum rnum, empno, ename
+2      from(
+3          select * from emp order by ename desc
+4          );
+
+      RNUM      EMPNO ENAME
+---------- ---------- ----------------------------------------
+         1       7521 WARD
+         2       7844 TURNER
+         3       7369 SMITH
+         4       7788 SCOTT
+         5       7934 MILLER
+         6       7654 MARTIN
+         7       7839 KING
+         8       7566 JONES
+         9       7900 JAMES
+        10       7902 FORD
+        11       7782 CLARK
+        12       7698 BLAKE
+        13       7499 ALLEN
+        14       7876 ADAMS
+
+14 rows selected.
+
+
+SQL> select rownum rnum, empno, ename
+  2      from(
+  3          select * from emp order by ename desc
+  4          );
+
+      RNUM      EMPNO ENAME
+---------- ---------- ----------------------------------------
+         1       7521 WARD
+         2       7844 TURNER
+         3       7369 SMITH
+         4       7788 SCOTT
+         5       7934 MILLER
+         6       7654 MARTIN
+         7       7839 KING
+         8       7566 JONES
+         9       7900 JAMES
+        10       7902 FORD
+        11       7782 CLARK
+
+      RNUM      EMPNO ENAME
+---------- ---------- ----------------------------------------
+        12       7698 BLAKE
+        13       7499 ALLEN
+        14       7876 ADAMS
+
+14 rows selected.

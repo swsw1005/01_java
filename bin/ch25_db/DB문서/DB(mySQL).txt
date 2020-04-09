@@ -1,0 +1,121 @@
+
+cd C:\Program Files\MySQL\MySQL Server 5.5\bin
+
+....\bin>mysql -u root -h localhost -p
+Enter password: *****
+
+....\bin>mysql -u root -h localhost -p
+Enter password: 12345
+
+mysql> show databases;
+
+mysql> create database mydb;
+
+mysql> use mydb;
+
+show tables; // oracle은 select * from tab;
+
+desc member;
+
+drop table member;
+
+create table member(
+id varchar(30) not null primary key,
+pwd varchar(30) not null,
+name varchar(30) not null
+);
+
+desc member;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | varchar(30) | NO   | PRI | NULL    |       |
+| pwd   | varchar(30) | NO   |     | NULL    |       |
+| name  | varchar(30) | NO   |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.03 sec)
+
+insert into member(id, pwd, name)
+values('lee', '123', '이세진');
+
+insert into member values('lee', '123', '이세진');
+ERROR 1062 (23000): Duplicate entry 'lee' for key 'PRIMARY'
+// -- primary key로 인해 중복으로 인한 에러를 발생시킨다
+
+insert into member values('park','123','박신혜');
+insert into member values('choi','123','최정원');
+insert into member values('kim','123','김지원');
+insert into member values('jo','123','조여정');
+insert into member values('go','123','고준희');
+insert into member values('hwang','123','황승언');
+insert into member values('song','123','송주아');
+insert into member values('lee2','123','이성경');
+insert into member values('im','123','임지연');
+insert into member values('son','123','손나은');
+insert into member values('seo','123','서현진');
+insert into member values('kang','123','강민경');
+insert into member values('song2','123','송지효');
+insert into member values('ha','123','하지원');
+
+
+create database mydb default character set utf8 collate utf8_general_ci;
+
+
+1. 전체 조회
+select * from member;
+
+
+select * from where name='이효리';
+
+select & from member order by name desc;  asc;
+
+update member set name='이상순와이프' where name='이효리';
+
+select * from member;
+
+select * from member where name like %이%;
+
+
+
+mysql> select * from member where name="강민경";
++------+-----+--------+
+| id   | pwd | name   |
++------+-----+--------+
+| kang | 123 | 강민경 |
++------+-----+--------+
+1 row in set (0.00 sec)
+
+mysql> select id from member where name="강민경";
++------+
+| id   |
++------+
+| kang |
++------+
+1 row in set (0.00 sec)
+
+mysql> select pwd from member where id=(select id from member where name="강민경");
++-----+
+| pwd |
++-----+
+| 123 |
++-----+
+1 row in set (0.00 sec)
+
+mysql> select name, pwd,id from member where name=(select name from member where id="kang");
++--------+-----+------+
+| name  | pwd | id   |
++--------+-----+------+
+| 강민경 | 123 | kang |
++--------+-----+------+
+1 row in set (0.00 sec)
+
+
+///////////////////////////////////////
+DB 사용자 계정 삭제
+  ; delete from db where user = "계정";
+  ; delete from user where user = "계정";
+
+DB삭제
+  ; drop database DB명;
+
+

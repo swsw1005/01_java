@@ -69,7 +69,6 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
         getContentPane().add(scrollPane, "Center");
         // 텍스트입력창 > 아래쪽
         getContentPane().add(tf, "South");
-
         // 대화명 입력
         name = JOptionPane.showInputDialog(this, "당신의 대화명은?");
 
@@ -78,8 +77,8 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
 
         setSize(400, 300);
         setVisible(true);
+        setResizable(false);
 
-        tf.requestFocus();
         tf.requestFocus();
         // 닫기버튼 동작 설정 - 창 닫기
         // setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -159,8 +158,8 @@ public class MiddleClient extends JFrame implements ActionListener, Runnable {
     // main ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
 
-        // new MiddleClient("192.168.137.24", 7777);
-        new MiddleClient("192.168.0.14", 7777);
+        new MiddleClient("192.168.137.24", 7777);
+        // new MiddleClient("192.168.0.14", 7777);
 
     }
 }

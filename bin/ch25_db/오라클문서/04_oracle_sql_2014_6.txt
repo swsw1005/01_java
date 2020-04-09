@@ -1,0 +1,61 @@
+그룹함수
+
+count : 행 갯수 count할때 사용 ( 행 갯수 구하기)
+sum : 해당 열의 총 행의 합 구한다
+avg : 해당 열의 총 행의 평균 구한다 
+max : 해당 열의 총 행의 최대값 구한다
+min : 해당 열의 총 행의 최소값 구한다
+
+★★★★★
+문) emp 테이블의 행 갯수 구하기
+   select count(*) from emp;// 게시판 글 갯수 구할 때 사용 
+
+잘못된 예)
+select ename,count(*) from emp;
+
+
+문) 30번 부서에서 커미션을 받는 사람수 ?
+    select count(comm) from emp where deptno=30;
+
+
+문) 전체에서 커미션을 받는 사람의 수 ?
+     select count(comm) from emp;
+
+문) 중복을 제거하고 job을 count하시요
+    select count(distinct job) from emp;
+    select distinct job from emp;
+
+문) 급여의 합 구하기 
+    select sum(sal) from emp;
+
+문) 급여의 평균 구하기 
+    select avg(sal) from emp;
+
+문) 최대 급여와 최소급여 구하기 
+    select max(sal), min(sal) from emp;
+
+
+
+문) 부서별로 가장 높은 급여 구하기
+    select max(sal),deptno from emp group by deptno;
+
+
+문) 부서별로 평균 급여 구하기
+    select avg(sal),deptno from emp group by deptno;
+
+========================================
+having 절
+
+having절은 group by 절에 의해 생성된 결과 중에서
+조건을 사용할때 having절을 사용합니다
+========================================
+
+문) 급여 평균이 2000 이상인 자료만 산출 하시요 
+
+select deptno, avg(sal) from emp 
+group by deptno
+having avg(sal)>=2000;  
+
+
+
+

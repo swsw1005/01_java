@@ -1,0 +1,113 @@
+ 문자열 처리함수
+upper  : 대문자로 변환 
+lower :  소문자로 변환 
+initcap : 첫글자만 대문자로 변환( 이니셜만 대문자로 변환)
+
+trim :  공백제거 
+ltrim : 왼쪽공백 제거 
+rtrim : 오른쪽 공백 제거
+
+substring : 자바에서 ( 문자열 일부분을 추출할때 사용)
+substr : 문자열 일부분을 추출할때 사용 
+
+문) ename을 대문자로 출력하되, empno,ename를 출력 하시요 
+
+    select empno,upper(ename) from emp;
+
+
+문) 1982/01/01 이후에 입사한 사람만 검색하여
+    ename,sal,hiredate 출력하시요.
+
+*********************************************************************
+    select ename,sal,hiredate from emp where hiredate>='1982/01/01';
+*********************************************************************
+
+문) ename을 소문자로 출력하되, empno,ename를 출력 하시요 
+   
+    select empno,lower(ename) from emp;
+
+★★★★★
+문) 입사일에서 년도만 추출하되, ename, hiredate 를 출력하시요.
+    select ename,hiredate,substr(hiredate,1,2) from emp;
+
+★★★★★
+문) 입사일에서 월(달)만 추출하되, ename, hiredate 를 출력하시요.
+    select ename,hiredate,substr(hiredate,4,2) from emp;
+    
+★★★★★
+문) 82년도에 입사한 사람만 추출하되, ename,hiredate 출력하시요
+    select ename,hiredate from emp where substr(hiredate,1,2)=82;
+
+======================================================
+2014년 6월 9일
+======================================================
+자바에서 문자열을 숫자로 변환 예: Integer.parseInt("123");
+
+자바에서 숫자를 문자열로 변환 예: 123+""
+
+오라클에서 
+
+number(숫자)-----> character(문자)
+            to_char   
+
+
+number(숫자)<----- character(문자)
+            to_number
+
+
+date(날짜)  ------->character(문자)
+            to_char
+
+date(날짜)  <-------character(문자)
+            to_date
+
+================================
+날짜출력 형식 
+================================
+yyyy : 년도 4자리
+yy  : 년도 2 자리
+
+MM : 월을 숫자로 표현 
+MON : 월을 알파벳으로 
+
+dd : 날자를 두 자리 로 표시
+DAY : 요일 표현 
+DY : 요일을 약어로 표현 
+
+시간 출력 형식 
+AM/PM : 오전 / 오후 
+HH / HH12 : 12 시간제 표현
+HH24      : 24시간제 표현 
+
+MI : 분 
+SS:초
+=================================
+문) hiredate (입사년도) 를 YYYY-MM-dd 로 출력 하시요 
+   ename,hiredate만 출력 하시요 
+
+select ename,hiredate,to_char(hiredate,'YYYY-MM-dd') from emp;
+
+
+문) emp테이블의 sal를 6자리로하고 , $를 붙여서 출력 하시요
+    select ename,sal from emp;
+    select ename,sal,to_char(sal,'$999,999') from emp;
+
+
+문) 지역 통화기호를 붙여서 sal을 출력 하시요
+    (각 나라 통화기호)
+    select ename,sal,to_char(sal,'L999,999') from emp;
+
+★★★★
+
+null 로 변환 하는 함수 : NVL ( null value )
+
+커미션이 null인경우 0으로 변경하여 계산 해야만 한다 
+
+잘못된 예 : select ename,sal,comm,sal+comm from emp;
+
+옳은 예   : select ename,sal,comm,sal+NVL(comm,0) from emp;
+
+
+
+
+

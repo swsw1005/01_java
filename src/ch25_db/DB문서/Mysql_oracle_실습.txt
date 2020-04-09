@@ -1,0 +1,126 @@
+MySql
+
+C:\MySQL5.5\bin>mysql -u root -h localhost -p
+Enter password: *****
+
+C:\MySQL5.5\bin>mysql -u root -p
+Enter password: 12345
+
+mysql>create database mydb;
+
+mysql> show databases;
+
+use mydb;
+
+show tables;  //oracle 은 select * from tab;
+
+desc member;
+
+drop table member;
+
+create table member(
+id varchar(30) not null primary key,
+pwd varchar(30) not null,
+name varchar(30) not null  
+);
+
+desc member;
+
+mysql> desc member;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | varchar(30) | NO   | PRI | NULL    |       |
+| pwd   | varchar(30) | NO   |     | NULL    |       |
+| name  | varchar(30) | NO   |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+
+select * from member limit 0,10;
+                                                     시작 ,갯수
+
+--------------------------------                                        
+MySQL        Oracle
+--------------------------------
+varchar      varchar2
+int(4)       number(4)
+date         date
+datetime                                                  
+----------------------------
+
+●CRUD(insert select update delete)
+
+●insert
+
+insert into member(id,pwd,name) values('park','123','박문수');
+ 
+insert into member values('park','123','박문수'); // --에러 
+
+
+insert into member values('kim','k123','김제동');
+insert into member values('hyun','h123','현광우');
+insert into member values('lee','l123','이효리');
+insert into member values('lee2','l123','이상순');
+insert into member values('im','l123','임영웅');
+insert into member values('park2','457','박찬호');
+insert into member values('kim2','153','김철수');
+insert into member values('cha','152','차인표');
+insert into member values('Jang','333','장효조');
+
+insert into member values('kim3','k123','김철수');
+insert into member values('an','a123','안미숙');
+
+insert into member values("an2",'a123','안미숙');
+ 
+●select
+
+1. 모두 검색
+select * from member;
+
+2. '이효리'를 검색하시오
+select * from member where name='이효리';
+
+
+3. 이름에 '이'가 포함 되어 있는 자료를 검색 하시오
+select name from member where name like '%이%';
+
+4. 이름으로 내림차순 하여 모든를 출력 하시요
+
+select * from member order by name desc;
+select * from member order by name asc;
+
+
+●update ( 반시드 조건, 보너스계산은 모두 해야 한다 )  
+
+5. '이효리'를 '이상순와이프' 으로 수정하시요.
+
+update member set name='이상순와이프' where name='이효리';
+
+select * from member;
+
+select * from member where name like '%이%';
+
+
+● delete (반드시 조건)
+
+5. '이상순와이프'를 삭제 하시오
+delete from member where name='이상순와이프';
+
+Mysql 끝  ctrl + C 
+///====================================
+
+오라클
+///====================================
+c:\>sqlplus scott/tiger
+
+
+drop table member;
+
+create table member(
+id varchar2(30) not null primary key,
+pwd varchar2(30) not null,
+name varchar2(30) not null  
+);
+
+desc member;
+
+

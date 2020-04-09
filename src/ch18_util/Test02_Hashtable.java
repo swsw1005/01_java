@@ -63,5 +63,6 @@ public class Test02_Hashtable {
         System.out.println(hb2.get(k + 1));
 
         sc.close();
+
     }
 }

@@ -1,23 +1,23 @@
 package ch24_network;
 
 import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.table.*;
-import java.util.*;
-import java.net.*;
 import java.io.*;
 
 public class RoomClient extends JFrame {
 
     private static final long serialVersionUID = -2298663277598490273L;
 
-    // 변수
+    // 변수 ////////////////////////////////////////////////////////////////////
     TextArea ta = new TextArea();
     TextField tf = new TextField();
 
     String data[][] = new String[0][1];
     String cols[] = { "대화명" };
+
+    BufferedReader in;
+    OutputStream out;
 
     DefaultTableModel model1 = new DefaultTableModel(data, cols) {
         private static final long serialVersionUID = -5353256769983665219L;
@@ -39,7 +39,7 @@ public class RoomClient extends JFrame {
     JButton sayB = new JButton("귓말"); // 버튼 - 귓속말
     JButton outB = new JButton("나가기"); // 버튼 - 나가기
 
-    // 생성자
+    // 생성자 ////////////////////////////////////////////////////////////////////
     public RoomClient() {
         setTitle("RoomClient 대화방");
         getContentPane().setLayout(null); // 프로그래머가 직접 디자인 하려고..
@@ -73,15 +73,20 @@ public class RoomClient extends JFrame {
         getContentPane().add(outB);
 
         setSize(800, 800);
-        setVisible(true);
+        setVisible(false);
         setResizable(false);
+        // setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+
     } // cons end
 
-    // 메소드
+    // 메소드 ////////////////////////////////////////////////////////////////////
 
     // test main
+    // ////////////////////////////////////////////////////////////////////
     public static void main(String[] args) {
-        new RoomClient();
+        new RoomClient().setVisible(true);
+        ;
+
     }
 
 }
