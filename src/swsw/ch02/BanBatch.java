@@ -18,15 +18,15 @@ public class BanBatch {
         banBatch[1][3] = "양승철";
         banBatch[1][4] = "김민식";
 
-        banBatch[2][0] = "(구)임성우";
+        banBatch[2][0] = "(구)성우";
         banBatch[2][1] = "이한수";
         banBatch[2][2] = "윤주호";
-        banBatch[2][3] = "";
-        banBatch[2][4] = "";
+        banBatch[2][3] = ".......";
+        banBatch[2][4] = ".......";
 
         banBatch[3][0] = "김우성";
         banBatch[3][1] = "배신자";
-        banBatch[3][2] = "(구)이세진";
+        banBatch[3][2] = "(구)세진";
         banBatch[3][3] = "이건혁";
         banBatch[3][4] = "박범수";
 
@@ -44,7 +44,7 @@ public class BanBatch {
 
         for (int i = 0; i < banBatch.length; i++) {
             for (int j = 0; j < banBatch[i].length; j++) {
-                System.out.print(banBatch[i][j] + "\t");
+                System.out.print(banBatch[i][j] + "  \t");
             }
             System.out.println();
         }

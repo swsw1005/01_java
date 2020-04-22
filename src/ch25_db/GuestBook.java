@@ -25,10 +25,8 @@ public class GuestBook extends JFrame implements ActionListener {
     // 테이블모델 >> 테이블 >> 스크롤
     // DefaultTableModel model = new DefaultTableModel(data, cols);
     DefaultTableModel model = new DefaultTableModel(data, cols) {
-        @Override // 테이블모델...편집
-                  // 못하게
-                  // 메소드
-                  // 오버라이딩
+        // 테이블모델...편집 못하게 메소드 오버라이딩
+        @Override
         public boolean isCellEditable(int i, int c) {
             return false;
         }
@@ -37,13 +35,15 @@ public class GuestBook extends JFrame implements ActionListener {
     JScrollPane scrollPane = new JScrollPane(table);
     JScrollPane scrollPane2 = new JScrollPane(taContent);
 
-    // 읽어서 가져올 예정
+    // DB
     String driver, url, user, pwd;
 
     Connection con = null;
     Statement stmt = null;
     PreparedStatement pstmt = null;
     ResultSet rs = null;
+
+    UpdateTest updateTest = null;
 
     // 생성자 -------------------------
     public GuestBook() {
@@ -61,6 +61,8 @@ public class GuestBook extends JFrame implements ActionListener {
         String user = pp.getProperty("user");
         String pwd = pp.getProperty("pwd");
         // 프로퍼티 ok
+
+        updateTest = new UpdateTest();
 
         laJemok = new JLabel("GuestBook");
         laJemok.setFont(new Font("굴림체", Font.BOLD, 30));
@@ -111,15 +113,20 @@ public class GuestBook extends JFrame implements ActionListener {
         tfId.setBounds(170, 100, 200, 28);
         tfEmail.setBounds(170, 130, 200, 28);
         tfTitle.setBounds(170, 160, 200, 28);
-        taContent.setBounds(170, 190, 200, 130);
-        // scrollPane2.setBounds(170, 190, 200, 130);
+        taContent.setBounds(170, 190, 200, 110);
         taContent.setLineWrap(true);
 
-        b_insert.setBounds(400, 50, 100, 40);
-        b_update.setBounds(400, 100, 100, 40);
-        b_list.setBounds(400, 150, 100, 40);
-        b_delete.setBounds(400, 200, 100, 40);
-        b_exit.setBounds(400, 250, 100, 40);
+        tfName.setEditable(false);
+        tfId.setEditable(false);
+        tfEmail.setEditable(false);
+        tfTitle.setEditable(false);
+        taContent.setEditable(false);
+
+        b_insert.setBounds(50, 300, 100, 40);
+        b_update.setBounds(150, 300, 100, 40);
+        b_list.setBounds(250, 300, 100, 40);
+        b_delete.setBounds(350, 300, 100, 40);
+        b_exit.setBounds(450, 300, 100, 40);
 
         getContentPane().add(laJemok);
         getContentPane().add(laName);
@@ -162,6 +169,7 @@ public class GuestBook extends JFrame implements ActionListener {
         b_list.addActionListener(this);
         b_delete.addActionListener(this);
         b_exit.addActionListener(this);
+        updateTest.b_update.addActionListener(this);
 
         table.addMouseListener(new MyMouse()); // inner class로 마우스이벤트
 
@@ -191,7 +199,7 @@ public class GuestBook extends JFrame implements ActionListener {
 
     }// cons end
 
-    int row = 0; // 행을 담을 변수
+    int row = -1; // 행을 담을 변수
     String val = ""; // 값을 담을 변수
 
     class MyMouse extends MouseAdapter {
@@ -200,6 +208,7 @@ public class GuestBook extends JFrame implements ActionListener {
         public void mousePressed(MouseEvent me) {
             row = table.getSelectedRow();
             val = (String) model.getValueAt(row, 1);
+            System.out.println(row + " " + val);
 
             String temp[] = new String[table.getColumnCount()];
             int cRow = table.getSelectedRow();
@@ -234,10 +243,9 @@ public class GuestBook extends JFrame implements ActionListener {
                 if (con != null) {
                     con.close();
                 }
-
             } catch (Exception ex) {
-
             }
+            System.exit(0);
         }
         // b_insert ---------------------------------------
         if (e.getSource() == b_insert) {
@@ -310,17 +318,100 @@ public class GuestBook extends JFrame implements ActionListener {
             tfName.requestFocus();
         }
 
-        // b_update ---------------------------------------
-        if (e.getSource() == b_update) {
-        }
-
         // b_list ---------------------------------------
         if (e.getSource() == b_list) {
             disp();
         }
 
+        // b_update ---------------------------------------
+        if (e.getSource() == b_update) {
+
+            if (row < 0) {
+                JOptionPane.showMessageDialog(this, "업데이트할 항목 선택");
+                return;
+            }
+
+            String temp[] = new String[5];
+
+            for (int i = 0; i < temp.length; i++) {
+                temp[i] = (String) model.getValueAt(row, i);
+            }
+
+            updateTest.tfName.setText(temp[0]);
+            updateTest.tfId.setText(temp[1]);
+            updateTest.tfEmail.setText(temp[2]);
+            updateTest.tfTitle.setText(temp[3]);
+            updateTest.taContent.setText(temp[4]);
+
+            updateTest.setVisible(true);
+            row = -1;
+            val = "";
+
+        }
+
+        // updateTest.b_update ---------------------------------------
+        if (e.getSource() == updateTest.b_update) {
+            System.out.println("업뎃버튼 클릭");
+
+            String name = updateTest.tfName.getText().trim();
+            String id = updateTest.tfId.getText().trim();
+            String email = updateTest.tfEmail.getText().trim();
+            String title = updateTest.tfTitle.getText().trim();
+            String content = updateTest.taContent.getText().trim();
+
+            String str_update = "update guest set name=?,  email=?, title=?, content=? where id=?";
+            try {
+                pstmt = con.prepareStatement(str_update);
+                pstmt.setString(1, name);
+                pstmt.setString(2, email);
+                pstmt.setString(3, title);
+                pstmt.setString(4, content);
+                pstmt.setString(5, id);
+
+                pstmt.executeUpdate();// 쿼리수행
+
+                row = -1;
+                val = "";
+                updateTest.setVisible(false);
+                System.out.println("업뎃 완료");
+                disp();
+
+            } catch (SQLException e1) {
+                System.out.println("pstmt 하다가 오류...");
+                e1.printStackTrace();
+            }
+
+        }
+
         // b_delete ---------------------------------------
         if (e.getSource() == b_delete) {
+            if (row < 0) {
+                JOptionPane.showMessageDialog(this, "삭제할 행 선택하세요");
+                return;
+            }
+
+            try {
+                int answer = JOptionPane.showConfirmDialog(this,
+                        "삭제할꺼냐고 물어보는 창 내용", "삭제할꺼냐고 물어보는 창 제목",
+                        JOptionPane.YES_NO_OPTION);
+                switch (answer) {
+                case JOptionPane.YES_OPTION:
+                    System.out.println("삭제confirm");
+                    stmt.execute("delete from guest where id = '" + val + "'");
+                    disp();
+                    val = "";// 초기화
+                    row = -1;// 초기화
+                    break;
+
+                default:
+                    System.out.println("삭제하지 않기로...");
+                    break;
+                }
+
+            } catch (Exception ex3) {
+                System.out.println("ex3!!!!");
+            }
+
         }
 
     }
