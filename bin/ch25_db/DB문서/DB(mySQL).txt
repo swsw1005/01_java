@@ -119,3 +119,8 @@ DB삭제
   ; drop database DB명;
 
 
+
+
+UPDATE mysql.user SET password=password('12345') WHERE user='root';
+FLUSH PRIVILEGES;
+
