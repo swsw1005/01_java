@@ -1,56 +1,56 @@
-±×·ìÇÔ¼ö
+ê·¸ë£¹í•¨ìˆ˜
 
-count : Çà °¹¼ö countÇÒ¶§ »ç¿ë ( Çà °¹¼ö ±¸ÇÏ±â)
-sum : ÇØ´ç ¿­ÀÇ ÃÑ ÇàÀÇ ÇÕ ±¸ÇÑ´Ù
-avg : ÇØ´ç ¿­ÀÇ ÃÑ ÇàÀÇ Æò±Õ ±¸ÇÑ´Ù 
-max : ÇØ´ç ¿­ÀÇ ÃÑ ÇàÀÇ ÃÖ´ë°ª ±¸ÇÑ´Ù
-min : ÇØ´ç ¿­ÀÇ ÃÑ ÇàÀÇ ÃÖ¼Ò°ª ±¸ÇÑ´Ù
+count : í–‰ ê°¯ìˆ˜ countí• ë•Œ ì‚¬ìš© ( í–‰ ê°¯ìˆ˜ êµ¬í•˜ê¸°)
+sum : í•´ë‹¹ ì—´ì˜ ì´ í–‰ì˜ í•© êµ¬í•œë‹¤
+avg : í•´ë‹¹ ì—´ì˜ ì´ í–‰ì˜ í‰ê·  êµ¬í•œë‹¤ 
+max : í•´ë‹¹ ì—´ì˜ ì´ í–‰ì˜ ìµœëŒ€ê°’ êµ¬í•œë‹¤
+min : í•´ë‹¹ ì—´ì˜ ì´ í–‰ì˜ ìµœì†Œê°’ êµ¬í•œë‹¤
 
-¡Ú¡Ú¡Ú¡Ú¡Ú
-¹®) emp Å×ÀÌºíÀÇ Çà °¹¼ö ±¸ÇÏ±â
-   select count(*) from emp;// °Ô½ÃÆÇ ±Û °¹¼ö ±¸ÇÒ ¶§ »ç¿ë 
+â˜…â˜…â˜…â˜…â˜…
+ë¬¸) emp í…Œì´ë¸”ì˜ í–‰ ê°¯ìˆ˜ êµ¬í•˜ê¸°
+   select count(*) from emp;// ê²Œì‹œíŒ ê¸€ ê°¯ìˆ˜ êµ¬í•  ë•Œ ì‚¬ìš© 
 
-Àß¸øµÈ ¿¹)
+ìž˜ëª»ëœ ì˜ˆ)
 select ename,count(*) from emp;
 
 
-¹®) 30¹ø ºÎ¼­¿¡¼­ Ä¿¹Ì¼ÇÀ» ¹Þ´Â »ç¶÷¼ö ?
+ë¬¸) 30ë²ˆ ë¶€ì„œì—ì„œ ì»¤ë¯¸ì…˜ì„ ë°›ëŠ” ì‚¬ëžŒìˆ˜ ?
     select count(comm) from emp where deptno=30;
 
 
-¹®) ÀüÃ¼¿¡¼­ Ä¿¹Ì¼ÇÀ» ¹Þ´Â »ç¶÷ÀÇ ¼ö ?
+ë¬¸) ì „ì²´ì—ì„œ ì»¤ë¯¸ì…˜ì„ ë°›ëŠ” ì‚¬ëžŒì˜ ìˆ˜ ?
      select count(comm) from emp;
 
-¹®) Áßº¹À» Á¦°ÅÇÏ°í jobÀ» countÇÏ½Ã¿ä
+ë¬¸) ì¤‘ë³µì„ ì œê±°í•˜ê³  jobì„ countí•˜ì‹œìš”
     select count(distinct job) from emp;
     select distinct job from emp;
 
-¹®) ±Þ¿©ÀÇ ÇÕ ±¸ÇÏ±â 
+ë¬¸) ê¸‰ì—¬ì˜ í•© êµ¬í•˜ê¸° 
     select sum(sal) from emp;
 
-¹®) ±Þ¿©ÀÇ Æò±Õ ±¸ÇÏ±â 
+ë¬¸) ê¸‰ì—¬ì˜ í‰ê·  êµ¬í•˜ê¸° 
     select avg(sal) from emp;
 
-¹®) ÃÖ´ë ±Þ¿©¿Í ÃÖ¼Ò±Þ¿© ±¸ÇÏ±â 
+ë¬¸) ìµœëŒ€ ê¸‰ì—¬ì™€ ìµœì†Œê¸‰ì—¬ êµ¬í•˜ê¸° 
     select max(sal), min(sal) from emp;
 
 
 
-¹®) ºÎ¼­º°·Î °¡Àå ³ôÀº ±Þ¿© ±¸ÇÏ±â
+ë¬¸) ë¶€ì„œë³„ë¡œ ê°€ìž¥ ë†’ì€ ê¸‰ì—¬ êµ¬í•˜ê¸°
     select max(sal),deptno from emp group by deptno;
 
 
-¹®) ºÎ¼­º°·Î Æò±Õ ±Þ¿© ±¸ÇÏ±â
+ë¬¸) ë¶€ì„œë³„ë¡œ í‰ê·  ê¸‰ì—¬ êµ¬í•˜ê¸°
     select avg(sal),deptno from emp group by deptno;
 
 ========================================
-having Àý
+having ì ˆ
 
-havingÀýÀº group by Àý¿¡ ÀÇÇØ »ý¼ºµÈ °á°ú Áß¿¡¼­
-Á¶°ÇÀ» »ç¿ëÇÒ¶§ havingÀýÀ» »ç¿ëÇÕ´Ï´Ù
+havingì ˆì€ group by ì ˆì— ì˜í•´ ìƒì„±ëœ ê²°ê³¼ ì¤‘ì—ì„œ
+ì¡°ê±´ì„ ì‚¬ìš©í• ë•Œ havingì ˆì„ ì‚¬ìš©í•©ë‹ˆë‹¤
 ========================================
 
-¹®) ±Þ¿© Æò±ÕÀÌ 2000 ÀÌ»óÀÎ ÀÚ·á¸¸ »êÃâ ÇÏ½Ã¿ä 
+ë¬¸) ê¸‰ì—¬ í‰ê· ì´ 2000 ì´ìƒì¸ ìžë£Œë§Œ ì‚°ì¶œ í•˜ì‹œìš” 
 
 select deptno, avg(sal) from emp 
 group by deptno

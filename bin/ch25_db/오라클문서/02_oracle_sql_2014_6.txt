@@ -1,26 +1,26 @@
 c:>sqlplus scott/tiger
-DB¸í : orcl
-DB¸í : XE
+DBëª… : orcl
+DBëª… : XE
 ====================================
-¿À¶óÅ¬ ÀÚ·áÇü
+ì˜¤ë¼í´ ìë£Œí˜•
 ====================================
-char : °íÁ¤±æÀÌ ( c ¾ğ¾îÀÇ ¹è¿­°ú °°´Ù)
-varchar2 : °¡º¯±æÀÌ ( c¾ğ¾îÀÇ Æ÷ÀÎÅÍ¿Í °°´Ù)
-date : ³¯Â¥
-number(4) : 4ÀÚ¸® Á¤¼ö
-number(7.2) : 7Àº ÀüÃ¼ ÀÚ¸®¼ö, 2´Â ¼Ò¼öÀÌÇÏ ÀÚ¸®¼ö 
+char : ê³ ì •ê¸¸ì´ ( c ì–¸ì–´ì˜ ë°°ì—´ê³¼ ê°™ë‹¤)
+varchar2 : ê°€ë³€ê¸¸ì´ ( cì–¸ì–´ì˜ í¬ì¸í„°ì™€ ê°™ë‹¤)
+date : ë‚ ì§œ
+number(4) : 4ìë¦¬ ì •ìˆ˜
+number(7.2) : 7ì€ ì „ì²´ ìë¦¬ìˆ˜, 2ëŠ” ì†Œìˆ˜ì´í•˜ ìë¦¬ìˆ˜ 
 ====================================
 
-¿À¶óÅ¬ Å×ÀÌºí º¸±â
+ì˜¤ë¼í´ í…Œì´ë¸” ë³´ê¸°
 select * from tab;
 select * from tabs;
 
 ====================================
 
-¿À¶óÅ¬ Å×ÀÌºí »èÁ¦ 
-drop table Å×ÀÌºíÀÌ¸§;
+ì˜¤ë¼í´ í…Œì´ë¸” ì‚­ì œ 
+drop table í…Œì´ë¸”ì´ë¦„;
 ====================================
-Å×ÀÌºí ±¸Á¶ º¸±â ( mysql,oracle °°´Ù )
+í…Œì´ë¸” êµ¬ì¡° ë³´ê¸° ( mysql,oracle ê°™ë‹¤ )
 
 desc member;
 desc emp;
@@ -31,137 +31,137 @@ desc salgrade;
 
 desc emp;
 
-EMPNO  => »ç¿ø¹øÈ£ p.k
-ENAME  => »ç¿ø ÀÌ¸§
-JOB    => Á÷¾÷
-MGR    => ¸Å´ÏÀú(»ó°ü)
-HIREDATE => ÀÔ»çÀÏ
-SAL      => ±Ş¿©
-COMM     => Ä¿¹Ì¼Ç
-DEPTNO   =>ºÎ¼­¹øÈ£ f.k
+EMPNO  => ì‚¬ì›ë²ˆí˜¸ p.k
+ENAME  => ì‚¬ì› ì´ë¦„
+JOB    => ì§ì—…
+MGR    => ë§¤ë‹ˆì €(ìƒê´€)
+HIREDATE => ì…ì‚¬ì¼
+SAL      => ê¸‰ì—¬
+COMM     => ì»¤ë¯¸ì…˜
+DEPTNO   =>ë¶€ì„œë²ˆí˜¸ f.k
 
 
 desc dept;
- DEPTNO  => ºÎ¼­¹øÈ£  p.k
- DNAME   =>ºÎ¼­¸í
- LOC     =>±Ù¹«Áö
+ DEPTNO  => ë¶€ì„œë²ˆí˜¸  p.k
+ DNAME   =>ë¶€ì„œëª…
+ LOC     =>ê·¼ë¬´ì§€
 
-¹®) emp Å×ÀÌºí¿¡¼­ »ç¿øÀÌ¸§°ú »ç¿ø¹øÈ£¸¸ Ãâ·ÂÇÏ½Ã¿ä
+ë¬¸) emp í…Œì´ë¸”ì—ì„œ ì‚¬ì›ì´ë¦„ê³¼ ì‚¬ì›ë²ˆí˜¸ë§Œ ì¶œë ¥í•˜ì‹œìš”
 
 select ename,empno from emp;
 
 
 
-¹®) emp Å×ÀÌºí¿¡¼­ »ç¿øÀÌ¸§,±Ş¿©,ÀÔ»çÀÏÀ» Ãâ·ÂÇÏ½Ã¿ä.
+ë¬¸) emp í…Œì´ë¸”ì—ì„œ ì‚¬ì›ì´ë¦„,ê¸‰ì—¬,ì…ì‚¬ì¼ì„ ì¶œë ¥í•˜ì‹œìš”.
 
 select ename,sal,hiredate from emp;
 
 
-¹®) empÅ×ÀÌºí¿¡¼­ »ç¿øÀÌ¸§, ±Ş¿©¿Í Ä¿¹Ì¼Ç ÇÕ»êÇÏ¿© Ãâ·ÂÇÏ½Ã¿ä
+ë¬¸) empí…Œì´ë¸”ì—ì„œ ì‚¬ì›ì´ë¦„, ê¸‰ì—¬ì™€ ì»¤ë¯¸ì…˜ í•©ì‚°í•˜ì—¬ ì¶œë ¥í•˜ì‹œìš”
 
-select ename,sal+comm as ±Ş¿©Ä¿¹Ì¼ÇÇÕ from emp; ( ¿¡·¯)
-select ename,sal+NVL(comm,0) as ±Ş¿©Ä¿¹Ì¼ÇÇÕ from emp; *******
+select ename,sal+comm as ê¸‰ì—¬ì»¤ë¯¸ì…˜í•© from emp; ( ì—ëŸ¬)
+select ename,sal+NVL(comm,0) as ê¸‰ì—¬ì»¤ë¯¸ì…˜í•© from emp; *******
 
-NVL ( null value ) ÀÚ·á¸¦ 0À¸·Î Ã³¸®ÇÏ¿© ¿¬»êÇÑ´Ù
+NVL ( null value ) ìë£Œë¥¼ 0ìœ¼ë¡œ ì²˜ë¦¬í•˜ì—¬ ì—°ì‚°í•œë‹¤
 
-select empno,ename,sal+comm from emp;  -- ¿¡·¯
+select empno,ename,sal+comm from emp;  -- ì—ëŸ¬
 SQL> select empno,ename,sal+NVL(comm,0) from emp;
 
-¹®) º°Äª »ç¿ë ¿¹
-select ename as »ç¿øÀÌ¸§, sal as ±Ş¿© from emp;
-select ename   »ç¿øÀÌ¸§, sal   ±Ş¿© from emp;
+ë¬¸) ë³„ì¹­ ì‚¬ìš© ì˜ˆ
+select ename as ì‚¬ì›ì´ë¦„, sal as ê¸‰ì—¬ from emp;
+select ename   ì‚¬ì›ì´ë¦„, sal   ê¸‰ì—¬ from emp;
 
 
-¹®) distinct : Áßº¹ ÄÃ·³À» 1¹ø¾¿¸¸ Ãâ·Â
+ë¬¸) distinct : ì¤‘ë³µ ì»¬ëŸ¼ì„ 1ë²ˆì”©ë§Œ ì¶œë ¥
 select deptno from emp;
 select distinct deptno from emp;
 
 
-¹®) emp Å×ÀÌºí¿¡¼­ ºÎ¼­°¡ 10¹øÀÎ µ¥ÀÌÅÍ¸¸ ÃßÃâÇÏµÇ
-    ename, deptno ¸¦ Ãâ·Â ÇÏ½Ã¿ä 
+ë¬¸) emp í…Œì´ë¸”ì—ì„œ ë¶€ì„œê°€ 10ë²ˆì¸ ë°ì´í„°ë§Œ ì¶”ì¶œí•˜ë˜
+    ename, deptno ë¥¼ ì¶œë ¥ í•˜ì‹œìš” 
   
     select ename,deptno from emp where deptno=10;
 
 
-¹®) ¿¬ºÀÀÌ 2000 ÀÌ»óÀÎ µ¥ÀÌÅÍ¸¸ ÃßÃâÇÏµÇ 
-    ename,sal¸¸ Ãâ·Â ÇÏ½Ã¿ä
+ë¬¸) ì—°ë´‰ì´ 2000 ì´ìƒì¸ ë°ì´í„°ë§Œ ì¶”ì¶œí•˜ë˜ 
+    ename,salë§Œ ì¶œë ¥ í•˜ì‹œìš”
 
  select ename,sal from emp where sal>=2000;
 
 
-¹®) empÅ×ÀÌºí¿¡¼­ scott »ç¶÷À» °Ë»öÇÏ¿©
-    ename,hredate ¸¦ Ãâ·Â ÇÏ½Ã¿ä
+ë¬¸) empí…Œì´ë¸”ì—ì„œ scott ì‚¬ëŒì„ ê²€ìƒ‰í•˜ì—¬
+    ename,hredate ë¥¼ ì¶œë ¥ í•˜ì‹œìš”
 
     select ename,hiredate from emp where ename='SCOTT';
 
 
-¹®) 1982/01/01 ÀÌÈÄ¿¡ ÀÔ»çÇÑ »ç¶÷¸¸ °Ë»öÇÏ¿©
-    ename,sal,hiredate Ãâ·ÂÇÏ½Ã¿ä.
+ë¬¸) 1982/01/01 ì´í›„ì— ì…ì‚¬í•œ ì‚¬ëŒë§Œ ê²€ìƒ‰í•˜ì—¬
+    ename,sal,hiredate ì¶œë ¥í•˜ì‹œìš”.
 
     select ename,sal,hiredate from emp where hiredate>='1982/01/01';
 
    
-  << like ¿¬»êÀÚ >>
+  << like ì—°ì‚°ì >>
 
-¹®) ÀÌ¸§¿¡ A°¡ Æ÷ÇÔµÈ µ¥ÀÌÅÍ¸¦ ÃßÃâÇÏ¿©
-    ename, deptno Ãâ·ÂÇÏ½Ã¿ä.
+ë¬¸) ì´ë¦„ì— Aê°€ í¬í•¨ëœ ë°ì´í„°ë¥¼ ì¶”ì¶œí•˜ì—¬
+    ename, deptno ì¶œë ¥í•˜ì‹œìš”.
 
      select ename,deptno from emp where ename like '%A%';
 
-<< or ¿¬»êÀÚ >>
-¹®) Ä¿¹Ì¼ÇÀÌ 300 ¶Ç´Â 500ÀÎ »ç¶÷À» ÃßÃâÇÏµÇ
-    ename,sal,comm ¸¦ Ãâ·Â ÇÏ½Ã¿ä 
+<< or ì—°ì‚°ì >>
+ë¬¸) ì»¤ë¯¸ì…˜ì´ 300 ë˜ëŠ” 500ì¸ ì‚¬ëŒì„ ì¶”ì¶œí•˜ë˜
+    ename,sal,comm ë¥¼ ì¶œë ¥ í•˜ì‹œìš” 
 
      select ename,sal, comm from emp where comm=300 or comm=500;
 
-<< and ¿¬»êÀÚ >>
-¹®) sal ÀÌ 500°ú 1400 »çÀÌÀÎ ÀÚ·á¸¦ ÃßÃâÇÏµÇ
-    ename,sal,hiredate ¸¦ Ãâ·Â ÇÏ½Ã¿ä 
+<< and ì—°ì‚°ì >>
+ë¬¸) sal ì´ 500ê³¼ 1400 ì‚¬ì´ì¸ ìë£Œë¥¼ ì¶”ì¶œí•˜ë˜
+    ename,sal,hiredate ë¥¼ ì¶œë ¥ í•˜ì‹œìš” 
 
     select ename,sal,hiredate from emp where sal>=500 and sal<=1400;
 
-<< between »ç¿ëÇÏ¿© Ãâ·ÂÇÏ½Ã¿ä >>
+<< between ì‚¬ìš©í•˜ì—¬ ì¶œë ¥í•˜ì‹œìš” >>
 
    select ename,sal,hiredate from emp where sal between 500 and 1400;
 
 
 
-<< and ¿¬»êÀÚ >>
-¹®) Á÷±ŞÀÌ CLERK(»ç¹«¿ø)ÀÌ°í ºÎ¼­°¡ 20¹øÀÎ ÀÚ·á¸¦ °Ë»öÇÏµÇ 
-    empno,ename,deptno,job À» Ãâ·Â ÇÏ½Ã¿ä 
+<< and ì—°ì‚°ì >>
+ë¬¸) ì§ê¸‰ì´ CLERK(ì‚¬ë¬´ì›)ì´ê³  ë¶€ì„œê°€ 20ë²ˆì¸ ìë£Œë¥¼ ê²€ìƒ‰í•˜ë˜ 
+    empno,ename,deptno,job ì„ ì¶œë ¥ í•˜ì‹œìš” 
     
     select empno,ename,deptno,job  from emp where job='CLERK' and deptno=20;
  
 
-¹®) ÀÌ¸§¿¡ 'A' Æ÷ÇÔµÈ ¾ÊÀº ÀÚ·á¸¸ °Ë»ö ÇÏµÇ
-    empno,ename,deptno Ãâ·ÂÇÏ½Ã¿ä
+ë¬¸) ì´ë¦„ì— 'A' í¬í•¨ëœ ì•Šì€ ìë£Œë§Œ ê²€ìƒ‰ í•˜ë˜
+    empno,ename,deptno ì¶œë ¥í•˜ì‹œìš”
 
    select empno,ename,deptno from emp where ename not like '%A%'; 
 
 
    << not between A and B >>
-¹®) ±Ş¿©°¡ 500°ú 1400 »çÀÌ°¡ ¾Æ´Ñ ÀÚ·á¸¦ °Ë»öÇÏ¿©
-    ename ,sal Ãâ·ÂÇÏ½Ã¿ä.
+ë¬¸) ê¸‰ì—¬ê°€ 500ê³¼ 1400 ì‚¬ì´ê°€ ì•„ë‹Œ ìë£Œë¥¼ ê²€ìƒ‰í•˜ì—¬
+    ename ,sal ì¶œë ¥í•˜ì‹œìš”.
 
    select ename,sal from emp where sal not between 500 and 1400;
 
 
- Á¤·Ä : order by Å°ÇÊµå asc | desc
+ ì •ë ¬ : order by í‚¤í•„ë“œ asc | desc
 
-¹®) ±Ş¿©¸¦ ³»¸²Â÷¼øÀ¸·Î Ãâ·ÂÇÏµÇ,   ename, sal¸¦ Ãâ·ÂÇÏ½Ã¿ä 
+ë¬¸) ê¸‰ì—¬ë¥¼ ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ì¶œë ¥í•˜ë˜,   ename, salë¥¼ ì¶œë ¥í•˜ì‹œìš” 
   
     select ename,sal from emp order by sal desc;
 
 
-¹®) ÀÌ¸§À» ¿À¸§Â÷¼øÀ¸·Î Ãâ·ÂÇÏµÇ , ename,sal,hiredate ¸¦ Ãâ·ÂÇÏ½Ã¿ä.
+ë¬¸) ì´ë¦„ì„ ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì¶œë ¥í•˜ë˜ , ename,sal,hiredate ë¥¼ ì¶œë ¥í•˜ì‹œìš”.
     select ename,sal,hiredate from emp order by ename asc;
  
 
-¹®) ÀÔ»çÀÏÀ» ³»¸²Â÷¼øÀ¸·Î Á¤·ÄÇÏµÇ, ename,hiredate Ãâ·Â ÇÏ½Ã¿ä 
+ë¬¸) ì…ì‚¬ì¼ì„ ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•˜ë˜, ename,hiredate ì¶œë ¥ í•˜ì‹œìš” 
     select ename,hiredate from emp order by hiredate desc;
 
-¹®) ºÎ¼­¹øÈ£¸¦ ¿À¸§Â÷¼øÀ¸·Î, »ç¿ø¹øÈ£¸¦ ³»¸²Â÷¼øÀ¸·Î Ãâ·ÂÇÏµÇ
-    empno,ename,deptno ¸¦ Ãâ·ÂÇÏ½Ã¿ä.
+ë¬¸) ë¶€ì„œë²ˆí˜¸ë¥¼ ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ, ì‚¬ì›ë²ˆí˜¸ë¥¼ ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ì¶œë ¥í•˜ë˜
+    empno,ename,deptno ë¥¼ ì¶œë ¥í•˜ì‹œìš”.
 
     select empno,ename,deptno from emp order by deptno asc,empno desc;
 

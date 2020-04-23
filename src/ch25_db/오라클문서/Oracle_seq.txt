@@ -1,5 +1,5 @@
 217 EJB
-¿À¶óÅ¬
+ì˜¤ë¼í´
 drop table board;
 
 create table board(
@@ -14,18 +14,18 @@ readcount number not null);
 drop sequence board_seq;
 create sequence board_seq;
 
-insert into board values(board_seq.NEXTVAL,'¹Ú¹®¼ö','p123','Á¦¸ñ','¾È³çÇÏ¼¼¿ä','2016-08-28',0);
-insert into board values(board_seq.NEXTVAL,'ppp','p123','Á¦¸ñ','¾È³çÇÏ¼¼¿ä',sysdate,0);
+insert into board values(board_seq.NEXTVAL,'ë°•ë¬¸ìˆ˜','p123','ì œëª©','ì•ˆë…•í•˜ì„¸ìš”','2016-08-28',0);
+insert into board values(board_seq.NEXTVAL,'ppp','p123','ì œëª©','ì•ˆë…•í•˜ì„¸ìš”',sysdate,0);
 
 select board_seq.CURRVAL from dual;
 
-seq : ÀÏ·Ã¹øÈ£
-name : ÀÛ¼ºÀÚ
-passwd : ¾ÏÈ£
-title  : ±ÛÁ¦¸ñ
-content : ±Û³»¿ë
-regdate : ³¯Â¥
-readcount : Á¶È¸¼ö 
+seq : ì¼ë ¨ë²ˆí˜¸
+name : ì‘ì„±ì
+passwd : ì•”í˜¸
+title  : ê¸€ì œëª©
+content : ê¸€ë‚´ìš©
+regdate : ë‚ ì§œ
+readcount : ì¡°íšŒìˆ˜ 
 
 224 EJB
 
@@ -42,7 +42,7 @@ pstmt.close();
 
 
 
-ÀÏ·Ã¹øÈ£ ±¸ÇÏ·Á°í 
+ì¼ë ¨ë²ˆí˜¸ êµ¬í•˜ë ¤ê³  
 
 pstmt=con.prepareStatement("select board_seq.CURRVAL from dual");
 rs=ps.executeQuery();
@@ -57,16 +57,16 @@ rs.next()
 java.sql.Clob clob_content=rs.getClob();
 
 /*
-board_seq.CURVAL·Î ±¸ÇÑ ÁÖÅ°°ªÀ» ÀÌ¿ëÇØ¼­ °Ô½ÃÆÇ¿¡ ¹Ù·ÎÀü¿¡ ÀúÀåµÈ 
-content ÄÃ·³ °ªÀ»¼±ÅÃ(select)ÇÑ´Ù
+board_seq.CURVALë¡œ êµ¬í•œ ì£¼í‚¤ê°’ì„ ì´ìš©í•´ì„œ ê²Œì‹œíŒì— ë°”ë¡œì „ì— ì €ì¥ëœ 
+content ì»¬ëŸ¼ ê°’ì„ì„ íƒ(select)í•œë‹¤
 
-select ¹®µÚ¿¡ "for update" ´Â Å°¿öµå select ¹®À» ¼öÁ¤ÇÏ±â À§ÇØÈ£Ãâ 
-ResultSet¿¡ getClob() ¸Ş¼Òµå´Â clobÇü½ÄÀÇ ÀúÀåµÈ °ªÀ» ÂüÁ¶(reference) ÇÏ´Â
-java.sql.Clob °´Ã¼¸¦ ¹İÈ¯ÇÑ´Ù 
+select ë¬¸ë’¤ì— "for update" ëŠ” í‚¤ì›Œë“œ select ë¬¸ì„ ìˆ˜ì •í•˜ê¸° ìœ„í•´í˜¸ì¶œ 
+ResultSetì— getClob() ë©”ì†Œë“œëŠ” clobí˜•ì‹ì˜ ì €ì¥ëœ ê°’ì„ ì°¸ì¡°(reference) í•˜ëŠ”
+java.sql.Clob ê°ì²´ë¥¼ ë°˜í™˜í•œë‹¤ 
 
 
 */
-±Û³»¿ë Ã³¸® clob
+ê¸€ë‚´ìš© ì²˜ë¦¬ clob
 Writer writer=((weblogic.jdbc.common.OracleClob)clob_content),getCharacteroutputStream();
 StringReader sr=new StringReader(boardBean.getcontent());
 
@@ -81,19 +81,19 @@ sr.close();
 writer.close();
 
 
-226 EJB ÂüÁ¶ 
+226 EJB ì°¸ì¡° 
 
 
-ÁÖÅ° key °ªÀº  board_seq sequensce ¸¦ ÀÌ¿ëÇØ¼­ 
-ÀÚµ¿À¸·Î ÀúÀåµÇ°Ô Çß´Ù 
+ì£¼í‚¤ key ê°’ì€  board_seq sequensce ë¥¼ ì´ìš©í•´ì„œ 
+ìë™ìœ¼ë¡œ ì €ì¥ë˜ê²Œ í–ˆë‹¤ 
 
 pstmt=con.prapareStatement("select board_seq.CURRVAL from dual");
 rs=pstmt.executeQuery();
 rs.next();
 int iseq=rs.getInt()
 
-board_seq.NEXTVAL ¿¡¼­ »ç¿ëÇÏ·Á°í 
-board_seq.CURRVALÀ» ÀÌ¿ëÇØ¼­ ¹æ±İÀü¿¡ ÀÚµ¿À¸·Î »ı¼ºµÈ sequence°ªÀ» ±¸ÇÑ´Ù
-sequence¿¡  Æ÷ÇÔµÈ CURRVAL ¼Ó¼ºÀº
-°°Àº Æ®·£Àè¼Ç ³»¿¡¼­ NEXTVAL¿¡¼­ È£ÃâÇÑ
-µÚ¿¡¸¸ È£ÃâÇÒ ¼ö ÀÖ´Ù
+board_seq.NEXTVAL ì—ì„œ ì‚¬ìš©í•˜ë ¤ê³  
+board_seq.CURRVALì„ ì´ìš©í•´ì„œ ë°©ê¸ˆì „ì— ìë™ìœ¼ë¡œ ìƒì„±ëœ sequenceê°’ì„ êµ¬í•œë‹¤
+sequenceì—  í¬í•¨ëœ CURRVAL ì†ì„±ì€
+ê°™ì€ íŠ¸ëœì­ì…˜ ë‚´ì—ì„œ NEXTVALì—ì„œ í˜¸ì¶œí•œ
+ë’¤ì—ë§Œ í˜¸ì¶œí•  ìˆ˜ ìˆë‹¤

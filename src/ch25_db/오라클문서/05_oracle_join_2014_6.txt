@@ -1,45 +1,45 @@
 ===================
 join
 ===================
-°ü°èÇü Å×ÀÌºí¿¡¼­ Å×ÀÌºí°£ÀÇ °ü°è°¡ Áß¿äÇÏ´Ù
-ÇÏ³ª ÀÌ»óÀÇ Å×ÀÌºí¿¡¼­ µ¥ÀÌÅÍ¸¦ Á¶È¸ÇÏ±â À§ÇØ¼­
-»ç¿ëµÇ´Â °ÍÀÌ joinÀÌ´Ù 
+ê´€ê³„í˜• í…Œì´ë¸”ì—ì„œ í…Œì´ë¸”ê°„ì˜ ê´€ê³„ê°€ ì¤‘ìš”í•˜ë‹¤
+í•˜ë‚˜ ì´ìƒì˜ í…Œì´ë¸”ì—ì„œ ë°ì´í„°ë¥¼ ì¡°íšŒí•˜ê¸° ìœ„í•´ì„œ
+ì‚¬ìš©ë˜ëŠ” ê²ƒì´ joinì´ë‹¤ 
 
-¹®) empÅ×ÀÌºí¿¡¼­ »ç¿øÀÌ¸§°ú , dept Å×ÀÌºí¿¡¼­´Â ºÎ¼­ÀÌ¸§À»
-    ÃßÃâÇÏµÇ, empÅ×ÀÌºíÀÇ deptno¿Í deptÅ×ÀÌºíÀÇ deptnork ÀÏÄ¡ÇÑ °ÍÀ»   
-    join ÇÏ½Ã¿ä
+ë¬¸) empí…Œì´ë¸”ì—ì„œ ì‚¬ì›ì´ë¦„ê³¼ , dept í…Œì´ë¸”ì—ì„œëŠ” ë¶€ì„œì´ë¦„ì„
+    ì¶”ì¶œí•˜ë˜, empí…Œì´ë¸”ì˜ deptnoì™€ deptí…Œì´ë¸”ì˜ deptnork ì¼ì¹˜í•œ ê²ƒì„   
+    join í•˜ì‹œìš”
 
     select ename ,deptno from emp;
     select * from dept;
 
-¿¹Á¦:
+ì˜ˆì œ:
     select ename,dname, emp.deptno, dept.deptno
     from emp,dept
     where emp.deptno=dept.deptno;
 
-º°Äª »ç¿ë¿¹Á¦:
+ë³„ì¹­ ì‚¬ìš©ì˜ˆì œ:
     select ename,dname, e.deptno, d.deptno
     from emp e,dept d
     where e.deptno=d.deptno;
 
-¹®) °¡Àå ³·Àº ±Þ¿©º¸´Ù ¸¹°í, °¡Àå ³ôÀº ±Þ¿©º¸´Ù ÀÛÀº ÀÚ·á°Ë»öÇÏ½Ã¿ä.
+ë¬¸) ê°€ìž¥ ë‚®ì€ ê¸‰ì—¬ë³´ë‹¤ ë§Žê³ , ê°€ìž¥ ë†’ì€ ê¸‰ì—¬ë³´ë‹¤ ìž‘ì€ ìžë£Œê²€ìƒ‰í•˜ì‹œìš”.
 
-    select * from salgrade;   ( ±Þ¿© µî±Þ Å×ÀÌºí )
+    select * from salgrade;   ( ê¸‰ì—¬ ë“±ê¸‰ í…Œì´ë¸” )
 
    select e.ename, e.sal, s.grade
    from emp e, salgrade s
    where e.sal>=s.losal and e.sal<=s.hisal;
    
 
-¹®) 3Å×ÀÌºí Á¶ÀÎ
-    ºÎ¼­°¡ ÀÏÄ¡ÇÏ°í, °¡Àå³·Àº ±Þ¿©¿Í °¡Àå ³ôÀº ±Þ¿© »çÀÌÀÎ ÀÚ·á¸¦ °Ë»öÇÏ½Ã¿ä.
+ë¬¸) 3í…Œì´ë¸” ì¡°ì¸
+    ë¶€ì„œê°€ ì¼ì¹˜í•˜ê³ , ê°€ìž¥ë‚®ì€ ê¸‰ì—¬ì™€ ê°€ìž¥ ë†’ì€ ê¸‰ì—¬ ì‚¬ì´ì¸ ìžë£Œë¥¼ ê²€ìƒ‰í•˜ì‹œìš”.
 
    select e.ename,e.sal,s.grade,d.dname
    from emp e, salgrade s, dept d
    where e.deptno=d.deptno and e.sal between s.losal and s.hisal;
 
-¹®) 2 Å×ÀÌºí¿¡¼­ join
-    ºÎ¼­°¡ ÀÏÄ¡ÇÏ°í , »ç¿øÀÌ¸§ÀÌ 'A'°¡ Æ÷ÇÔµÈ ÀÚ·á °Ë»ö ÇÏ½Ã¿ä 
+ë¬¸) 2 í…Œì´ë¸”ì—ì„œ join
+    ë¶€ì„œê°€ ì¼ì¹˜í•˜ê³  , ì‚¬ì›ì´ë¦„ì´ 'A'ê°€ í¬í•¨ëœ ìžë£Œ ê²€ìƒ‰ í•˜ì‹œìš” 
 
     select e.ename, d.dname
     from emp e, dept d

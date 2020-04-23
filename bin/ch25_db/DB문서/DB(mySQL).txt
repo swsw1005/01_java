@@ -7,11 +7,11 @@ Enter password: *****
 ....\bin>mysql -u root -h localhost -p
 Enter password: 12345
 
-mysql> show databases;
 
-mysql> create database mydb;
+ show databases;
+ create database mydb;
 
-mysql> use mydb;
+use mydb;
 
 show tables; // oracle은 select * from tab;
 
