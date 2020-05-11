@@ -1,10 +1,4 @@
-
-cd C:\Program Files\MySQL\MySQL Server 5.5\bin
-
-....\bin>mysql -u root -h localhost -p
-Enter password: *****
-
-....\bin>mysql -u root -h localhost -p
+mysql -u root -h localhost -p
 Enter password: 12345
 
 
