@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Person",
+      "request": "launch",
+      "mainClass": "swsw.polymorphism.Person",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - C",
+      "request": "launch",
+      "mainClass": "swsw.polymorphism.C",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - RomanCalCulrater",
+      "request": "launch",
+      "mainClass": "swsw.romanCalculrater.RomanCalCulrater",
+      "projectName": "01_java"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Test09",
       "request": "launch",
       "mainClass": "ch03_oper.Test09",

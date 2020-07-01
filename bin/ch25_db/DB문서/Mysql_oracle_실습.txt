@@ -12,7 +12,7 @@ mysql> show databases;
 
 use mydb;
 
-show tables;  //oracle Àº select * from tab;
+show tables;  //oracle ì€ select * from tab;
 
 desc member;
 
@@ -36,7 +36,7 @@ mysql> desc member;
 +-------+-------------+------+-----+---------+-------+
 
 select * from member limit 0,10;
-                                                     ½ÃÀÛ ,°¹¼ö
+                                                     ì‹œìž‘ ,ê°¯ìˆ˜
 
 --------------------------------                                        
 MySQL        Oracle
@@ -47,68 +47,68 @@ date         date
 datetime                                                  
 ----------------------------
 
-¡ÜCRUD(insert select update delete)
+â—CRUD(insert select update delete)
 
-¡Üinsert
+â—insert
 
-insert into member(id,pwd,name) values('park','123','¹Ú¹®¼ö');
+insert into member(id,pwd,name) values('park','123','ë°•ë¬¸ìˆ˜');
  
-insert into member values('park','123','¹Ú¹®¼ö'); // --¿¡·¯ 
+insert into member values('park','123','ë°•ë¬¸ìˆ˜'); // --ì—ëŸ¬ 
 
 
-insert into member values('kim','k123','±èÁ¦µ¿');
-insert into member values('hyun','h123','Çö±¤¿ì');
-insert into member values('lee','l123','ÀÌÈ¿¸®');
-insert into member values('lee2','l123','ÀÌ»ó¼ø');
-insert into member values('im','l123','ÀÓ¿µ¿õ');
-insert into member values('park2','457','¹ÚÂùÈ£');
-insert into member values('kim2','153','±èÃ¶¼ö');
-insert into member values('cha','152','Â÷ÀÎÇ¥');
-insert into member values('Jang','333','ÀåÈ¿Á¶');
+insert into member values('kim','k123','ê¹€ì œë™');
+insert into member values('hyun','h123','í˜„ê´‘ìš°');
+insert into member values('lee','l123','ì´íš¨ë¦¬');
+insert into member values('lee2','l123','ì´ìƒìˆœ');
+insert into member values('im','l123','ìž„ì˜ì›…');
+insert into member values('park2','457','ë°•ì°¬í˜¸');
+insert into member values('kim2','153','ê¹€ì² ìˆ˜');
+insert into member values('cha','152','ì°¨ì¸í‘œ');
+insert into member values('Jang','333','ìž¥íš¨ì¡°');
 
-insert into member values('kim3','k123','±èÃ¶¼ö');
-insert into member values('an','a123','¾È¹Ì¼÷');
+insert into member values('kim3','k123','ê¹€ì² ìˆ˜');
+insert into member values('an','a123','ì•ˆë¯¸ìˆ™');
 
-insert into member values("an2",'a123','¾È¹Ì¼÷');
+insert into member values("an2",'a123','ì•ˆë¯¸ìˆ™');
  
-¡Üselect
+â—select
 
-1. ¸ðµÎ °Ë»ö
+1. ëª¨ë‘ ê²€ìƒ‰
 select * from member;
 
-2. 'ÀÌÈ¿¸®'¸¦ °Ë»öÇÏ½Ã¿À
-select * from member where name='ÀÌÈ¿¸®';
+2. 'ì´íš¨ë¦¬'ë¥¼ ê²€ìƒ‰í•˜ì‹œì˜¤
+select * from member where name='ì´íš¨ë¦¬';
 
 
-3. ÀÌ¸§¿¡ 'ÀÌ'°¡ Æ÷ÇÔ µÇ¾î ÀÖ´Â ÀÚ·á¸¦ °Ë»ö ÇÏ½Ã¿À
-select name from member where name like '%ÀÌ%';
+3. ì´ë¦„ì— 'ì´'ê°€ í¬í•¨ ë˜ì–´ ìžˆëŠ” ìžë£Œë¥¼ ê²€ìƒ‰ í•˜ì‹œì˜¤
+select name from member where name like '%ì´%';
 
-4. ÀÌ¸§À¸·Î ³»¸²Â÷¼ø ÇÏ¿© ¸ðµç¸¦ Ãâ·Â ÇÏ½Ã¿ä
+4. ì´ë¦„ìœ¼ë¡œ ë‚´ë¦¼ì°¨ìˆœ í•˜ì—¬ ëª¨ë“ ë¥¼ ì¶œë ¥ í•˜ì‹œìš”
 
 select * from member order by name desc;
 select * from member order by name asc;
 
 
-¡Üupdate ( ¹Ý½Ãµå Á¶°Ç, º¸³Ê½º°è»êÀº ¸ðµÎ ÇØ¾ß ÇÑ´Ù )  
+â—update ( ë°˜ì‹œë“œ ì¡°ê±´, ë³´ë„ˆìŠ¤ê³„ì‚°ì€ ëª¨ë‘ í•´ì•¼ í•œë‹¤ )  
 
-5. 'ÀÌÈ¿¸®'¸¦ 'ÀÌ»ó¼ø¿ÍÀÌÇÁ' À¸·Î ¼öÁ¤ÇÏ½Ã¿ä.
+5. 'ì´íš¨ë¦¬'ë¥¼ 'ì´ìƒìˆœì™€ì´í”„' ìœ¼ë¡œ ìˆ˜ì •í•˜ì‹œìš”.
 
-update member set name='ÀÌ»ó¼ø¿ÍÀÌÇÁ' where name='ÀÌÈ¿¸®';
+update member set name='ì´ìƒìˆœì™€ì´í”„' where name='ì´íš¨ë¦¬';
 
 select * from member;
 
-select * from member where name like '%ÀÌ%';
+select * from member where name like '%ì´%';
 
 
-¡Ü delete (¹Ýµå½Ã Á¶°Ç)
+â— delete (ë°˜ë“œì‹œ ì¡°ê±´)
 
-5. 'ÀÌ»ó¼ø¿ÍÀÌÇÁ'¸¦ »èÁ¦ ÇÏ½Ã¿À
-delete from member where name='ÀÌ»ó¼ø¿ÍÀÌÇÁ';
+5. 'ì´ìƒìˆœì™€ì´í”„'ë¥¼ ì‚­ì œ í•˜ì‹œì˜¤
+delete from member where name='ì´ìƒìˆœì™€ì´í”„';
 
-Mysql ³¡  ctrl + C 
+Mysql ë  ctrl + C 
 ///====================================
 
-¿À¶óÅ¬
+ì˜¤ë¼í´
 ///====================================
 c:\>sqlplus scott/tiger
 

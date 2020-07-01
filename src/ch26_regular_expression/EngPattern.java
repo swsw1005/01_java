@@ -6,7 +6,7 @@ public class EngPattern {
 
     public static void main(String[] args) {
 
-        String pattern = "^[a-zA-Z]*$";
+        String pattern = "^[a-zA-Z][*+-/][a-zA-Z]*$";
         String input = "ABzzzDAWRAWR";
 
         boolean i = Pattern.matches(pattern, input);

@@ -1,29 +1,29 @@
-java¿¡¼­ »ç¿ëÇÒ Å×ÀÌºí ÀÛ¼º
+javaì—ì„œ ì‚¬ìš©í•  í…Œì´ë¸” ìž‘ì„±
 
 
 ------------------
-¡Ü Oracle Å×ÀÌºí»ý¼º
+â— Oracle í…Œì´ë¸”ìƒì„±
 ------------------
 dos>sqlplus scott/tiger
 
-drop table test purge; --Å×ÀÌºí »èÁ¦
+drop table test purge; --í…Œì´ë¸” ì‚­ì œ
 
 create table test(
-name varchar2(20) not null,--ÀÌ¸§
-pwd varchar2(8),--¾ÏÈ£
-email varchar2(30),--ÀÌ¸ÞÀÏ
-title varchar2(30),--±ÛÁ¦¸ñ
-content varchar2(4000)--±Û³»¿ë
+name varchar2(20) not null,--ì´ë¦„
+pwd varchar2(8),--ì•”í˜¸
+email varchar2(30),--ì´ë©”ì¼
+title varchar2(30),--ê¸€ì œëª©
+content varchar2(4000)--ê¸€ë‚´ìš©
 );
 
 ------------------------
-¡ÜMySql Å×ÀÌºí ÀÛ¼º
+â—MySql í…Œì´ë¸” ìž‘ì„±
 ------------------------
 C:\MySQL5\bin>mysql -u root -p
 Enter password: *****
 
 ------------------------------
-DB¸¸µé±â => create database DBÀÌ¸§(mydb)
+DBë§Œë“¤ê¸° => create database DBì´ë¦„(mydb)
 
 show databases;
 use mydb;
@@ -37,7 +37,7 @@ content varchar(4000)
 );
 ------------------------------
 
-desc test; --Å×ÀÌºí ±¸Á¶ º¸±â 
+desc test; --í…Œì´ë¸” êµ¬ì¡° ë³´ê¸° 
 
 +---------+---------------+------+-----+---------+-------+
 | Field   | Type          | Null | Key | Default | Extra |
@@ -51,86 +51,86 @@ desc test; --Å×ÀÌºí ±¸Á¶ º¸±â
 5 rows in set (0.00 sec)
 
 
-¡Üµ¥ÀÌÅÍ ÀÔ·Â : ¿À¶óÅ¬ , MySql °°´Ù 
+â—ë°ì´í„° ìž…ë ¥ : ì˜¤ë¼í´ , MySql ê°™ë‹¤ 
 
 
 
 insert into test (name,pwd,email,title,content) 
-values('È«±æµ¿','123','hong@naver.com','±æµ¿±Û','¾È³çÇÏ¼¼¿ä');
+values('í™ê¸¸ë™','123','hong@naver.com','ê¸¸ë™ê¸€','ì•ˆë…•í•˜ì„¸ìš”');
 
 insert into test values
-('Àåµ¿°Ç','j123','jang@daum.net','Àåµ¿°Ç±Û','Àåµ¿°ÇÀÔ´Ï´Ù');
+('ìž¥ë™ê±´','j123','jang@daum.net','ìž¥ë™ê±´ê¸€','ìž¥ë™ê±´ìž…ë‹ˆë‹¤');
 
 insert into test values
-('¼ÛÇý±³','s123','song@daum.net','¼ÛÇý±³±Û','¼ÛÇý±³ÀÔ´Ï´Ù');
+('ì†¡í˜œêµ','s123','song@daum.net','ì†¡í˜œêµê¸€','ì†¡í˜œêµìž…ë‹ˆë‹¤');
 
 insert into test values
-('¾ÆÀÌÀ¯','i123','i@daum.net','¾ÆÀÌÀ¯±Û','¾ÆÀÌÀ¯ÀÔ´Ï´Ù');
+('ì•„ì´ìœ ','i123','i@daum.net','ì•„ì´ìœ ê¸€','ì•„ì´ìœ ìž…ë‹ˆë‹¤');
 
 insert into test values
-('ÀÌÈ¿¸®','l123','lee@naver.com','ÀÌÈ¿¸®±Û','ÀÌÈ¿¸®ÀÔ´Ï´Ù');
+('ì´íš¨ë¦¬','l123','lee@naver.com','ì´íš¨ë¦¬ê¸€','ì´íš¨ë¦¬ìž…ë‹ˆë‹¤');
 
 insert into test values
-('·ÎÀÌÅ´','k123','kim@naver.com','·ÎÀÌÅ´±Û','·ÎÀÌÅ´ÀÔ´Ï´Ù');
+('ë¡œì´í‚´','k123','kim@naver.com','ë¡œì´í‚´ê¸€','ë¡œì´í‚´ìž…ë‹ˆë‹¤');
 -----------------------------------------------------
-SQL>commit; --¿À¶óÅ¬
+SQL>commit; --ì˜¤ë¼í´
 
 mysql> select * from test;
 
 +--------+------+----------------+----------+--------------+
 | name   | pwd  | email          | title    | content      |
 +--------+------+----------------+----------+--------------+
-| È«±æµ¿ | 123  | hong@naver.com | ±æµ¿±Û   | ¾È³çÇÏ¼¼¿ä   |
-| Àåµ¿°Ç | j123 | jang@daum.net  | Àåµ¿°Ç±Û | Àåµ¿°ÇÀÔ´Ï´Ù |
-| ¼ÛÇý±³ | s123 | song@daum.net  | ¼ÛÇý±³±Û | ¼ÛÇý±³ÀÔ´Ï´Ù |
-| ¾ÆÀÌÀ¯ | i123 | i@daum.net     | ¾ÆÀÌÀ¯±Û | ¾ÆÀÌÀ¯ÀÔ´Ï´Ù |
-| ÀÌÈ¿¸® | l123 | lee@naver.com  | ÀÌÈ¿¸®±Û | ÀÌÈ¿¸®ÀÔ´Ï´Ù |
-| ·ÎÀÌÅ´ | k123 | kim@naver.com  | ·ÎÀÌÅ´±Û | ·ÎÀÌÅ´ÀÔ´Ï´Ù |
+| í™ê¸¸ë™ | 123  | hong@naver.com | ê¸¸ë™ê¸€   | ì•ˆë…•í•˜ì„¸ìš”   |
+| ìž¥ë™ê±´ | j123 | jang@daum.net  | ìž¥ë™ê±´ê¸€ | ìž¥ë™ê±´ìž…ë‹ˆë‹¤ |
+| ì†¡í˜œêµ | s123 | song@daum.net  | ì†¡í˜œêµê¸€ | ì†¡í˜œêµìž…ë‹ˆë‹¤ |
+| ì•„ì´ìœ  | i123 | i@daum.net     | ì•„ì´ìœ ê¸€ | ì•„ì´ìœ ìž…ë‹ˆë‹¤ |
+| ì´íš¨ë¦¬ | l123 | lee@naver.com  | ì´íš¨ë¦¬ê¸€ | ì´íš¨ë¦¬ìž…ë‹ˆë‹¤ |
+| ë¡œì´í‚´ | k123 | kim@naver.com  | ë¡œì´í‚´ê¸€ | ë¡œì´í‚´ìž…ë‹ˆë‹¤ |
 +--------+------+----------------+----------+--------------+
 
 ==============================
-¡Ü ÀÚ¹Ù¿¡¼­ DB ¿¬°á
+â— ìžë°”ì—ì„œ DB ì—°ê²°
 ==============================
 
-DB¿Í ÀÚ¹Ù ¾Æ¹«°ü°è ¾ø½À´Ï´Ù
+DBì™€ ìžë°” ì•„ë¬´ê´€ê³„ ì—†ìŠµë‹ˆë‹¤
 
-ÀÚ¹Ù¿¡¼­ DB¸¦ ¿¬°á ÇÏ·Á¸é °¢ DBÀÇ 'µå¶óÀÌ¹ö'°¡ ÇÊ¿äÇÕ´Ï´Ù
-'µå¶óÀÌ¹ö'Á¦°øÀº DB¿Ü»ç ¿¡¼­ Á¦°ø ÇÕ´Ï´Ù
-'µå¶óÀÌ¹ö'µµ Å¬·¡½º ÀÔ´Ï´Ù 
+ìžë°”ì—ì„œ DBë¥¼ ì—°ê²° í•˜ë ¤ë©´ ê° DBì˜ 'ë“œë¼ì´ë²„'ê°€ í•„ìš”í•©ë‹ˆë‹¤
+'ë“œë¼ì´ë²„'ì œê³µì€ DBì™¸ì‚¬ ì—ì„œ ì œê³µ í•©ë‹ˆë‹¤
+'ë“œë¼ì´ë²„'ë„ í´ëž˜ìŠ¤ ìž…ë‹ˆë‹¤ 
 
 
-¿À¶óÅ¬µå¶óÀÌ¹ö´Â ¿À¶óÅ¬ ¼³Ä¡ ÇÏ¸é ÀÖ½À´Ï´Ù
-lib/ojdbc14.jar °Ë»öÇÏ¿© JDK/jre/lib/ext/ ³Ö¾îÁÖ¸é µÈ´Ù 
+ì˜¤ë¼í´ë“œë¼ì´ë²„ëŠ” ì˜¤ë¼í´ ì„¤ì¹˜ í•˜ë©´ ìžˆìŠµë‹ˆë‹¤
+lib/ojdbc14.jar ê²€ìƒ‰í•˜ì—¬ JDK/jre/lib/ext/ ë„£ì–´ì£¼ë©´ ëœë‹¤ 
 
 D:\app\tjoeun\product\11.2.0\dbhome_1 \ owb \ wf \lib
 
 
-MySql µå¶óÀÌ¹ö- ´Ù¿î·Îµå ¹Þ¾Æ¼­
-http://dev.mysql.com/downloads/connector/j/ ¿©±â °¡¼­
+MySql ë“œë¼ì´ë²„- ë‹¤ìš´ë¡œë“œ ë°›ì•„ì„œ
+http://dev.mysql.com/downloads/connector/j/ ì—¬ê¸° ê°€ì„œ
 
 mysql-connector-java-5.0.8-bin.jar
 
-JDK/jre/lib/ext/ ³Ö¾îÁÖ¸é µÈ´Ù 
+JDK/jre/lib/ext/ ë„£ì–´ì£¼ë©´ ëœë‹¤ 
 
 ------------------------------
 com.mysql.jdbc.Driver
 oracle.jdbc.driver.OracleDriver
 ------------------------------
 
-ÀÌÅ¬¸³½º¸¦ ±¸µ¿ÇÏ¿© *.jar ÆÄÀÏÀ» È®ÀÎ
-ÇÁ·ÎÁ§Æ®¿¡¼­==¿ìÅ¬¸¯==Properties
+ì´í´ë¦½ìŠ¤ë¥¼ êµ¬ë™í•˜ì—¬ *.jar íŒŒì¼ì„ í™•ì¸
+í”„ë¡œì íŠ¸ì—ì„œ==ìš°í´ë¦­==Properties
 
-¿ÞÂÊ
-java Build Path ¼±ÅÃ
+ì™¼ìª½
+java Build Path ì„ íƒ
 
-¿À¸¥ÂÊ
-Libraries ÅÇ
+ì˜¤ë¥¸ìª½
+Libraries íƒ­
 
 JRE System Library [JavaSE-1.8]
- È®ÀÎ
+ í™•ì¸
 ---------------------------------
-¹®¼­
-03_¹®¼­_DB.doc  ÂüÁ¶
+ë¬¸ì„œ
+03_ë¬¸ì„œ_DB.doc  ì°¸ì¡°
 
 
 
